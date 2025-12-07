@@ -1,0 +1,11 @@
+CVE_ID,Severity,Base_Score,CVSS_Vector,Published_Date,Last_Modified,Description
+CVE-2025-12642,CRITICAL,9.1,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N,2025-11-03,2025-11-12,"lighttpd1.4.80 incorrectly merged trailer fields into headers after http request parsing. This behavior can be exploited to conduct HTTP Header Smuggling attacks.
+
+Successful exploitation may allow an attacker to:
+
+  *  Bypass access control rules
+  *  Inject unsafe input into backend logic that trusts request headers
+  *  Execute HTTP Request Smuggling attacks under some conditions
+
+
+This issue affects lighttpd1.4.80"

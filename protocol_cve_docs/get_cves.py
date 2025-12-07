@@ -5,11 +5,11 @@ import sys
 
 # --- 配置参数 ---
 # 搜索关键词：替换为你想要查询的产品或协议名称，例如 'proftpd'
-SEARCH_KEYWORD = "proftpd"
+SEARCH_KEYWORD = "lightftpd"
 # NVD API 基础 URL
 NVD_API_URL = "https://services.nvd.nist.gov/rest/json/cves/2.0"
 # 输出文件名
-OUTPUT_FILENAME = f"{SEARCH_KEYWORD}_cve_full_list.csv"
+OUTPUT_FILENAME = f"{SEARCH_KEYWORD}_cve.csv"
 # NVD API 的每页最大限制
 RESULTS_PER_PAGE = 500
 
@@ -122,8 +122,8 @@ def fetch_cves_from_nvd(keyword):
                 'Published_Date': cve.get('published', 'N/A').split('T')[0],
                 'Last_Modified': cve.get('lastModified', 'N/A').split('T')[0],
                 'Description': description,
-                'References': references_str,
-                'Vulnerable_CPEs': cpes_str
+                # 'References': references_str,
+                # 'Vulnerable_CPEs': cpes_str
             })
 
         print(f"--- 📥 已下载 {len(all_cves)} / {total_results} 条记录... ---")
@@ -148,7 +148,7 @@ def export_to_csv(data, filename):
     fieldnames = [
         'CVE_ID', 'Severity', 'Base_Score', 'CVSS_Vector', 
         'Published_Date', 'Last_Modified', 'Description', 
-        'References', 'Vulnerable_CPEs'
+        # 'References', 'Vulnerable_CPEs'
     ]
 
     try:

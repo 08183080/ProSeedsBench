@@ -1,0 +1,563 @@
+{
+  "meta": {
+    "protocol": "RTSP",
+    "implementation": "live555",
+    "source_repo": "rgaufman/live555",
+    "documentation_source": "rgaufman-live555-DeepWiki/RTSP-Media-Server.md, Network-Protocol-Implementation.md",
+    "extraction_date": "2025-01-XX"
+  },
+  "implementation_knowledge": {
+    "code_structure": {
+      "key_functions": [
+        {
+          "name": "handleCmd_SETUP",
+          "file": "liveMedia/RTSPServer.cpp",
+          "purpose": "Process RTSP SETUP command, establish transport for media stream",
+          "parameters": ["RTSP command", "URL", "headers"],
+          "return_codes": [200, 400, 454, 459, 461],
+          "source_ref": "RTSP-Media-Server.md:254-271, RTSPServer.cpp:361-896"
+        },
+        {
+          "name": "handleCmd_DESCRIBE",
+          "file": "liveMedia/RTSPServer.cpp",
+          "purpose": "Provide SDP media description",
+          "parameters": ["RTSP command", "URL", "Accept header"],
+          "return_codes": [200, 400, 404],
+          "source_ref": "RTSP-Media-Server.md:254-271"
+        },
+        {
+          "name": "handleCmd_PLAY",
+          "file": "liveMedia/RTSPServer.cpp",
+          "purpose": "Start media streaming",
+          "parameters": ["RTSP command", "URL", "Session header", "Range header"],
+          "return_codes": [200, 400, 454, 455],
+          "source_ref": "RTSP-Media-Server.md:254-271"
+        },
+        {
+          "name": "lookupServerMediaSession",
+          "file": "liveMedia/GenericMediaServer.cpp",
+          "purpose": "Find or create ServerMediaSession for requested URL",
+          "parameters": ["URL path"],
+          "return_codes": ["ServerMediaSession* or NULL"],
+          "source_ref": "RTSP-Media-Server.md:111-133"
+        },
+        {
+          "name": "createNewClientSession",
+          "file": "liveMedia/RTSPServer.cpp",
+          "purpose": "Create new RTSPClientSession for client connection",
+          "parameters": ["ServerMediaSession", "client connection"],
+          "return_codes": ["RTSPClientSession*"],
+          "source_ref": "RTSP-Media-Server.md:100-110"
+        }
+      ],
+      "call_chains": [
+        {
+          "trigger": "RTSP SETUP command",
+          "chain": [
+            "RTSPServer::handleCmd_SETUP()",
+            "lookupServerMediaSession()",
+            "createNewClientSession() or lookup existing",
+            "setupTransport()",
+            "return 200 OK with Session header"
+          ],
+          "purpose": "Establish media transport for streaming session",
+          "source_ref": "RTSP-Media-Server.md:135-166"
+        },
+        {
+          "trigger": "RTSP DESCRIBE command",
+          "chain": [
+            "RTSPServer::handleCmd_DESCRIBE()",
+            "lookupServerMediaSession()",
+            "ServerMediaSession::generateSDPDescription()",
+            "return 200 OK with SDP body"
+          ],
+          "purpose": "Provide media description to client",
+          "source_ref": "RTSP-Media-Server.md:135-166"
+        },
+        {
+          "trigger": "RTSP PLAY command",
+          "chain": [
+            "RTSPServer::handleCmd_PLAY()",
+            "lookupClientSession()",
+            "RTSPClientSession::handleCmd_PLAY()",
+            "startStreaming()",
+            "return 200 OK"
+          ],
+          "purpose": "Start media streaming to client",
+          "source_ref": "RTSP-Media-Server.md:135-166"
+        }
+      ]
+    },
+    "parsing_logic": [
+      {
+        "target": "Transport header",
+        "function": "parseTransportHeader() (implied)",
+        "parsing_order": [
+          "Extract transport-protocol (RTP/AVP, RTP/AVP/TCP, etc.)",
+          "Parse lower-transport (UDP, TCP)",
+          "Parse parameters (unicast/multicast, ports, interleaving)"
+        ],
+        "validation": [
+          "Transport header MUST be present in SETUP",
+          "Must specify acceptable transport parameters",
+          "Port range validation (if specified)",
+          "Interleaving channel ID validation (for TCP)"
+        ],
+        "error_cases": [
+          "Missing Transport header -> 400 Bad Request",
+          "Invalid transport parameters -> 400 Bad Request",
+          "Unsupported transport -> 461 Unsupported Transport"
+        ],
+        "source_ref": "RTSP-Media-Server.md:254-271, RFC 2326 section 12.39"
+      },
+      {
+        "target": "Session header",
+        "function": "parseSessionHeader() (implied)",
+        "parsing_order": [
+          "Extract Session ID string",
+          "Lookup session in hash table"
+        ],
+        "validation": [
+          "Session ID must exist in active sessions",
+          "Session must not be expired"
+        ],
+        "error_cases": [
+          "Invalid Session ID -> 454 Session Not Found",
+          "Session expired -> 454 Session Not Found"
+        ],
+        "source_ref": "RTSP-Media-Server.md:100-110"
+      },
+      {
+        "target": "URL path",
+        "function": "parseURL() (implied)",
+        "parsing_order": [
+          "Extract path component",
+          "Map to file system or media source"
+        ],
+        "validation": [
+          "Path must map to valid media source",
+          "File extension determines media type (for DynamicRTSPServer)"
+        ],
+        "error_cases": [
+          "Invalid path -> 404 Not Found",
+          "Unsupported media type -> 415 Unsupported Media Type"
+        ],
+        "source_ref": "RTSP-Media-Server.md:118-133, 295-309"
+      }
+    ],
+    "state_management": {
+      "session_storage": "Hash table keyed by Session ID string (ClientSession structure)",
+      "session_lifecycle": {
+        "creation": "On successful SETUP command (200 OK response)",
+        "timeout": "65 seconds of inactivity (reclamation time, configurable)",
+        "cleanup": "Automatic cleanup on timeout or explicit TEARDOWN command"
+      },
+      "state_transitions": [
+        {
+          "from": "INIT (no session)",
+          "command": "SETUP",
+          "condition": "response_code == 200 AND transport setup successful",
+          "to": "READY (session established)",
+          "code_location": "RTSPServer.cpp:463-461",
+          "source_ref": "RTSP-Media-Server.md:135-166, 216-253"
+        },
+        {
+          "from": "READY",
+          "command": "PLAY",
+          "condition": "response_code == 200 AND streaming started",
+          "to": "PLAYING",
+          "code_location": "RTSPServer.cpp:463-461",
+          "source_ref": "RTSP-Media-Server.md:135-166"
+        },
+        {
+          "from": "PLAYING",
+          "command": "PAUSE",
+          "condition": "response_code == 200",
+          "to": "READY",
+          "code_location": "RTSPServer.cpp",
+          "source_ref": "RTSP-Media-Server.md:254-271"
+        },
+        {
+          "from": "READY or PLAYING",
+          "command": "TEARDOWN",
+          "condition": "response_code == 200",
+          "to": "INIT (session destroyed)",
+          "code_location": "RTSPServer.cpp",
+          "source_ref": "RTSP-Media-Server.md:254-271"
+        }
+      ],
+      "session_components": [
+        {
+          "component": "ClientConnection",
+          "purpose": "Represents TCP connection with client",
+          "lifetime": "Per connection",
+          "source_ref": "RTSP-Media-Server.md:100-110"
+        },
+        {
+          "component": "ClientSession",
+          "purpose": "Represents active streaming session",
+          "lifetime": "Per session (can have multiple sessions per connection)",
+          "source_ref": "RTSP-Media-Server.md:100-110"
+        },
+        {
+          "component": "ServerMediaSession",
+          "purpose": "Represents media content",
+          "lifetime": "Per media file/source",
+          "source_ref": "RTSP-Media-Server.md:111-133"
+        }
+      ]
+    },
+    "memory_operations": [
+      {
+        "location": "Session ID storage",
+        "buffer_type": "Dynamic string (C++ string class)",
+        "buffer_size": "No explicit limit in documentation (implementation dependent)",
+        "operation": "String assignment/copy",
+        "length_check": "Not explicitly mentioned in documentation",
+        "risk": "Potential DoS with extremely long session IDs, or buffer issues if using C-style strings internally",
+        "source_ref": "RTSP-Media-Server.md:100-110",
+        "fuzz_strategy": "Generate session IDs of various lengths: 8 bytes (minimum per RFC), 100 bytes, 1000 bytes, 10000 bytes"
+      },
+      {
+        "location": "URL path processing",
+        "buffer_type": "Not explicitly documented",
+        "buffer_size": "Implied limit from file system paths (typically 2048-4096 bytes on most systems)",
+        "operation": "Path string processing",
+        "length_check": "Not explicitly mentioned",
+        "risk": "Path traversal attacks, buffer overflow with extremely long paths",
+        "source_ref": "RTSP-Media-Server.md:295-309",
+        "fuzz_strategy": "Test with paths of various lengths, path traversal sequences (../), and special characters"
+      },
+      {
+        "location": "RTP-over-TCP interleaved binary framing",
+        "buffer_type": "Binary buffer",
+        "buffer_size": "Packet size specified in 2-byte length field (max 65535 bytes)",
+        "operation": "Binary packet framing: $<channelId><length><data>",
+        "length_check": "Length field read before buffer allocation",
+        "risk": "Length field manipulation can cause buffer over-read or allocation of extremely large buffers",
+        "source_ref": "Network-Protocol-Implementation.md:112-151",
+        "fuzz_strategy": "Manipulate length field: 0, 1, 65535, values larger than actual packet, negative values (if signed)"
+      },
+      {
+        "location": "Transport header parameter parsing",
+        "buffer_type": "String parsing",
+        "buffer_size": "Not explicitly documented",
+        "operation": "String tokenization and parameter extraction",
+        "length_check": "Not explicitly mentioned",
+        "risk": "Buffer issues in parameter parsing, especially with malformed or extremely long parameter values",
+        "source_ref": "RTSP-Media-Server.md:254-271",
+        "fuzz_strategy": "Generate Transport headers with: extremely long parameter values, missing separators, duplicate parameters, special characters"
+      }
+    ],
+    "implementation_constraints": [
+      {
+        "constraint": "Session reclamation time",
+        "limit": "65 seconds (default, configurable via RTSPServer::createNew parameter)",
+        "location": "Session management",
+        "source_ref": "RTSP-Media-Server.md:216-253",
+        "fuzz_strategy": "Test session reuse at timeout boundary (64s, 65s, 66s), test multiple sessions with staggered timeouts"
+      },
+      {
+        "constraint": "Media format detection (DynamicRTSPServer)",
+        "limit": "Based on file extension only",
+        "location": "DynamicRTSPServer::lookupServerMediaSession()",
+        "source_ref": "RTSP-Media-Server.md:118-133",
+        "fuzz_strategy": "Test with: missing extension, unknown extension, multiple extensions, extension confusion attacks"
+      },
+      {
+        "constraint": "Concurrent client connections",
+        "limit": "Not explicitly documented (likely limited by system resources)",
+        "location": "ClientConnection management",
+        "source_ref": "RTSP-Media-Server.md:100-110",
+        "fuzz_strategy": "Test with: many concurrent connections, rapid connect/disconnect, connection reuse"
+      },
+      {
+        "constraint": "RTP packet size (interleaved mode)",
+        "limit": "65535 bytes (2-byte length field)",
+        "location": "RTP-over-TCP framing",
+        "source_ref": "Network-Protocol-Implementation.md:112-151",
+        "fuzz_strategy": "Test with: 0-byte packets, 1-byte packets, 65535-byte packets, packets larger than 65535 (if possible)"
+      }
+    ],
+    "error_handling": [
+      {
+        "error": "Invalid Session ID in PLAY/PAUSE/TEARDOWN",
+        "detection": "Hash table lookup fails (session not found)",
+        "response": "454 Session Not Found",
+        "resource_cleanup": "No cleanup needed (session doesn't exist)",
+        "fuzz_strategy": "Test with: random session IDs, reused/deleted session IDs, session IDs from other connections, extremely long session IDs",
+        "source_ref": "RTSP-Media-Server.md:100-110"
+      },
+      {
+        "error": "SETUP with existing Session ID",
+        "detection": "Session ID already exists in hash table",
+        "response": "459 Aggregate Operation Not Allowed (if trying to bundle) or session reuse logic",
+        "resource_cleanup": "Implementation dependent",
+        "fuzz_strategy": "Test session ID reuse: send SETUP with same session ID twice, use session ID from expired session, use session ID from different client",
+        "source_ref": "RTSP-Media-Server.md:135-166"
+      },
+      {
+        "error": "Invalid Transport header",
+        "detection": "Transport parameter parsing/validation fails",
+        "response": "400 Bad Request or 461 Unsupported Transport",
+        "resource_cleanup": "No session created, no cleanup needed",
+        "fuzz_strategy": "Test with: missing Transport header, empty Transport header, malformed parameters, unsupported transport types, conflicting parameters",
+        "source_ref": "RTSP-Media-Server.md:254-271"
+      },
+      {
+        "error": "Media source not found",
+        "detection": "lookupServerMediaSession() returns NULL",
+        "response": "404 Not Found",
+        "resource_cleanup": "No session created",
+        "fuzz_strategy": "Test with: non-existent paths, path traversal sequences, paths to non-media files, extremely long paths",
+        "source_ref": "RTSP-Media-Server.md:111-133"
+      },
+      {
+        "error": "RTP-over-TCP framing error",
+        "detection": "Invalid framing format or length mismatch",
+        "response": "Connection may be closed or error in RTP processing",
+        "resource_cleanup": "Implementation dependent",
+        "fuzz_strategy": "Test with: missing $ prefix, invalid channel ID, incorrect length field, truncated packets, extra data after packet",
+        "source_ref": "Network-Protocol-Implementation.md:112-151"
+      }
+    ],
+    "custom_features": [
+      {
+        "feature": "HTTP Tunneling",
+        "description": "RTSP over HTTP tunneling for firewall traversal",
+        "implementation": "setUpTunnelingOverHTTP(httpPort)",
+        "security_implications": "RTSP messages embedded in HTTP requests, potential for HTTP/RTSP protocol confusion attacks",
+        "source_ref": "RTSP-Media-Server.md:241-252",
+        "fuzz_strategy": "Test HTTP tunneling with: malformed RTSP in HTTP body, HTTP headers in RTSP messages, protocol confusion attacks"
+      },
+      {
+        "feature": "TLS/SRTP Support",
+        "description": "Secure RTSP with TLS and secure RTP with SRTP",
+        "implementation": "setTLSState(certFileName, privKeyFileName, weServeSRTP, weEncryptSRTP)",
+        "security_implications": "TLS handshake handling, certificate validation, SRTP key management",
+        "source_ref": "RTSP-Media-Server.md:231-240",
+        "fuzz_strategy": "Test TLS: invalid certificates, malformed handshakes, protocol downgrade attacks. Test SRTP: invalid keys, key reuse, encryption bypass attempts"
+      },
+      {
+        "feature": "Dynamic Media Session Creation",
+        "description": "Automatic media session creation based on file extension (DynamicRTSPServer)",
+        "implementation": "DynamicRTSPServer::lookupServerMediaSession() detects format by extension",
+        "security_implications": "File extension-based detection can be confused, potential for serving unintended file types",
+        "source_ref": "RTSP-Media-Server.md:118-133",
+        "fuzz_strategy": "Test with: files with wrong extensions, multiple extensions, extension spoofing, files without extensions"
+      },
+      {
+        "feature": "RTP-over-TCP Interleaved Mode",
+        "description": "RTP/RTCP packets interleaved with RTSP on same TCP connection (RFC 2326 section 10.12)",
+        "implementation": "Format: $<channelId><length><packet>",
+        "security_implications": "Binary framing in text protocol, length field manipulation, channel ID confusion",
+        "source_ref": "Network-Protocol-Implementation.md:112-151",
+        "fuzz_strategy": "Test framing: invalid channel IDs, manipulated length fields, $ character injection in RTSP text, channel ID reuse, missing framing markers"
+      }
+    ],
+    "network_protocol_details": {
+      "rtp_over_tcp": {
+        "framing_format": "$<streamChannelId><packetSize><packet>",
+        "channel_id_size": "1 byte (0-255)",
+        "packet_size_size": "2 bytes (0-65535)",
+        "implementation": "Two-level hash table: socket -> SocketDescriptor -> channel -> RTPInterface",
+        "source_ref": "Network-Protocol-Implementation.md:112-151",
+        "fuzz_strategy": "Test with: invalid channel IDs (out of range), manipulated packet sizes, missing $ prefix, $ in RTSP text messages, channel ID collisions"
+      },
+      "multicast_support": {
+        "description": "Support for IP multicast for RTP",
+        "implementation": "Groupsock with multicast group joining",
+        "source_ref": "Network-Protocol-Implementation.md:286-334",
+        "fuzz_strategy": "Test multicast: invalid multicast addresses, TTL manipulation, source-specific multicast (SSM) attacks"
+      }
+    }
+  },
+  "fuzzing_guidance": {
+    "high_priority_targets": [
+      {
+        "target": "Session ID handling",
+        "reason": "No explicit length limit documented, stored in hash table",
+        "priority": "HIGH",
+        "test_cases": [
+          "8-byte session ID (RFC minimum)",
+          "100-byte session ID",
+          "1000-byte session ID",
+          "10000-byte session ID",
+          "Session ID with null bytes",
+          "Session ID with special characters"
+        ]
+      },
+      {
+        "target": "Transport header parsing",
+        "reason": "Complex parameter parsing, multiple validation points",
+        "priority": "HIGH",
+        "test_cases": [
+          "Missing Transport header",
+          "Empty Transport header",
+          "Transport with extremely long parameter values",
+          "Transport with duplicate parameters",
+          "Transport with conflicting parameters (unicast + multicast)",
+          "Transport with invalid port ranges",
+          "Transport with missing required parameters"
+        ]
+      },
+      {
+        "target": "RTP-over-TCP binary framing",
+        "reason": "Binary data in text protocol, length field manipulation",
+        "priority": "HIGH",
+        "test_cases": [
+          "Length field = 0",
+          "Length field = 1",
+          "Length field = 65535",
+          "Length field > actual packet size",
+          "Missing $ prefix",
+          "Invalid channel ID (256, -1)",
+          "$ character in RTSP text messages"
+        ]
+      },
+      {
+        "target": "URL path processing",
+        "reason": "File system interaction, path traversal potential",
+        "priority": "MEDIUM",
+        "test_cases": [
+          "Path traversal sequences (../../../etc/passwd)",
+          "Extremely long paths",
+          "Paths with null bytes",
+          "Paths with special characters",
+          "Non-existent paths",
+          "Paths to non-media files"
+        ]
+      },
+      {
+        "target": "Session state management",
+        "reason": "State transitions, session reuse, timeout handling",
+        "priority": "MEDIUM",
+        "test_cases": [
+          "PLAY without SETUP",
+          "PLAY with expired session",
+          "PLAY with session from different client",
+          "Multiple SETUP with same session ID",
+          "TEARDOWN twice on same session",
+          "Session reuse at timeout boundary"
+        ]
+      }
+    ],
+    "test_case_templates": [
+      {
+        "name": "Long Session ID Attack",
+        "target": "Session ID storage and validation",
+        "template": "SETUP rtsp://server/path RTSP/1.0\r\nCSeq: 1\r\nTransport: RTP/AVP/TCP\r\nSession: {LONG_STRING}\r\n\r\n",
+        "variations": [
+          "8 bytes (minimum per RFC)",
+          "100 bytes",
+          "1000 bytes",
+          "10000 bytes",
+          "With null bytes",
+          "With special characters"
+        ],
+        "expected_behavior": "Should handle gracefully or return appropriate error, not crash"
+      },
+      {
+        "name": "Malformed Transport Header",
+        "target": "Transport header parsing",
+        "template": "SETUP rtsp://server/path RTSP/1.0\r\nCSeq: 1\r\nTransport: {MALFORMED_TRANSPORT}\r\n\r\n",
+        "variations": [
+          "Missing (no Transport header)",
+          "Empty value",
+          "RTP/AVP/TCP;unicast;client_port=8080-8081;server_port=9000-9001;interleaved=0-1;param1=value1;param2={LONG_VALUE}",
+          "RTP/AVP/TCP;unicast;multicast (conflicting)",
+          "RTP/AVP/TCP;client_port=invalid",
+          "RTP/AVP/TCP;interleaved=256 (out of range)"
+        ],
+        "expected_behavior": "Should return 400 Bad Request or 461 Unsupported Transport"
+      },
+      {
+        "name": "RTP-over-TCP Framing Attack",
+        "target": "Binary framing parser",
+        "template": "${CHANNEL_ID}{LENGTH_FIELD}{PACKET_DATA}",
+        "variations": [
+          "$\\x00\\x00\\x00 (0-byte packet)",
+          "$\\x00\\xFF\\xFF (65535-byte packet, test with actual data)",
+          "$\\x01\\x00\\x05{5 bytes data} (valid packet)",
+          "$\\x100\\x00\\x05 (invalid channel ID 256)",
+          "Missing $ prefix",
+          "$\\x00\\x00\\x10{only 5 bytes data} (length mismatch)"
+        ],
+        "expected_behavior": "Should handle gracefully, not cause buffer over-read or crash"
+      },
+      {
+        "name": "State Machine Violation",
+        "target": "Session state management",
+        "template": "PLAY rtsp://server/path RTSP/1.0\r\nCSeq: 2\r\nSession: {SESSION_ID}\r\n\r\n",
+        "variations": [
+          "PLAY without prior SETUP (no session)",
+          "PLAY with invalid session ID",
+          "PLAY with expired session ID",
+          "PLAY with session ID from different client"
+        ],
+        "expected_behavior": "Should return 454 Session Not Found or 455 Method Not Valid in This State"
+      },
+      {
+        "name": "Path Traversal Attack",
+        "target": "URL path processing and file system access",
+        "template": "DESCRIBE rtsp://server/{PATH} RTSP/1.0\r\nCSeq: 1\r\nAccept: application/sdp\r\n\r\n",
+        "variations": [
+          "../../../etc/passwd",
+          "..\\..\\..\\windows\\system32\\config\\sam",
+          "/etc/passwd",
+          "C:\\windows\\system32\\config\\sam",
+          "Extremely long path (4096+ bytes)",
+          "Path with null bytes"
+        ],
+        "expected_behavior": "Should return 404 Not Found, not expose file system"
+      }
+    ],
+    "code_path_coverage": [
+      {
+        "path": "SETUP -> lookupServerMediaSession -> createNewClientSession -> setupTransport",
+        "trigger": "Valid SETUP command with new session",
+        "fuzz_strategy": "Vary URL paths, Transport parameters, and optional headers to cover different code branches"
+      },
+      {
+        "path": "SETUP -> lookupServerMediaSession -> lookup existing session -> bundle or error",
+        "trigger": "SETUP with existing Session ID",
+        "fuzz_strategy": "Test session bundling logic, expired session handling, session from different client"
+      },
+      {
+        "path": "PLAY -> lookupClientSession -> handleCmd_PLAY -> startStreaming",
+        "trigger": "Valid PLAY command in READY state",
+        "fuzz_strategy": "Vary Range headers, Scale headers, and session states"
+      },
+      {
+        "path": "RTP-over-TCP -> tcpReadHandler -> parse framing -> deliver packet",
+        "trigger": "Receiving RTP packet over TCP",
+        "fuzz_strategy": "Manipulate framing format, channel IDs, and packet sizes"
+      },
+      {
+        "path": "Session timeout -> cleanup -> remove from hash table",
+        "trigger": "65 seconds of inactivity",
+        "fuzz_strategy": "Test session reuse at timeout boundary, rapid timeout/reconnect cycles"
+      }
+    ],
+    "integration_with_rfc_knowledge": {
+      "note": "This implementation knowledge should be combined with RFC 2326 knowledge for comprehensive fuzzing",
+      "combined_strategies": [
+        {
+          "rfc_knowledge": "Session ID must be at least 8 bytes (RFC 2326)",
+          "implementation_knowledge": "No explicit maximum length in implementation",
+          "combined_test": "Test with 7 bytes (violates RFC) AND 10000 bytes (tests implementation limit)"
+        },
+        {
+          "rfc_knowledge": "Transport header must specify transport parameters",
+          "implementation_knowledge": "Complex parsing logic with multiple validation points",
+          "combined_test": "Test with RFC-compliant but implementation-problematic Transport headers (e.g., extremely long parameter values)"
+        },
+        {
+          "rfc_knowledge": "RTP-over-TCP uses $<channel><length><data> format",
+          "implementation_knowledge": "Two-level hash table for channel management",
+          "combined_test": "Test with valid format but invalid channel IDs or hash table collision scenarios"
+        }
+      ]
+    }
+  }
+}

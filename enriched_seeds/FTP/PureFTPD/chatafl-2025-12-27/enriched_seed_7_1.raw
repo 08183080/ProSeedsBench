@@ -1,0 +1,6 @@
+USER fuzzing
+PASS fuzzing
+DELE test.txt
+XCUP
+HELP
+QUIT

@@ -1,0 +1,9 @@
+USER fuzzing
+PASS fuzzing
+SMNT /
+MDTM test.txt
+LIST
+STOR test.txt
+pruebaaaaaaaaaventoryaabbbaaabbbcceccccdddddaaaddddddab
+NOOP
+QUIT

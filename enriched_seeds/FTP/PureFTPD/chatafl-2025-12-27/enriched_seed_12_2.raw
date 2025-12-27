@@ -1,0 +1,10 @@
+USER fuzzing
+PASS fuzzing
+RNFR test.txt
+RNTO test2.txt
+LIST
+ALLO
+RNFR test2.txt
+RNTO test.txt
+LIST
+QUIT

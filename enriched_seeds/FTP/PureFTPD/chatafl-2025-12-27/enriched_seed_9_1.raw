@@ -1,0 +1,9 @@
+USER fuzzing
+PASS fuzzing
+EPSV
+ABOR
+SYST
+LIST
+STAT
+HELP
+QUIT

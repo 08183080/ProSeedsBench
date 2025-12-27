@@ -1,0 +1,9 @@
+USER fuzzing
+PASS fizzing
+PASV
+LIST
+NLST
+OPTSUtf8 on
+STOU
+STAT
+.Quit

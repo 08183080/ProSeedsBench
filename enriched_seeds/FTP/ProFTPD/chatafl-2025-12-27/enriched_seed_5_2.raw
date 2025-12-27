@@ -1,0 +1,8 @@
+USER ubuntu
+PASS ubuntu
+OPTS utf8 ON
+PWD
+NLST
+STOR test.txt
+pruebaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbcccccccccccccccccccccccccccccccccccccccccccccccccccccdddddddddddddddddddddddddddddddddddddddddddddddddddd
+a

@@ -1,6 +1,0 @@
-USER ubuntu
-PASS ubuntu
-ABOR
-STAT
-DELE test.txt
-QUIT

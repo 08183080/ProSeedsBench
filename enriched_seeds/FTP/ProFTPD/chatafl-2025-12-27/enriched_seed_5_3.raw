@@ -1,0 +1,8 @@
+USER ubuntu
+PASS ubuntu
+STAT
+XPWD
+STOR test.txt
+pruebaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbcccccccccccccccccccccccccccccccccccccccccccccccccccccdddddddddddddddddddddddddddddddddddddddddddddddddddd
+a
+QUIT

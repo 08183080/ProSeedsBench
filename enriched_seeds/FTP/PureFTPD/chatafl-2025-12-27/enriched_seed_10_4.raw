@@ -1,0 +1,14 @@
+USER fuzzing
+PASS fuzzing
+SMNT /
+TYPE A
+SIZE test.txt
+ABOR
+OPTS utf8on *.
+TYPE E
+SIZE test.txt
+TYPE I
+SIZE test.txt
+TYPE L 7
+SIZE test.txt
+QUIT

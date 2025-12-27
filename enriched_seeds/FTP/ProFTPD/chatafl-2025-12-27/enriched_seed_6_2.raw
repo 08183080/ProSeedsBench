@@ -1,0 +1,7 @@
+USER ubuntu
+PASS ubuntu
+HELP
+CDUP
+LIST
+RETR test.txt
+QUIT

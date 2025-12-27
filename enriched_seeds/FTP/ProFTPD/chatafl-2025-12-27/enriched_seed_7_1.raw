@@ -1,0 +1,7 @@
+USER ubuntu
+PASS ubuntu
+STRU I
+STOU
+MDTM test.txt
+DELE test.txt
+QUIT

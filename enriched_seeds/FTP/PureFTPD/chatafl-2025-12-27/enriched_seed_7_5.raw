@@ -1,0 +1,7 @@
+USER fuzzing
+ACCT fuzzing
+PASS fuzzing
+XCUP
+PWD
+DELE test.txt
+QUIT

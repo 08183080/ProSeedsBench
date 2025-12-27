@@ -1,0 +1,18 @@
+USER fuzzing
+PASS fuzzing
+TYPE A
+STRU F
+MDTM test.txt
+SIZE test.txt
+TYPE E
+STRU F
+MDTM test.txt
+SIZE test.txt
+TYPE I
+STRU F
+MDTM test.txt
+SIZE test.txt
+TYPE L 7
+STYPE VB
+SIZE test.txt
+QUIT

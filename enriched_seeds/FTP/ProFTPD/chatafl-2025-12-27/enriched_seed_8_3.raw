@@ -1,0 +1,8 @@
+USER ubuntu
+PASS ubuntu
+OPTS utf8 ON
+PASV
+LIST
+NOOP
+STAT
+QUIT

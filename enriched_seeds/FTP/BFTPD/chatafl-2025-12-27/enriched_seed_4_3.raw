@@ -1,0 +1,12 @@
+USER ubuntu
+PASS xyz
+SYST
+MKD todeletenow
+XMKD todeletetoo
+SITE admin move
+NOOP
+LIST
+RMD todeletenow
+XRMD todeletetoo
+LIST
+QUIT

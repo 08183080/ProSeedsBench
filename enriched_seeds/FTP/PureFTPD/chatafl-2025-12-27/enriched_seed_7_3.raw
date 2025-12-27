@@ -1,0 +1,5 @@
+PASS fuzzing
+DELE test.txt
+MDTM test.log
+PASV
+QUIT)esti_seq_fused_seq)esti_seq_remove_brackets

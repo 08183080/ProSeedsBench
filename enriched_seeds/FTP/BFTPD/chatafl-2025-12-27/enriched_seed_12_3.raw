@@ -1,0 +1,14 @@
+USER ubuntu
+Pass ubuntu
+LIST
+PASV
+NLST test2.txt
+RNFR test.txt
+RNTO test2.txt
+LIST
+STAT
+RMD test2.png
+SENDFILEtest3.txttest3Copy.txt
+RNFR test.txt
+RNTO test2.txt
+QUIT

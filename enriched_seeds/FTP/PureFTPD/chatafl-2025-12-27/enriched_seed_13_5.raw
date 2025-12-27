@@ -1,0 +1,6 @@
+USER fuzzing
+APPE teste.txt
+PASV
+STOU
+STAT
+QUIT

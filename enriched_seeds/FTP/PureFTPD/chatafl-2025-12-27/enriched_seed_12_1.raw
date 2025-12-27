@@ -1,0 +1,11 @@
+USER fuzzing
+PASS化石区
+LIST
+NLST
+RNFR test.txt
+RNTO test2.txt
+CDUP
+LIST
+RNFR test2.txt
+RETR test_reversed.txt
+QUIT

@@ -148,11 +148,14 @@ def run_from_config(config_path: str = "config.yaml") -> None:
             if 'max_enriched_per_file' in advanced_config:
                 max_enriched_per_file = advanced_config['max_enriched_per_file']
                 enricher.MAX_ENRICHED_SEEDS_PER_FILE = max_enriched_per_file
+            if 'temperature' in advanced_config:
+                enricher.TEMPERATURE = advanced_config['temperature']
             
             print(f"已应用高级配置")
             print(f"  CONFIDENT_TIMES: {enricher.CONFIDENT_TIMES}")
             print(f"  MAX_ENRICHMENT_MESSAGE_TYPES: {enricher.MAX_ENRICHMENT_MESSAGE_TYPES}")
             print(f"  MAX_ENRICHMENT_CORPUS_SIZE: {enricher.MAX_ENRICHMENT_CORPUS_SIZE}")
+            print(f"  TEMPERATURE: {enricher.TEMPERATURE}")
             if max_enriched_per_file is not None:
                 print(f"  MAX_ENRICHED_SEEDS_PER_FILE: {max_enriched_per_file}")
             print("-" * 60)

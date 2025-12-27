@@ -1,0 +1,8 @@
+USER ubuntu
+PASS ubuntu
+EPSV
+STRU F
+ALLO 1024
+LIST
+STAT
+QUIT

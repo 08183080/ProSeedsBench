@@ -1,0 +1,9 @@
+USER fuzzing
+PASS fuzzing
+FEAT
+PASV
+LIST
+XPWD
+STAT
+PWD
+_quit_

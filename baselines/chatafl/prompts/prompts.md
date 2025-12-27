@@ -52,3 +52,7 @@ Desired format:
 * **全大写** (UPPERCASE)
 * **无空格** (WITHOUT WHITESPACES)
 * **逗号分隔** (COMMA SEPARATED)
+
+
+# 参考
+chatafl的种子丰富机制：https://deepwiki.com/search/chatafl_74f90c94-2a4f-4b9e-94ae-852a164bd543

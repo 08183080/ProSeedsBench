@@ -1,0 +1,7 @@
+USER fuzzing
+PASS fuzzing
+SITE prueba
+STOR test.txt
+PWD
+LIST
+QUIT

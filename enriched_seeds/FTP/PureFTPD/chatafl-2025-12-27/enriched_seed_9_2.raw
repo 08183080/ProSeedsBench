@@ -1,0 +1,8 @@
+USER fuzzing
+PASS fuzzing
+EPSV
+ALLO 300
+LIST
+STAT
+ABOR
+QUIT

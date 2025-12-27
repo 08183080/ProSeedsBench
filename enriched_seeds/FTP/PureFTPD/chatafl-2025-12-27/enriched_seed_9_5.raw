@@ -1,0 +1,9 @@
+USER fuzzing
+PASS fuzzing
+EPSV
+LIST
+SITE
+HELP
+CDUP
+STAT
+QUIT

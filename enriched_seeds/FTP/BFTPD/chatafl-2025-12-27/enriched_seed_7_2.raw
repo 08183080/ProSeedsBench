@@ -1,0 +1,7 @@
+USER ubuntu
+PASS ubuntu
+LIST
+PWD
+NLST
+DELE test.txt
+QUIT

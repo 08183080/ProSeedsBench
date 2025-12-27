@@ -1,0 +1,13 @@
+USER fuzzing
+PASS fuzzing
+TYPE A
+SIZE test.txt
+TYPE E
+SIZE test.txt
+.TYPE I
+SIZE test.txt
+HELP
+STAT
+TYPE L 7
+SIZE test.txt
+QUIT

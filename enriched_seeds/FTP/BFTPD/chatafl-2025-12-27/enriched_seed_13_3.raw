@@ -1,0 +1,10 @@
+USER ubuntu
+PASS ubuntu
+OPTS ptbinary*ftf--
+XPWD /path/to/directory
+APPE teste.txt
+PRUEBA
+CAPITULO3...
+STAT
+RETR test.txt
+QUIT

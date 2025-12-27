@@ -1,0 +1,13 @@
+USER fuzzing
+PASS fuzzing
+SYST
+ALLO 1024
+MKD todeletenow
+XMKD todeletetoo
+SMNT /mnt/temporal
+LIST
+RMD todeletenow
+XRMD todeletetoo
+SMNT /
+_LIST
+QUIT

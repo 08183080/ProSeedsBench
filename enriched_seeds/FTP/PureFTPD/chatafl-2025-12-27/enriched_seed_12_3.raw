@@ -1,0 +1,7 @@
+USER fuzzing
+PASS fuzzing
+REST 0
+NLST
+rnfr test2.txt
+rkntest txt STAT
+QUIT

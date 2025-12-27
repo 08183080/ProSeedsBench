@@ -1,0 +1,9 @@
+USER fuzzing
+PASS fuzzing
+PSZ _
+STRU R
+PASV
+LIST
+STAT
+XCUP
+QUIT

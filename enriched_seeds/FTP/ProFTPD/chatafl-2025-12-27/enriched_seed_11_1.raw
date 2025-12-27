@@ -1,0 +1,13 @@
+USER ubuntu
+PASS ubuntu
+FEAT
+CDUP
+PWD
+MODE S
+RETR test.txt
+MODE B
+SIZE test.txt
+MODE C
+SIZE test.txt
+STAT
+QUIT

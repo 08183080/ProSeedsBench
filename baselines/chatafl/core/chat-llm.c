@@ -3,54 +3,23 @@
 #define MAX_TOKENS 2048
 #define CONFIDENT_TIMES 3
 
-
-
-static size_t chat_with_llm_helper(void *contents, size_t size, size_t nmemb, void *userp)
-{
-    size_t realsize = size * nmemb;
-    struct MemoryStruct *mem = (struct MemoryStruct *)userp;
-
-    mem->memory = realloc(mem->memory, mem->size + realsize + 1);
-    if (mem->memory == NULL)
-    {
-        /* out of memory! */
-        printf("not enough memory (realloc returned NULL)\n");
-        return 0;
-    }
-
-    memcpy(&(mem->memory[mem->size]), contents, realsize);
-    mem->size += realsize;
-    mem->memory[mem->size] = 0;
-
-    return realsize;
-}
-
 char *chat_with_llm(char *prompt, char *model, int tries, float temperature)
 {
     CURL *curl;
     CURLcode res = CURLE_OK;
     char *answer = NULL;
     char *url = NULL;
-    if (strcmp(model, "instruct") == 0)
-    {
-        url = "https://api.openai.com/v1/completions";
-    }
-    else
-    {
+
+    
         url = "https://api.openai.com/v1/chat/completions";
-    }
+    
     char *auth_header = "Authorization: Bearer " OPENAI_TOKEN;
     char *content_header = "Content-Type: application/json";
     char *accept_header = "Accept: application/json";
     char *data = NULL;
-    if (strcmp(model, "instruct") == 0)
-    {
-        asprintf(&data, "{\"model\": \"gpt-3.5-turbo-instruct\", \"prompt\": \"%s\", \"max_tokens\": %d, \"temperature\": %f}", prompt, MAX_TOKENS, temperature);
-    }
-    else
-    {
+
         asprintf(&data, "{\"model\": \"gpt-3.5-turbo\",\"messages\": %s, \"max_tokens\": %d, \"temperature\": %f}", prompt, MAX_TOKENS, temperature);
-    }
+    
     curl_global_init(CURL_GLOBAL_DEFAULT);
     do
     {
@@ -130,23 +99,7 @@ char *chat_with_llm(char *prompt, char *model, int tries, float temperature)
     return answer;
 }
 
-char *construct_prompt_stall(char *protocol_name, char *examples, char *history)
-{
-    char *template = "In the %s protocol, the communication history between the %s client and the %s server is as follows."
-                     "The next proper client request that can affect the server's state are:\\n\\n"
-                     "Desired format of real client requests:\\n%sCommunication History:\\n\\\"\\\"\\\"\\n%s\\\"\\\"\\\"";
 
-    char *prompt = NULL;
-    asprintf(&prompt, template, protocol_name, protocol_name, protocol_name, examples, history);
-
-    char *final_prompt = NULL;
-
-    asprintf(&final_prompt, "[{\"role\": \"system\", \"content\": \"You are a helpful assistant.\"}, {\"role\": \"user\", \"content\": \"%s\"}]", prompt);
-
-    free(prompt);
-
-    return final_prompt;
-}
 
 char *construct_prompt_for_templates(char *protocol_name, char **final_msg)
 {
@@ -203,28 +156,6 @@ char *construct_prompt_for_remaining_templates(char *protocol_name, char *first_
     free(second_question);
 
     return prompt;
-}
-
-char *extract_stalled_message(char *message, size_t message_len)
-{
-
-    int errornumber;
-    size_t erroroffset;
-    // After a lot of iterations, the model consistently responds with an empty line and then a line of text
-    pcre2_code *extracter = pcre2_compile("\r?\n?.*?\r?\n", PCRE2_ZERO_TERMINATED, 0, &errornumber, &erroroffset, NULL);
-    pcre2_match_data *match_data = pcre2_match_data_create_from_pattern(extracter, NULL);
-    int rc = pcre2_match(extracter, message, message_len, 0, 0, match_data, NULL);
-    char *res = NULL;
-    if (rc >= 0)
-    {
-        size_t *ovector = pcre2_get_ovector_pointer(match_data);
-        res = strdup(message + ovector[1]);
-    }
-
-    pcre2_match_data_free(match_data);
-    pcre2_code_free(extracter);
-
-    return res;
 }
 
 char *format_request_message(char *message)
@@ -593,57 +524,6 @@ range_list starts_with(char *line, int length, pcre2_code *pattern)
     return dyn_ranges;
 }
 
-range_list get_mutable_ranges(char *line, int length, int offset, pcre2_code *pattern)
-{
-    pcre2_match_data *match_data = pcre2_match_data_create_from_pattern(pattern, NULL);
-
-    range_list dyn_ranges;
-    kv_init(dyn_ranges);
-
-    for (;;) // catch all the other ranges
-    {
-        int rc = pcre2_match(pattern, line, length, offset, 0, match_data, NULL);
-        if (rc < 0)
-        {
-            switch (rc)
-            {
-            case PCRE2_ERROR_NOMATCH:
-                // printf("No match!\n");
-                break;
-            default:
-                // printf("Matching error %d\n", rc);
-                break;
-            }
-            pcre2_match_data_free(match_data);
-            match_data = NULL;
-            break;
-        }
-        PCRE2_SIZE *ovector = pcre2_get_ovector_pointer(match_data);
-        if (offset != ovector[0])
-        {
-            range v = {.start = offset, .len = ovector[0] - offset, .mutable = 1};
-            kv_push(range, dyn_ranges, v);
-        }
-
-        // printf("Matched over %d %d\n", ovector[0], ovector[1]);
-        for (int i = 1; i < rc; i++)
-        {
-            if (ovector[2 * i] == -1)
-                continue;
-            // printf("Group %d %d %d\n",i, ovector[2 * i], ovector[2 * i + 1]);
-            range v = {.start = ovector[2 * i], .len = ovector[2 * i + 1] - ovector[2 * i], .mutable = 1};
-            kv_push(range, dyn_ranges, v);
-            // ranges[0][i - 1] = v;
-        }
-        if (offset == ovector[1])
-        { // in the case the match is empty, we just move a step forward
-            offset++;
-        }
-        else
-        {
-            offset = ovector[1];
-        }
-    }
 
     if (offset < length) // catch anything past the last matched pattern
     {
@@ -806,56 +686,8 @@ void get_protocol_message_types(char *state_prompt, khash_t(strSet) * states_set
     }
 }
 
-khash_t(strSet) * duplicate_hash(khash_t(strSet) * set)
-{
-    khash_t(strSet) *new_set = kh_init(strSet);
 
-    for (khiter_t k = kh_begin(set); k != kh_end(set); ++k)
-    {
-        if (kh_exist(set, k))
-        {
-            const char *val = kh_key(set, k);
-            int ret;
-            kh_put(strSet, new_set, val, &ret);
-        }
-    }
 
-    return new_set;
-}
-
-// message_set_list generate_combinations(khash_t(strSet)* sequence, int size)
-// {
-//     if(size == 0)
-//     {
-//         message_set_list output;
-//         kv_init(output);
-//         kv_push(khash_t(strSet)*,output,kh_init(strSet));
-//         return output;
-//     }
-//     else
-//     {
-//         message_set_list subcombinations = generate_combinations(sequence,size-1);
-//         message_set_list newCombinations;
-//         kv_init(newCombinations);
-//         for(int i = 0; i < kv_size(subcombinations);i++)
-//         {
-//             khash_t(strSet)* target = kv_A(subcombinations,i);
-//             khiter_t sequence_iter;
-//             for (sequence_iter = kh_begin(sequence); sequence_iter != kh_end(sequence); sequence_iter++)
-//             {
-//                 if (!kh_exist(sequence, sequence_iter))
-//                     continue;
-//                 khiter_t k = kh_get(strSet, target, kh_val(sequence,sequence_iter));
-//                 if (kh_exist(target, k))
-//                     continue;
-//                 khash_t(strSet)* newCombination = duplicate_hash(target);
-//                 int absent;
-//                 kh_put(strSet,newCombination,kh_val(sequence,sequence_iter))    
-//             }
-//         }
-//         return newCombinations;
-//     }
-// }
 void make_combination(khash_t(strSet)* sequence, char** data , message_set_list* res,khiter_t st, khiter_t end, int index, int size);
 
 message_set_list message_combinations(khash_t(strSet)* sequence, int size)

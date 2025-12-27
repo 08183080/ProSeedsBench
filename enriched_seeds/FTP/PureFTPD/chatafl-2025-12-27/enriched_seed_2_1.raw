@@ -1,0 +1,17 @@
+USER fuzzing
+PASS fuzzing
+MKD test
+CWD test
+PWD
+ALLO 1024
+PASV
+HELP
+RETR test.txt
+LIST
+XMKD test
+XCWD test
+XPWD
+CDUP
+XCUP
+PASV
+QUIT

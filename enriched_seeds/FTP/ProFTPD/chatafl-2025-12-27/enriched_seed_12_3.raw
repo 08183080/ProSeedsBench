@@ -1,0 +1,14 @@
+USER ubuntu
+PASS ubuntu
+RNFR test.txt
+RNTO test2.txt
+LIST
+NOOP
+SITE CHMOD 644 test2.txt
+RNFR test2.txt
+RNTO test.txt
+XCUP 0
+STAT
+RNFR test2.txt
+RNTO test.txt
+QUIT

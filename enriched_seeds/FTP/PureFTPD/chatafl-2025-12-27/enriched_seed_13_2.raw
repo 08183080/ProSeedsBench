@@ -1,0 +1,10 @@
+USER fuzzing
+PASS fuzzing
+XPWD /
+SITE Chap03setup
+PWD
+APPE teste.txt
+prueba
+STAT
+RETR test.txt
+QUIT

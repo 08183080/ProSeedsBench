@@ -1,0 +1,7 @@
+USER fuzzing
+PASS fuzzing
+STAT
+PWD
+RETR test.txt
+ACCT fuzzing-account
+QUIT

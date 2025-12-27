@@ -1,0 +1,8 @@
+USER fuzzing
+PASS fizzing
+PASV
+MDTM
+LIST
+PASV
+STAT
+QUIT

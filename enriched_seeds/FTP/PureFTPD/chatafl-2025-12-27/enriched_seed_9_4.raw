@@ -1,0 +1,9 @@
+USER fuzzing
+PASS fuzzing
+EPSV
+REST 0
+SMNT public
+SITE changepwd password.txt
+LIST
+STAT
+QUIT

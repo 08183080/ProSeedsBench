@@ -1,0 +1,15 @@
+USER ubuntu
+PASS ubuntu
+TYPE A
+ALLO 992345
+STOU
+SIZE test.txt
+SITE copied files to remote server
+TYPE E
+STOU
+SIZE test.txt
+SITE setting temporary files mode on remote
+TYPE I
+STOU
+SIZE test.txt
+QUIT

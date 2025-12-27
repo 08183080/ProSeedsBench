@@ -1,0 +1,13 @@
+USER ubuntu
+PASS ubuntu
+ALLO 1034
+TYPE A
+SIZE test.txt
+TYPE E
+XPWD
+SIZE test.txt
+_TYPE I
+SIZE test.txt
+_TYPE L 7
+SIZE test.txt
+QUIT

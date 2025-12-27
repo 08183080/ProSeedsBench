@@ -1,0 +1,13 @@
+USER ubuntu
+PASS ubuntu
+SYST
+NOOP
+MKD todeletenow
+XMKD todeletetoo
+LIST
+MDTM test.txt
+ABOR
+RMD todeletenow
+XRMD todeletetoo
+LIST
+QUIT

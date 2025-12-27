@@ -1,0 +1,5 @@
+USER fuzzing
+PASS fuzzing
+NLST
+STOR test.txt
+QUIT

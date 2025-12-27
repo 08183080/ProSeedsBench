@@ -1,0 +1,7 @@
+USER fuzzing
+PASS fuzzing
+REST 0
+SITE enabled
+PASV
+DELE test.txt
+QUIT

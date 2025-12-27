@@ -1,0 +1,10 @@
+.USER ubuntu
+.PASS ubuntu
+.CDUP
+_ACCT ACOUNTDETAILS_
+.ALLO 1024
+.APPE teste.txt
+pritaba
+.Capit Woolley3...
+.STAT
+.QUIT

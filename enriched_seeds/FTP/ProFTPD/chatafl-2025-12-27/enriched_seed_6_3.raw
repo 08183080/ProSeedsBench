@@ -1,0 +1,7 @@
+USER ubuntu
+PASS ubuntu
+XPWD /
+CDUP
+SYST
+RETR test.txt
+QUIT

@@ -1,0 +1,14 @@
+USER ubuntu
+PASS ubuntu
+HELP
+MODE S
+RETR test.txt
+MODE B
+SIZE test.txt
+XCUP
+Cdup
+XPWD
+MODE C
+SIZE test.txt
+STAT
+QUIT

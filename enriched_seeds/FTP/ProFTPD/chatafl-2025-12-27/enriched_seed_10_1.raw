@@ -1,0 +1,13 @@
+USER ubuntu
+PASS ubuntu
+FEAT
+HELP
+TYPE A
+SIZE test.txt
+TYPE E
+SIZE test.txt
+TYPE I
+SIZE test.txt
+TYPE L 7
+STOU
+QUIT

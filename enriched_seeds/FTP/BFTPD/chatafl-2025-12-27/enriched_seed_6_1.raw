@@ -1,0 +1,7 @@
+USER ubuntu
+PASS ipv4
+HELP
+RETR test.txt
+STOU
+ACCT username
+QUIT

@@ -1,0 +1,15 @@
+USER fuzzing
+PASS fuzzing
+STAT
+PASV
+EPRT ,2,0:0:0:0:0:0,1025,
+LIST
+MLST /
+s
+STAT
+LIST
+NLST
+MLSD /
+HELP
+SMNT /
+QUIT

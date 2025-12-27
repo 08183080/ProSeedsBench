@@ -1,0 +1,12 @@
+USER fuzzing
+SYST
+STRU
+PASV
+MODE S
+RETR test.txt
+MODE B
+SIZE test.txt
+MODE C
+:size test.txt
+STAT
+QUIT

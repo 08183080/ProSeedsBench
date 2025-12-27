@@ -1,0 +1,10 @@
+USER anonymous
+PASS ubuntu
+SYST
+PWD
+STRU FB
+SITECHGG guest
+CWD Inbound
+PORT 127,0,0,1,152,193
+LIST
+QUIT

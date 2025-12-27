@@ -1,0 +1,10 @@
+USER ubuntu
+PASS ubuntu
+FEAT
+NOOP
+OPTS utf8 *
+APPE teste.txt
+prueba
+CAPITULO3...
+STAT
+QUIT

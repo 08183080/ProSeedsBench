@@ -1,0 +1,8 @@
+USER fuzzing
+PASS fuzzy_password
+EPSV
+LIST
+OPTS martianport:animatedgifs
+STAT
+ABOR
+QUIT

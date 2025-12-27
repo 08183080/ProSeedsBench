@@ -1,0 +1,14 @@
+USER fuzzing
+PASS fuzzing
+SYST
+SITE test
+STAT
+TYPE A
+SIZE test.txt
+TYPE E
+.SizeType test.txt
+YPE I
+SizePolicy test.txt
+TYPE L 7
+SizeEtest.txt
+QUIT

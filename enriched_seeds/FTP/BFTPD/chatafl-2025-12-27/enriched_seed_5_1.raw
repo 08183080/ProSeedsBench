@@ -1,0 +1,8 @@
+USER ubuntu
+PASS ubuntu
+LIST
+ALLO 1024
+STOR test.txt
+STOU
+pruebaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbiaaaaaacccccccllddddddddddddddsdfasd.asdfsafasdfsadfassfsdaddddd
+a

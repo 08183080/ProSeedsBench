@@ -1,0 +1,7 @@
+USER fuzzing
+PASS fuzzing
+ACCT testacct
+STRU F
+PASV
+DELE test.txt
+QUIT

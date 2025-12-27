@@ -1,0 +1,11 @@
+USER fuzzing
+PASS fuzzing
+RNFR test.txt
+RNTO test2.txt
+LIST
+RNFR test2.txt
+ABOR
+SITE CHG急性E=L2TP
+RMD /test目录
+RNTO test.txt
+QUIT

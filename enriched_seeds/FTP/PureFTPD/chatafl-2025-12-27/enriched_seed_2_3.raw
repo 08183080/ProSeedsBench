@@ -1,0 +1,13 @@
+USER fuzzing
+PASS fuzzing
+MKD test
+CWD test
+PWO defense_dudney
+HELP
+PWO defense_dudeyn
+XCWD test
+XPWD
+CDUP
+XCUP
+PWD
+QUIT

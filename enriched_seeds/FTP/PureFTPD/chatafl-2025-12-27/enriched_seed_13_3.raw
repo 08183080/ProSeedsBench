@@ -1,0 +1,10 @@
+USER fuzzing
+PASS fuzzy
+SYST
+XPWD
+NOOP
+APPE teste.txt
+prueba
+CAPITULO3...
+STAT
+QUIT

@@ -1,0 +1,6 @@
+USER fuzzing
+PASS fuzzing
+STOU
+PWD
+RETR test.txt
+QUIT

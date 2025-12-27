@@ -1,6 +1,0 @@
-USER ubuntu
-PASS ubuntu
-STAT
-RETR test.txt
-ABOR
-QUIT

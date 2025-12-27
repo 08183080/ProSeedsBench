@@ -14,6 +14,7 @@ import re
 import json
 import requests
 import subprocess
+import random
 from typing import List, Set, Dict, Optional
 from collections import Counter
 from pathlib import Path
@@ -58,6 +59,7 @@ class ChatAFLEnricher:
     ENRICHMENT_RETRIES = 5
     MESSAGE_TYPE_RETRIES = 5
     MAX_ENRICHED_SEEDS_PER_FILE = 1  # 每个原始种子最多生成的丰富种子数量
+    TEMPERATURE = 0.5  # LLM 温度参数（控制输出的随机性，0.0-2.0）
     
     # 协议消息类型硬编码字典
     PROTOCOL_MESSAGE_TYPES = {
@@ -525,7 +527,7 @@ class ChatAFLEnricher:
         
         # 计算允许的序列长度（考虑 token 限制）
         template_base = (
-            "You are a network protocol expert. Your task is to add missing client request types to an existing sequence.\n\n"
+            "You are a network protocol expert. Your task is to add missing client request types to an existing sequence in the proper locations.\n\n"
             "{example}\n\n"
             "Original sequence:\n"
             "{sequence}\n\n"
@@ -744,6 +746,100 @@ class ChatAFLEnricher:
         
         return True
     
+    def normalize_line_endings(self, content: str) -> str:
+        """
+        规范化换行符格式，确保使用 \r\n（Windows 风格）
+        并确保文件末尾有换行符
+        
+        Args:
+            content: 原始内容
+            
+        Returns:
+            规范化后的内容（使用 \r\n 换行，末尾有换行符）
+        """
+        if not content:
+            return '\r\n'
+        
+        # 统一处理：先将所有可能的换行符组合标准化为 \n
+        # 处理 \r\n (Windows)
+        content = content.replace('\r\n', '\n')
+        # 处理单独的 \r (Mac)
+        content = content.replace('\r', '\n')
+        
+        # 移除末尾的空白字符（但保留换行符的逻辑）
+        content = content.rstrip(' \t')
+        
+        # 现在所有换行都是 \n，统一转换为 \r\n
+        content = content.replace('\n', '\r\n')
+        
+        # 确保文件末尾有换行符
+        if not content.endswith('\r\n'):
+            content += '\r\n'
+        
+        return content
+    
+    def generate_message_type_combinations(self, missing_types: List[str], 
+                                           max_size: int = None) -> List[List[str]]:
+        """
+        生成缺失消息类型的所有组合
+        
+        例如：如果 max_size=3，缺失类型为 [GET, POST, PUT]，
+        则生成所有长度为1、2、3的组合：
+        - 长度1: [GET], [POST], [PUT]
+        - 长度2: [GET, POST], [GET, PUT], [POST, PUT]
+        - 长度3: [GET, POST, PUT]
+        
+        Args:
+            missing_types: 缺失的消息类型列表
+            max_size: 每个组合的最大大小（默认使用 MAX_ENRICHMENT_MESSAGE_TYPES）
+            
+        Returns:
+            组合列表，每个组合是一个消息类型列表
+        """
+        from itertools import combinations
+        
+        if not missing_types:
+            return []
+        
+        max_size = max_size if max_size is not None else self.MAX_ENRICHMENT_MESSAGE_TYPES
+        combinations_list = []
+        
+        # 生成所有可能的组合（大小从1到max_size）
+        for size in range(1, min(max_size + 1, len(missing_types) + 1)):
+            for combo in combinations(missing_types, size):
+                combinations_list.append(list(combo))
+        
+        return combinations_list
+    
+    def select_diverse_combinations(self, all_combinations: List[List[str]], 
+                                    num_select: int) -> List[List[str]]:
+        """
+        从所有组合中随机选择不同的组合
+        
+        例如：如果 all_combinations 包含 [GET], [POST], [PUT], [GET, POST], [GET, PUT], [POST, PUT], [GET, POST, PUT]
+        且 num_select=3，则随机选择3个不同的组合，如：[POST], [GET, PUT], [GET, POST, PUT]
+        
+        Args:
+            all_combinations: 所有可能的组合列表（长度1到max_enrichment_message_types的所有组合）
+            num_select: 需要选择的数量（对应 max_enriched_per_file）
+            
+        Returns:
+            随机选中的组合列表，每个组合用于生成一个变体种子
+        """
+        if not all_combinations:
+            return []
+        
+        # 如果组合数量少于需要的数量，直接返回所有组合（随机打乱）
+        if len(all_combinations) <= num_select:
+            selected = all_combinations.copy()
+            random.shuffle(selected)
+            return selected
+        
+        # 随机选择 num_select 个不同的组合
+        selected = random.sample(all_combinations, num_select)
+        
+        return selected
+    
     def enrich_sequence(self, sequence: str, 
                        missing_message_types: List[str],
                        protocol_name: str = "FTP") -> Optional[str]:
@@ -766,7 +862,7 @@ class ChatAFLEnricher:
         response = self.chat_with_llm(
             prompt,
             model_type="chat",
-            temperature=0.5,
+            temperature=self.TEMPERATURE,
             max_retries=self.ENRICHMENT_RETRIES
         )
         
@@ -909,20 +1005,36 @@ class ChatAFLEnricher:
                 skip_count += 1
                 continue
             
-            # 为每个种子生成多个变体
+            # 生成缺失消息类型的所有可能组合
+            all_combinations = self.generate_message_type_combinations(seed_missing_types)
+            
+            if not all_combinations:
+                print(f"  ⊘ 无法生成消息类型组合，跳过")
+                skip_count += 1
+                continue
+            
+            # 随机选择多样化的组合
+            selected_combinations = self.select_diverse_combinations(all_combinations, max_per_file)
+            
+            print(f"  种子缺失的消息类型: {sorted(seed_missing_types)}")
+            print(f"  将生成 {len(selected_combinations)} 个不同的消息类型组合变体")
+            
+            # 为每个种子生成多个变体（每个变体使用不同的消息类型组合）
             file_success_count = 0
-            for variant_idx in range(max_per_file):
+            for variant_idx, combo in enumerate(selected_combinations):
                 if variant_idx > 0:
-                    print(f"  生成变体 {variant_idx + 1}/{max_per_file}...")
+                    print(f"  生成变体 {variant_idx + 1}/{len(selected_combinations)} (组合: {', '.join(combo)})...")
+                else:
+                    print(f"  生成变体 1/{len(selected_combinations)} (组合: {', '.join(combo)})...")
                 
-                # 丰富种子
-                enriched_content = self.enrich_sequence(content, seed_missing_types, protocol_name)
+                # 使用当前组合丰富种子
+                enriched_content = self.enrich_sequence(content, combo, protocol_name)
                 
                 if enriched_content:
                     # 立即保存到输出目录
                     if output_dir:
                         original_file = Path(seed_file)
-                        if max_per_file > 1:
+                        if len(selected_combinations) > 1:
                             # 多个变体时，添加序号
                             base_name = original_file.stem
                             extension = original_file.suffix
@@ -932,10 +1044,14 @@ class ChatAFLEnricher:
                             output_file = output_dir / f"enriched_{original_file.name}"
                         
                         try:
-                            with open(output_file, 'w', encoding='utf-8') as f:
-                                f.write(enriched_content)
+                            # 规范化换行符格式为 \r\n
+                            normalized_content = self.normalize_line_endings(enriched_content)
                             
-                            if max_per_file > 1:
+                            with open(output_file, 'wb') as f:
+                                # 使用二进制模式写入，确保 \r\n 正确保存
+                                f.write(normalized_content.encode('utf-8'))
+                            
+                            if len(selected_combinations) > 1:
                                 print(f"  ✓ 成功生成变体 {variant_idx + 1} 并保存: {output_file.name}")
                             else:
                                 print(f"  ✓ 成功丰富并保存: {output_file.name}")
@@ -944,7 +1060,7 @@ class ChatAFLEnricher:
                             success_count += 1
                             
                             # 保存到返回字典
-                            key = f"{seed_file}_v{variant_idx + 1}" if max_per_file > 1 else str(seed_file)
+                            key = f"{seed_file}_v{variant_idx + 1}" if len(selected_combinations) > 1 else str(seed_file)
                             enriched_seeds[key] = enriched_content
                             
                         except Exception as e:
@@ -954,15 +1070,14 @@ class ChatAFLEnricher:
                         print(f"  ✓ 成功丰富种子（未指定输出目录，未保存）")
                         file_success_count += 1
                         success_count += 1
-                        key = f"{seed_file}_v{variant_idx + 1}" if max_per_file > 1 else str(seed_file)
+                        key = f"{seed_file}_v{variant_idx + 1}" if len(selected_combinations) > 1 else str(seed_file)
                         enriched_seeds[key] = enriched_content
                 else:
                     if variant_idx == 0:
-                        print(f"  ✗ 丰富种子失败")
+                        print(f"  ✗ 丰富种子失败 (组合: {', '.join(combo)})")
                     else:
-                        print(f"  ✗ 生成变体 {variant_idx + 1} 失败")
-                    fail_count += 1
-                    break  # 如果生成失败，不再尝试生成更多变体
+                        print(f"  ✗ 生成变体 {variant_idx + 1} 失败 (组合: {', '.join(combo)})")
+                    # 继续尝试下一个组合，而不是直接break
             
             if file_success_count == 0:
                 fail_count += 1

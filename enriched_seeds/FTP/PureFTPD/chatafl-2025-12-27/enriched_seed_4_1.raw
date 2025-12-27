@@ -1,0 +1,14 @@
+USER fuzzing
+PASS fuzzing
+_SYST_
+_MKD todeletenow
+_XMKD todeletetoo
+_STRTFS_ FILE
+_LIST
+_RMD todeletenow
+_XRMD todeletetoo
+_STRTFS_ BLOCK
+_MDTMW 54321
+_REST_ 0
+getList.txt
+QUIT

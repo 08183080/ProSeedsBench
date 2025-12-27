@@ -1,0 +1,13 @@
+USER fuzzing
+PASS fuzzing
+SYST
+NOOP
+_MODE S
+RETR test.txt
+MODE B
+SIZE test txt
+MODE C
+SIZE test txt
+统计
+STAT
+QUIT

@@ -1,0 +1,12 @@
+USER fuzzing
+PASS fuzzing
+NLST
+SYST
+RNFR test.txt
+RNTO test2.txt
+LIST
+RNFR test2.txt
+RNTO test.txt
+STAT
+RNQDIR .
+QUIT

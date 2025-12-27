@@ -1,0 +1,13 @@
+USER fuzzing
+PASS fuzzing
+MODE S
+RETR test.txt
+MODE B
+SIZE test.txt
+MDTM test.txt
+PASV
+OPTS (*AUTO(*"))
+MODE C
+SIZE test.txt
+STAT
+QUIT

@@ -1,0 +1,8 @@
+USER ubuntu
+PASS ubuntu
+SMNT /home
+LIST
+STOR test.txt
+REST 0
+a
+QUIT

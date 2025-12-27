@@ -1,0 +1,12 @@
+USER fuzzing<br/>
+PASS fuzzing<br/>
+SYST<br/>
+MKD todeletenow<br"/>
+XMKD todeledgetoo<br"/>
+MDTM test.txt<br""
+HELP STAT<br"?>
+SMNT sptest<br"+
+LIST<br""
+RETR test.txt<br""
+QU CH MOD<br""RMM todeledenow<br"
+QU XM RMD T odelededt-too<1n>LST <rQT <UIT

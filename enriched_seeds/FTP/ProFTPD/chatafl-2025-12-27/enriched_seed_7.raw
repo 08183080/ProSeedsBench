@@ -1,0 +1,7 @@
+USER ubuntu
+PASS ubuntu
+STAT
+STOU
+XPWD
+DELE test.txt
+QUIT

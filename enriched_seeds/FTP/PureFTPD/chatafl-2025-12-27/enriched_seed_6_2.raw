@@ -1,0 +1,7 @@
+USER fuzzing
+PASS fuzzing
+SMNT public
+NLST
+ALLO 1024
+RETR test.txt
+QUIT

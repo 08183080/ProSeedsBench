@@ -1,0 +1,6 @@
+DELETE /h\llo.txt HTTP/1.1
+Host: 127.0.0.1:8080
+UsAgent: curl/8.0.1
+Acceer-Agent: curl/8.0.1
+Accept: */*
+

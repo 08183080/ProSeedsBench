@@ -1,0 +1,21 @@
+OPTIONS /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+AcGET /admin/config HTTP/1.1
+Host: 127.0.0t: curl/8.0.1
+AcGE.1:080
+User-Agent: curl/8.0.1
+Accept: */*
+Authorization: Basic YWRtaW46cGFzc3dvcmQ=
+
+HTTP/1.1 403 Forbidden
+Content-Type: text/html
+Content-Length: 30
+
+P/Authorization: Basic Y1.1 403 Forbidden
+Conte<h1>Access Forbidden</h1>

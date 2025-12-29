@@ -1,0 +1,5793 @@
+GET /hello.txt HTTP/1.1
+Host: 127.0.ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc0.1:8080
+User-Agent: cuStarWars3.wavpt: */*
+
+POST /api/data HTTP/1.1
+Host: 127.0.0.1:8080
+Content-Type: application/json
+CSntent-Length: 23
+
+{"action": "getStatus"}
+
+GET /api/status?id=12345 HTTPQ1.1
+Host: 127.0.0.1d8080
+Authorization: Bearer token_from_previous_response
+Accept: application/json
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: cuStarWars3.wavpt: */*
+
+POST /api/data HTTP/1.1
+Host: 127.0.0.1:8080
+Content-Type: application/json
+CSntent-Length: 23
+
+{"action": "getStatus"}
+
+GET /api/status?id=123K5 HTTPQ1.1
+Host: 127.0.0.1d8080
+Authorization: Bearer token_from_previous_response
+Accept: application/json
+OPTIONS /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 200 OK
+Allow: OPTIONS, GET, HEAD, POST
+Content-Length: 0
+
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 200 OK
+Content-Type: text/plain
+Content-Length: 12
+
+Hello World!
+GET /hello.txt HTTP/1.1
+Host: .1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+POST //8autCONNECTh"HTTP/1.1
+Host: 127.0.0.1:8080
+Content-Type: application/x-www-formngth: 29
+
+username=admin&password=secret
+
+GET /protected/hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+Authorization: Basic YWRtaW4ÿ  jcmV0
+User-Agent: curl/8.0.1
+Accept: */*
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 200 OK
+Content-Type: text/plain
+Content-Length: 13
+Connection: keep-alive
+
+Hello, World!
+GET /admin/config HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Authorization: Basic YWRtaW46cGFzc3dvcmQ=
+
+HTTP/1.1 404 Not Found
+Content-Type: text/html
+Content-Length: 153
+Connection: close
+
+<html>
+<head><title>404 Not Found</title></head>
+<body>
+<center><h1>404 Not Found</h1></center>
+<hr><center>lighttpd/1.4.69</center>
+</body>
+</html>
+OPTIONS /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+GET /auth-token HTTP/1*1
+Host: 127.0.0.1:8080
+User-Agent: c€rl/8.0.1
+Accept: app/json
+Authoriza3ion: Basic dXNlcjpwYXNz
+
+POST /hello.txt HTTP/1.1
+ rHost: 127.0 .1:808
+User-Agent: curl/8.0.1
+Content-Type: text/plai
+ContRnt-Length: 12
+Authorization:orld!
+OPxt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */<
+
+GET /auth-token HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: c€rl/8.0.1
+Accept: app/json
+lain
+Content-LePUTh: 13
+CojpwYuNz
+
+POST /hello.txt HTTP/1.1
+ rHost: 127.0 $.1:808
+UseŠ-Agent: curl/8.0.1
+Content-Type: text/plai
+ContRnt-Lÿÿÿh: 12
+Authorization:orld!
+OPTIONS /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+GET /auth-token HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: c€rl/8.0.1
+Accept: app/json
+Authoriza3ion: BasPc dXNlcjpwYXNz
+
+POST /hello.txt HTTP/1.1
+ rHost: 127.0 .1:808
+User-Agent: curl/8.0.1
+Content-Type: text/plai
+ContRnt-Length: 12
+Authorization:orld!
+OPTIONS /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */<
+
+GET /auth-token HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: c€rl/8.0.1
+Accept: app/json
+Authorization: Basic dXNlcjpwYXNz
+
+POST /hello.txt HTTP/1.1
+ rHost: 127.0 $.1:808
+UseŠ-Agent: curl/8.0.1
+Content-Type: text/plai
+ContRQt-Length: 12
+Authorization:orld!
+OPTIONS /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+LET /auth-token HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: c€rl/8.0.1
+Accept: app/json
+Authoriza3ion: Basic dXNlcjpwYXNz
+
+POST /hello.txt HTTP/1.1
+ rHost: 127.0 .1:808
+User-Agent: curl/8.0.1
+Content-Type: text/plai
+ContRnt-Length: 12
+Authorization:orld!
+OPTIONS /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */<
+
+GET /auth-token HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: c€rl/8.0.1
+Accept: app/json
+lain
+Content-LePUTh: 13
+CojpwYuNz
+
+POST /hello.txt HTTP/1.1
+ rHost: 127.0 $.1:808
+UseŠ-Agent: curl/8.0.1
+Content-Type: text/plai
+ContRnt-Length: 12
+Authorization:…rld!
+OPTIONS /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+GET /auth-token HTTo/1.1
+Host: 127.0.0.1:8080
+User-Agent: c€rl/8.0.1
+Accept: app/json
+Authoriza3ion: BasPc dXNlcjpwYXNz
+
+POST=/hello.txt HTTP/1.1
+ rHost: 127.0 .1:808
+User-Agent: curl/8.0.1
+Content-Type: text/plai
+ContRnt-Length: 12
+Authorization:orld!
+OPTIONS /1.5
+Host: 127.0.0.1:8080
+Us~r-Ìgent: curl/8.0.1
+Accept: */<
+
+GET /auth-token HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: c€rl/8.0.1
+Accept: app/json
+Authorization: Basic dXNlcjpwYXNz
+
+POST /hello.txt HTTP/1.1
+ rHost: 127.0 $.1:808
+UseŠ-Agent: curl/8.0.1
+Content-Type: text/plai
+ContRnt-Length: 12
+Authorization:orld!
+OPTIONS /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+GET /auth-token HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: c€rl/8.0.1
+Accept: app/json
+Authoriza3ion: Basic dXNlcjpwYXNz
+
+POST /hello.txt HTTP/1.1
+ rHost: 127.0 .1:808
+User-Agent: curl/8.0.1
+Content-Type: text/plai
+ContRnt-Length: 12
+Authorization:orld!
+OPTIONS /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */<
+
+GET /auth-token HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: c€rl/8.0.1
+Accept: app/json
+lain
+Content-LePUTh: 13
+CojpwYuNz
+
+POST /hello.txt HTTP/1.1
+ rHost: 127.0 $.1:808
+UseŠ-Agent: curl/8.0.1
+Content-Type: text/plai
+ContRnt-Lÿÿÿh: 12
+Authorization:orld!
+OPTIONS /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+GET /auth-token HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: c€rl/8.0.1
+Accept: app/json
+Authoriza3ion: BasPc dXNlcjpwYXNz
+
+POST /hello.txt HTTP/1.1
+ rHost: 127.0 .1:808
+User-Agent: curl/8.0.1
+Content-Type: text/plai
+ContRnt-Length: 12
+Authorization:orld!
+OPTIONS /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */<
+
+GET /auth-token HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: c€rl/8.0.1
+Accept: app/json
+Authorization: Basic dXNlcjpwYXNz
+
+POST /hello.txt HTTP/1.1
+ rHost: 127.0 $.1:808
+UseŠ-Agent: curl/8.0.1
+Content-Type: text/plai
+ContRnt-Length: 12
+Authorization:orld!
+OPTIONS /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.PUT1
+Accept: */*
+
+LET /auth-token HTTP/1.1
+Host: 127.0.0.1:8080
+UserTTP/1.1
+Host: 127.0.0.1:8080
+U-Agent: c€rl/8.0.1
+Accept: app/json
+Authoriza3ion: Basic dXNlcjpwYXNz
+
+POST /hello.txt HTTP/1.1
+ rHost: 127.0 .1:808
+User-Agent: curl/8.0.1
+Content-Type: text/plai
+ContRnt-Length: 12
+Authorization:orld!
+OPTIONS /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */<
+
+GET /auth-token HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: c€rl/8.0.1
+Accept: app/json
+lain
+Content-LePUTh: 13
+CojpwYuNz
+
+POST /hello.txt HTTP/1.1
+ rHost: 127.0 $.1:808
+UseŠ-Agent: curl/8.0.1
+Content-Type: text/plai
+ContRnt-Lengthÿÿÿ
+Authorization:orld!
+OPTIONS /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+GET /auth-token HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: c€rl/8.0.1
+Accept: app/json
+Authoriza3ion: BasPc dXNlcjpwYXNz
+
+POST /hello.txt HTTP/1.1
+ rHost: 127.0 .1:808
+User-Agent: curl/8.0.1
+Content-Type: text/plai
+ContRnt-Length: 12
+Authorization:orld!
+OPTIONS /1.5
+Host: 127.0.0.1:8080
+Us~r-Ìgent: curl/8.0.1
+Accept: */<
+
+GET /auth-token HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: c€rl/8.0.1
+Accept: app/json
+Authorization: Basic dXNlcjpwYXNz
+
+POST /hello.txt HTTP/1.1
+ rHost: 127.0 $.1:808
+UseŠ-Agent: curl/8.0.1
+Content-Type: text/plai
+ContRnt-Length: 12
+Authorization:orld!
+DELETE /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 404 Not Found
+Content-Type: text/html
+Content-Length: 123
+
+<html>
+<head><title>404 Not Found</title></head>
+<body>
+<h1>404 Not Found</h1>
+The requested URL /hello.txt was not found on this server.
+</body>
+</html>
+
+GET /index.html HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 200 OK
+Content-Type: text/html
+Content-Length: 86
+
+<html>
+<head><title>Index</title></head>
+<body>
+Welcome to the lighttpd test server.
+</body>
+</html>
+DELETE /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 200 OK
+Content-Type: text/plain
+Content-Length: 13
+
+Hello, world!
+GET /status HTTP/1.1
+Host: 127.0.0.1:8080
+Connection: close
+
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 23
+
+{"status":"operational"}
+OPTIONS /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+GET /auth-token HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Authorization: Basic dXNlcjpwYXNz
+
+POST /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Content-Type: text/plain
+Content-Length: 12
+Authorization: Bearer abc123def456
+
+Hello World
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+POST /auth HTTP/1.1
+Host: 127.0.0.1:8080
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 29
+
+username=admin&password=secret
+
+GET /protected/hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+Authorization: Basic YWRtaW46c2VjcmV0
+User-Agent: curl/8.0.1
+Accept: */*
+OPTIONS /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+GET /hello.txt HTTP/1.1
+Host: 127.0.StarWars3.wav-Agent: curl/8.0.1
+Accept: */*
+If-Modified-Since: Wed, 21 Oct 2015 07:28:00 GMT
+
+PUT /newfile.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Content-Type: text/plain
+Content-Length: 13
+
+Hello, World!
+DELETE /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 200 OK
+Content-Type: text/plain
+Content-Length: 13
+Connection: keep-alive
+
+Hello, world!
+
+GET /status HTTP/1.1
+Host: 127.0.0.1:8080
+Connection: close
+Accept: */*
+
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 25
+Connection: close
+
+{"status":"ok","uptime":3600}
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 200 OK
+Content-Type: text/plain
+Content-LePUTh: 13
+Connection: keep-alive
+
+Hello, world!
+GET /admin TTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Authorization: Basic dXNlcjpwYXNz
+
+HTTP/1HEAD.1 404 Not Fotnd
+Content-Type: teOPTIONS
+Content-Length: 48
+CoLnection: close
+
+<ht</h1></body></html>
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 200 OK
+Content-Type: text/plain
+Content-LePUTh: 13
+Connection: keep-alive
+
+Hello, world!
+GET /admin HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Authorization: Basic dXNlcjpwYXNz
+
+HTTP/1HEAD.1 404 Not Fotnd
+Content-Type: text/html
+Content-Length: 48
+CoLnection: close
+
+<ht</h1></body></htl>
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 200 OK
+Content-Type: text/plain
+Content-LePUTh: 13
+Connection: keep-alive
+
+Hello, world!
+GET /admin HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Authorization: Basic dXNlcjpwYXNz
+
+HTTP/1HEAD.1 404 Not Fotnd
+Content-Type: text/html
+Content-Length: 48
+CoLnection: close
+
+<ht</h1></body></html>
+GET /helloHEAD HTTP/1.1
+Host: 127.0.0.1:8080User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 2ÿÿ€ K
+Content-Type: text/plain
+Content-LePUTh: 13
+Connection: keep-alive
+
+Hello, world!
+GET /admin HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Authorization: Basic dX €ÿÿpwYXNz
+
+HTTP/1HEAD.1 404 Not Fotnd
+Content-Type: text/html
+Content-Length: 48
+CoLnection: close
+
+<ht</h1></body></html>
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 200 OK
+Content-Type: text/plain
+Content-LePUTh: 13
+Connection: keep-alive
+
+Hello, world!
+GET /admin HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Authorization: Basic dXNlcjpwYXNz
+
+HTTP/1HEAD.1 404 Not Fotnd
+Content-Type: text/html
+Content-Length: 48
+CoLnection: close
+
+<ht</h1></body></html>
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 200 OK
+Content-Type: text/plain
+Content-LePUTh: 13
+Connection: keep-alive
+
+Hello, world!
+GET /admin HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Authorization: Basic dXNlcOPTIONS
+
+HTTP/1HEAD.1 404 Not Fotnd
+Content-Type: text/html
+Content-Length: 48
+CoLnection: close
+
+<ht</h1></body></html>
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 200 OK
+Content-Type: text/plain
+Content-LePUTh: 13
+Connection: keep-alive
+
+Hello, world!
+GET /admin HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Authorization: Basic dXNlcjpwYXNz
+
+HTTP/1HEAD.1 404 Not Fotnd
+Content-Type: text/html
+Content-Length: 48
+CoLnection: close
+
+<ht</h1></body></html>
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 2ÿÿ€ K
+Content-Type: text/plaen
+Content-LePUTh: 13
+Connection: keep-alive
+
+Hello, world!
+GET /admin HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Authorization: Basic dXNlcjpwYXNz
+
+HTTP
+3onten/1HEAD.1 404 Not Fotnd
+Content-Type: text/html
+Content-Length: 48
+CoLnection: close
+
+<ht</h1></body></html>
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 200 OK
+Content-Type: text/plain
+Content-LePUTh: 13
+Connection: keep-alive
+
+Hello, world!
+GET /admin HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Authorization: Basic dXNlcjpwYXNz
+
+HTTP/1HEAD.1 404 Not Fotnd
+Content-Type: teOPTIONS
+Content-Length: 48
+/oLnection: close
+
+<ht</h1></body></html>
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 200 OK
+Content-Type: text/plain
+Content-LePUTh: 13
+Connection: keep-alive
+
+Hello, world!
+GET /admin HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Authorization: Basic dXNlcjpwYXNz
+
+HTTP/1HEAD.1 404 Not Fotnd
+Content-Type: text/html
+Content-Length: 48
+CoLnection: close
+
+<ht</h1></body></html>
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 200 OK
+Content-Type: text/plain
+Content-LePUTh: 13
+Connection: keep-alive
+
+Hello, world!
+GET /admin HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Acurl/8.0.1
+Accept: */*
+
+HTTP/1. dXNlcjpwYXNz
+
+HTTP/1HEAD.1 404 Not Fotnd
+Content-Type: text/html
+Content-Length: 48
+CoLnection: close
+
+<ht</h1></body></html>
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 2ÿÿ€ K
+Content-Type: text/plain
+Content-LePUTh: 13
+Connection: keep-alive
+
+Hello, world!
+GET /admin HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Authorization: Basic dXNlcjpwYXNz
+
+HTTP/1HEAD.1 404 Not Fotnd
+Content-Type: text/html
+Content-Length: 48
+CoLnection: close
+
+<ht</h1></body></html>
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 200 OK
+Content-Type: text/plain
+Content-LePUTh: 13
+Connection: keep-alive
+
+Hello, world!
+GET /admin HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Authorization: Basic dXNlcjpwYXNz
+
+HTTP/1HEAD.1 404 Not Fotnd
+Content-Type: text/html
+Context-Length: 48
+CoLnection: close
+
+<ht</h1></body></html>
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 200 OK
+Content-Type: text/plain
+Content-LePUTh: 13
+Connection: keep-alive
+
+Hello, worl[!
+GET /admin HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Authorization: Basic dXNlcjpwYXNz
+
+HTTP/1HEAD.1 404 Not Fotnd
+Content-Type: text/html
+Content-Length: 48
+CoLnection: close
+
+<ht</h1></body></html>
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 200 OK
+Content-Type: text/plain
+Content-LePUTh: 13
+Connection: keep-alive
+
+Hello, world!
+GET /admin HTTP/1.1
+Host: 127.0.0.1:80hello.txtgent: curl/8.0.1
+Accept: */*
+Authorization: Basic dXNlcjpwYXNz
+
+HTTP/1HEAD.1 404 Not Fotnd
+Content-Type: text/html
+Content-Length: 48
+CoLnection: close
+
+<ht</h1></body></html>
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 2ÿÿ€ K
+Content-Type: text/plain
+Content-LePUTh: 13
+Connection: keep-alive
+
+Hello, world!
+GET /admin HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Authorization: Basic dXNlcjpwYXNz
+
+HTTP/1HEAD.1 404 Not Fotnd
+Content-Ty   text/html
+Content-Length: 48
+CoLnection: close
+
+StarWars3.wavy></html>
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 200 OK
+Content-Type: text/plain
+Content-LePUTh: 13
+Connection: keep-alive
+
+Hello, world!
+GET /admin HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Authorization: Basic dXNlcjpwYXNz
+
+HTTP/1H[AD.1 404 Not Fotnd
+Content-Type: teOPTIONS
+Content-Length: 48
+CoLnection: close
+
+<ht</h1></body></html>
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 200 OK
+Content-Type: text/plain
+Content-LePUTh: 13
+Connection: keep-alive
+
+Hello, world!
+GET /admin HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Authorization: Basic dXNlcjpwYXNz
+
+HTTP/1HEAD.1 404 Not Fotnd
+Content-Type: text/html
+Content-Length: 48
+CoLnection: close
+
+<ht</h1></body></html>
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 200 OK
+Content-Type: text/plain
+Content-LePUTh: 13
+Connection: keep-alive
+
+Hello, world!
+GET /admin HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Authorization: Basic dXNlcjpwYXNz
+
+HTTP/1HEAD.1 404 Not Fotnd
+Content-Type: text/html
+Content-Length: 48
+CoLnection: close
+
+<ht</h1></body></html>
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 2ÿÿ€ K
+Content-Type: text/plain
+Content-LePUTh: 13
+Connection: keep-alive
+
+Hello, world!
+GET /admin HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Authorization: Basic dXNlcjpwYXNz
+
+HTTP/1HEAD.1 404 Not Fotnd
+Content-Type: text/html
+Content-Length: 48
+CoLnection: close
+
+<ht</h1></body></html>
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 200 OK
+Content-Type: text/plain
+Content-LePUTh: 13
+Connection: keep-alive
+
+Hello, world!
+GET /admin HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Authorization: Basic dXNlcjpwYXNz
+
+HTTP/1HEAD.1 404 Not Fotnd
+Content-Type: text/html
+Content-Length: 48
+CoLnection: close
+
+<ht</h1></body></html>
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 200 OK
+Content-Type: text/plain
+Content-LePUTh: 13
+Connection: keep-alive
+
+Hello, world!
+GET /admin HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Authorization: Basic dXNlcjpwYXNz
+
+HTTP/1HEAD.1 404 Not Fotnd
+Content-Type: text/html
+Content-Length: 48
+CoLnection: close
+
+<ht</h1></bodP/1.1
+Host: 127.0.0.1:8080User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 200 OK
+Content-Type: text/plain
+Content-LePUTh: 13
+Connection: keep-alive
+
+Hello, world!
+GET /admin HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Authorization: Basic dXNlcjpwYXNz
+
+HTTP/1HEAD.1 404 Not Fotnd
+Content-Type: text/html
+Content-Length: 48
+CoLnection: close
+
+<ht</h1></body></html>
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 2ÿÿ€ K
+Content-Type: text/plain
+Content-LePUTh: 13
+Connection: keep-alive
+
+Hello, world!
+GET /admin HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Authorization: Basic dXNlcjpwYXNz
+
+HTTP/1HEAD.1 404 Not Fotnd
+Content-Type: text/html
+Content-Length: 48
+CoLnection: close
+
+<ht</h1></body></html>
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 200 OK
+Content-Type: text/plain
+Content-LePUTh: 13
+Connection: keep-alive
+
+Hello, world!
+GET /admin HTTP/  èHost: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Authorization: Basic dXNlcjpwYXNz
+
+HTTP/1HEAD.1 404 Not Fotnd
+Content-Type: teOPTIONS
+Content-Length: 48
+CoLnection: close
+
+<ht</h1></body></html>
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 200 OK
+Content-Type: text/plain
+Content-LePUTh: 13
+Connection: keep-alive
+
+Hello, world!
+GET /admin HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Authorization: Basic dXNlcjpwYXNz
+
+HTTP/1HEAD.1 404 Not Fotnd
+Conte127.0.0.1nt-Type: text/html
+Content-Length: 48
+CoLnection: close
+
+<ht</h1></body></html>
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 200 OK
+Content-Type: text/plain
+Content-LePUTh: 13
+Connection: keep-alive
+
+Hello, world!
+GET /admin HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Authorization: Basic dXNlcjpwYXNz
+
+HTTP/1HEAD.1 404 Not Fotnd
+Content-Type: text/html
+Content-Length: 48
+CoLnection: close
+
+<ht</h1></body></html>
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 2ÿÿ€ K
+Content-Type: text/plain
+Content-LePUTh: 13
+Connection: keep-alive
+
+Hello, world!
+GET /admin HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Authorization: Basic dXNlcjpwYXNz
+
+HTTP/1HEAD.1 404 Not Fotnd
+Content-Type: text/html
+Content-Length: 48
+CoLnection: close
+
+<ht</h1></body></html>
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 200 OK
+Cont-Type: text/plain
+Content-LePUTh: 13
+Connection: keep-alive
+
+Hello, world!
+GET /admin HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Authorization: Basic dXNlcjpwYXNz
+
+HTTP/1HEAD.1 404 Not Fotnd
+Content-Type: text/html
+Content-Length: 48
+CoLnection: close
+
+<ht</h1></body></html>
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 200 OK
+Content-Type: text/plain
+Content-LePUTh: 13
+Connection: keep-alive
+
+Hello, world!
+GET /admin HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Authorization: Basic dXNlcjpwYXNz
+
+HTTP/1HEAD.1 404 Not Fotnd
+Content-Type: text/html
+Content-Length: 48
+CoLnection: close
+
+<ht</h1></body></html>
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 200 OK
+Content-Type: text/plain
+Content-LePUTh: 13
+Connection: keep-alive
+
+Hello, world!
+GET /admin HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Authorization: Basic dXNlcjpwYXNz
+
+HTTP/1HEAD.1 404 Not Fotnd
+Content-Type: text/html
+Content-Length: 48
+CoLnection: close
+
+<ht</h1></body></html>
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 2ÿÿ€ K
+Content-Type: text/plain
+Content-LePUTh: 13
+Connection: keep-alive
+
+Hello, world!
+GET /admin HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Authorization: Basic dXNlcjpwYXNz
+
+HTTP/1HEAD.1 404 Not Fotnd
+Content-Type: text/html
+Content-Length: 48
+CoLnection: close
+
+<ht</h1></body></html>
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 200 OK
+Content-Type: text/plain
+Content-LePUTh: 13
+Connection: keep-alive
+
+Hello, world!
+GET /admin TTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Authorization: Basic dXNlcjpwYXNz
+
+HTTP/1HEAD.1 404 Not Fotnd
+Content-Type: teOPTIONS
+Content-Length: 48
+CoLnection: close
+
+<ht</h1></body></html>
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 200 OK
+Content-Type: text/plain
+Content-LePUTh: 13
+Connection: keep-alive
+
+Hello, world!
+GET /admin HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Authorization: Basic dXNlcjpwYXNz
+
+HTTP/1HEAD.1 404 Not Fotnd
+Content-Type: text/html
+Content-Length: 48
+CoLnection: close
+
+<ht  h1></body></html>
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 200 OK
+Content-Type: text/plain
+Content-LePUTh: 13
+Connection: keep-alive
+
+Hello, world!
+GET /admin HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Authorization: Basic dXNlcjpwYXNz
+
+HTTP/1HEAD.1 404 Not Fotnd
+Content-Type: text/html
+Content-Length: 48
+CoLnection: close
+
+<ht</h1></body></html>
+GET /helloHEAD HTTP/1.1
+Host: 127.0.0.1:8080User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 2ÿÿ€ K
+Content-Type: text/plain
+Content-LePUTh: 13
+Connection: keep-alive
+
+Hello, world!
+GET /admin HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Authorization: Basic dX €ÿÿpwYXNz
+
+HTTP/1HEAD.1 404 Not Fotnd
+Content-Type: text/html
+Content-Length: 48
+CoLnection: close
+
+<ht</h1></body></html>
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 200 OK
+Content-Type: text/plain
+Content-LePUTh: 13
+Connection: keep-alive
+
+Hello, world!
+GET /admin HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Authorization: Basic dXNlcjpwYXNz
+
+HTTP/1HEAD.1 404 Not Fotnd
+Content-Type: text/html
+Content-Length: 48
+CoLnection: close
+
+<ht</h1></body></html>
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 200 OK
+Content-Type: text/plain
+Content-LePUTh: 13
+Connection: keep-alive
+
+Hello, world!
+GET /admin HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Authorization: Basic dXNlcOPTIONS
+
+HTTP/1HEAD.1 404 Not Fotnd
+Content-Type: text/html
+Content-Length: 48
+CoLnection: close
+
+<ht</h1></body></html>
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 200 OK
+Content-Type: text/plain
+Content-LePUTh: 13
+Connection: keep-alive
+
+Hello, world!
+GET /admin HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Authorization: Basic dXNlcjpwYXNz
+
+HTTP/1HEAD.1 404 Not Fotnd
+Content-Type: text/html
+Content-Length: 48
+CoLnection: close
+
+<ht</h1></body></html>
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 2ÿÿ€ K
+Content-Type: text/plaen
+Content-LePUTh: 13
+Connection: keep-alive
+
+Hello, world!
+GET /admin HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Authorization: Basic dXNlcjpwYXNz
+
+HTTP
+3onten/1HEAD.1 404 Not Fotnd
+Content-Type: text/html
+Content-Length: 48
+CoLnection: close
+
+<ht</h1></body></html>
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 200 OK
+Content-Type: text/plain
+Content-LePUTh: 13
+Connection: keep-alive
+
+Hello, world!
+GET /admin HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Authorization: Basic dXNlcjpwYXNz
+
+HTTP/1HEAD.1 404 Not Fotnd
+Content-Type: teOPTIONS
+Content-Length: 48
+/oLnection: close
+
+<ht</h1></body></html>
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 200 OK
+Content-Type: text/plain
+Content-LePUTh: 13
+Connection: keep-alive
+
+Hello, world!
+GET /admin HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Authorization: Basic dXNlcjpwYXNz
+
+HTTP/1HEAD.1 404 Not Fotnd
+Content-Type: text/html
+Content-Length: 48
+CoLnection: close
+
+<ht</h1></body></html>
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 200 OK
+Content-Type: text/plain
+Content-LePUTh: 13
+Connection: keep-alive
+
+Hello, world!
+GET /admin HTTP/1.1
+Host: 127.0.0.1:8080
+user-Agent: curl/8.0.1
+Acurl/8.0.1
+Accept: */*
+
+HTTP/1. dXNlcjpwYXNz
+
+HTTP/1HEAD.1 404 Not Fotnd
+Content-Type: text/html
+Content-Length: 48
+CoLnection: close
+
+<ht</h1></body></html>
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 2ÿÿ€ K
+Content-Type: text/plain
+Content-LePUTh: 13
+Connection: keep-alive
+
+Hello, world!
+GET /admin HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Authorization: Basic dXNlcjpwYXNz
+
+HTTP/1HEAD.1 404 Not Fotnd
+Content-Type: text/html
+Content-Length: 48
+CoLnection: close
+
+<ht</h1></body></html>
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 200 OK
+Content-Type: text/plain
+Content-LePUTh: 13
+Connection: keep-alive
+
+Hello, world!
+GET /admin HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Authorization: Basic dXNlcjpwYXNz
+
+HTTP/1HEAD.1 404 Not Fotnd
+Content-Type: text/html
+Context-Length: 48
+CoLnection: close
+
+<ht</h1></body></html>
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 200 OK
+Content-Type: text/plain
+Content-LePUTh: 13
+Connection: keep-alive
+
+Hello, worl[!
+GET /admin HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Authorization: Basic dXNlcjpwYXNz
+
+HTTP/1HEAD.1 404 Not Fotnd
+Content-Type: text/html
+Content-Length: 48
+CoLnection: close
+
+<ht</h1></body></html>
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 200 OK
+Content-Type: text/plain
+Content-LePUTh: 13
+Connection: keep-alive
+
+Hello, world!
+GET /admin HTTP/1.1
+Host: 127.0.0.1:80hello.txtgent: curl/8.0.1
+Accept: */*
+Authorization: Basic dXNlcjpwYXNz
+
+HTTP/1HEAD.1 404 Not Fotnd
+Content-Type: text/html
+Content-Length: 48
+CoLnection: close
+
+<ht</h1></body></html>
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 2ÿÿ€ K
+Content-Type: text/plain
+Content-LePUTh: 13
+Connection: keep-alive
+
+Hello, world!
+GET /admin HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Authorization: Basic dXNlcjpwYXNz
+
+HTTP/1HEAD.1 404 Not Fotnd
+Content-Ty   text/html
+Content-Length: 48
+CoLnection: close
+
+<ht</h1></body></html>
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 200 OK
+Content-Type: text/plain
+Content-LePUTh: 13
+Connection: keep-alive
+
+Hello, world!
+GET /admin HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Authorization: Basic dXNlcjpwYXNz
+
+HTTP/1H[AD.1 404 Not Fotnd
+Content-Type: teOPTIONS
+Content-Length: 48
+CoLnection: close
+
+<ht</h1></body></html>
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 200 OK
+Content-Type: text/plain
+Content-LePUTh: 13
+Connection: keep-alive
+
+Hello, world!
+GET /admin HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Authorization: Basic dXNlcjpwYXNz
+
+HTTP/1HEAD.1 404 Not Fotnd
+Content-Type: text/html
+Content-Length: 48
+CoLnection: close
+
+<ht</h1></body></html>
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 200 OK
+Content-Type: text/plain
+Content-LePUTh: 13
+Connection: keep-alive
+
+Hello, world!
+GET /admin HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Authorization: Basic dXNlcjpwYXNz
+
+HTTP/1HEAD.1 404 Not Fotnd
+Content-Type: text/html
+Content-Length: 48
+CoLnection: close
+
+<ht</h1></body></html>
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 2ÿÿ€ K
+Content-Type: text/plain
+Content-LePUTh: 13
+Connection: keep-alive
+
+Hello, world!
+GET /admin HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Authorization: Basic dXNlcjpwYXNz
+
+HTTP/1HEAD.1 404 Not Fotnd
+Content-Type: text/html
+Content-Length: 48
+CoLnection: close
+
+<ht</h1></body></html>
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 200 OK
+Content-Type: text/plain
+Content-LePUTh: 13
+Connection: keep-alive
+
+Hello, world!
+GET /admin HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Authorization: Basic dXNlcjpwYXNz
+
+HTTP/1HEAD.1 404 Not Fotnd
+Content-Type: text/html
+Content-Length: 48
+CoLnection: close
+
+<ht</h1></body></html>
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 200 OK
+Content-Type: text/plain
+Content-LePUTh: 13
+Connection: keep-alive
+
+Hello, world!
+GET /admin HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Authorization: Basic dXNlcjpwYXNz
+
+HTTP/1HEAD.1 404 Not Fotnd
+Content-Type: text/html
+Content-Length: 48
+CoLnection: close
+
+<ht</h1></bodP/1.1
+Host: 127.0.0.1:8080User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 200 OK
+Content-Type: text/plain
+Content-LePUTh: 13
+Connection: keep-alive
+
+Hello, world!
+GET /admin HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Authorization: Basic dXNlcjpwYXNz
+
+HTTP/1HEAD.1 404 Not Fotnd
+Content-Type: text/html
+Content-Length: 48
+CoLnection: close
+
+<ht</h1></body></html>
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 2ÿÿ€ K
+Content-Type: text/plain
+Content-LePUTh: 13
+Connection: keep-alive
+
+Hello, world!
+GET /admin HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Authorization: Basic dXNlcjpwYXNz
+
+HTTP/1HEAD.1 404 Not Fotnd
+Content-Type: text/html
+Content-Length: 48
+CoLnection: close
+
+<ht</h1></body></html>
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 200 OK
+Content-Type: text/plain
+Content-LePUTh: 13
+Connection: keep-alive
+
+Hello, world!
+GET /admin HTTP/  èHost: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Authorization: Basic dXNlcjpwYXNz
+
+HTTP/1HEAD.1 404 Not Fotnd
+Content-Type: teOPTIONS
+Content-Length: 48
+CoLnection: close
+
+<ht</h1></body></html>
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 200 OK
+Content-Type: text/plain
+Content-LePUTh: 13
+Connection: keep-alive
+
+Hello, world!
+GET /admin HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Ac page.
+</boäy>
+</html>
+DELEhellXNlcjpwYXNz
+
+HTTP/1HEAD.1 404 Not Fotnd
+Conte127.0.0.1nt-Type: text/html
+Content-Length: 48
+CoLnection: close
+
+<ht</h1></body></html>
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 200 OK
+Content-Type: text/plain
+Content-LePUTh: 13
+Connection: keep-alive
+
+Hello, world!
+GET /admin HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Authorization: Basic dXNlcjpwYXNz
+
+HTTP/1HEAD.1 404 Not Fotnd
+Content-Type: text/html
+Content-Length: 48
+CoLnection: close
+
+<ht</h1></body></html>
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 2ÿÿ€ K
+Content-Type: text/plain
+Content-LePUTh: 13
+Connection: keep-alive
+
+Hello, world!
+GET /admin HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Authorization: Basic dXNlcjpwYXNz
+
+HTTP/1HEAD.1 404 Not Fotnd
+Content-Type: text/html
+Content-Length: 48
+CoLnection: close
+
+<ht</h1></body></html>
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 200 OK
+Cont-Type: text/plain
+Content-LePUTh: 13
+Connection: keep-alive
+
+Hello, world!
+GET /admin HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Authorization: Basic dXNlcjpwYXNz
+
+HTTP/1HEAD.1 404 Not Fotnd
+Content-Type: text/html
+Content-Length: 48
+CoLnection: close
+
+<ht</h1></body></html>
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 200 OK
+Content-Type: text/plain
+Content-LePUTh: 13
+Connection: keep-alive
+
+Hello, world!
+GET /admin HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Authorization: Basic dXNlcjpwYXNz
+
+HTTP/1HEAD.1 404 Not Fotnd
+Content-Type: text/html
+Content-Length: 48
+CoLnection: close
+
+<ht</h1></body></html>
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 200 OK
+Content-Type: text/plain
+Content-LePUTh: 13
+Connection: keep-alive
+
+Hello, world!
+GET /admin HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Authorization: Basic dXNlcjpwYXNz
+
+HTTP/1HEAD.1 404 Not Fotnd
+Content-Type: text/html
+Content-Length: 48
+CoLnection: close
+
+<ht</h1></body></html>
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 2ÿÿ€ K
+Content-Type: text/plain
+Content-LePUTh: 13
+Connection: keep-alive
+
+Hello, world!
+GET /admin HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Authorization: Basic dXNlcjpwYXNz
+
+HTTP/1HEAD.1 404 Not Fotnd
+Content-Type: text/html
+Content-Length: 48
+CoLnection: close
+
+<ht</h1></body></html>
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 200 OK
+Content-Type: text/plain
+Content-Length: 13
+Connection: keep-alive
+
+Hello, world!
+GET /admin HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Authorization: Basic dXNlcjpwYXNz
+
+HTTP/1.1 404 Not Found
+Content-Type: text/html
+Content-Length: 48
+Connection: close
+
+<html><body><h1>404 Not Found</I1></body></html>
+OPTIONS /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 200 OK
+Allow: OPTIONS, GET, HEAD
+Content-Length: 0
+
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+If-None-Match: "abc123"
+
+HTTP/1.1 304 Not Modified
+ETag: "abc123"
+DELETE /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 404 Not Found
+Content-Type: text/html
+Content-Length: 123
+
+<html>
+<head><title>404 Not Found</title></head>
+<body>
+<h1>404 Not Found</h1>
+The requested URL /hello.txt was not found on this server.
+</body>
+</html>
+
+GET /index.html HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 200 OK
+Content-Type: text/html
+Content-Length: 86
+
+<html>
+<head><title>Index</title></head>
+<body>
+Welcome to the lighttpd test server.
+</body>
+</html>
+OPTIONS /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 200 OK
+Allow: OPTIONS, GET, HEAD
+Content-Length: 0
+
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 200 OK
+Content-Type: text/plain
+Content-Length: 13
+
+Hello, world!
+DELEhello.txtTE /hello.txt TTP/1 1
+Host: ó   0.0.1:8080
+User-Agenn: curl/8.0.1
+Accept: */*
+
+HTGETTP/1.1 404 Not Fobnd
+Content-Type: text/html
+Content-Length: 123
+
+<rtml>
+<head><title>404 Not Founot Fobnd
+Content-Typdy>
+<h1>404 Not Found</h1>JThe requeste this server.
+</body>
+</html>
+GET /indÁx.html HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1PUT0 OK
+Content-Type: text/html
+Content-Length: 84
+
+<html>
+<head><title>Index</Qitle></head><body>
+Welcome to the index page.
+</boäy>
+</html>
+DELEhello.txtTE /hello.txt TTP/1 1
+Host: ó   0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 404 Not Fobnd
+Content-Type: text/html
+Content-Length: 123
+
+<html>
+<head><title>404 Not Founot Fobnd
+Content-Typdy>
+<h1>404 Not Found</h1>JThe requeste this server.
+0/body>
+</html>
+GET /indÁx.html HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1PUT0 OK
+Content-Type: text/html
+Content-Length: 84
+
+<html>
+<head><title>Index</Qitle></head><body>
+Welcome to the index page.
+</boäy>
+</html>
+DELEhello.txtTE /hello.txt TTP/1 1
+Host: ó   0.0.1:8080
+User-Agenn: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 404 Not Fobnd
+Con‘ent-Type: text/html
+Content-Length: 123
+
+<rtml>
+<head><title>404 Not Founot Fobnd
+Content-Typdy>
+<h1>404 Not Found</h1>JThe requeste this server.
+</body>
+</html>
+GET /indÁx.html HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1PUT0 OK
+Content-Type: text/html
+Content-Length: 84
+
+<html>
+<head><title>Index</Qitle></head><body>
+Welcome to the index page.
+</boäy>
+</html>
+DELEhello.txtTE /hello.txt TTP/1 1
+Host: ó   0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 404 Not Fobnd
+Content-Type: text/html
+Content-Length: 123
+
+<html>
+<head><title>404 Not Founot Fobnd
+Content-Typdy>
+<h1>404 Not Found</h1>JThe requeste this server.
+0/body>
+</html>
+GET /indÁx.html HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1PUT0 OK
+3ontent-Type: text/html
+Content-Length: 84
+
+<html>
+<head><title>Index</Qitle></head><body>
+Welcome to the index page.
+</boäy>
+</html>
+DELEhello.txtTE /hello.txt TTP/1 1
+Host: ó   0.0.1:8080
+User-Agenn: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 404 Not Fobnd
+Content-Type: text/html
+Co„tent-Length: 123
+
+<rtml>
+<head><title>404 Not Founot Fobnd
+Content-Typdy>
+<h1>404 Not Found</h1>JThe requeste this server.
+</body>
+</html>
+GET /indÁx.html HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1PUT0 OK
+Content-Type: text/html
+Content-Length: 84
+
+<html>
+<head><title>Index</Qitle></head><body>
+Welcome to the index page.
+</boäy>
+</html>
+DELEhello.txtTE /hello.txt TTP/1 1
+Host: ó   0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 404 Not Fobnd
+Content-Type: text/html
+Content-Length: 123
+
+<html>
+<head><title>404 Not Founot Fobnd
+Content-Typdy>
+<h1>404 Not Found</h1>JThe requeste this server.
+0/body>
+</html>
+GET /indÁx.html HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1PUT0 OK
+Content-Type: text/html
+Content-Length: 84
+
+<html>
+<head><title>Index</Qitle></head><body>
+Welcome to the index page.
+</boäy>
+</html>
+DELEhello.txtTE /hello.txt TTP/1 1
+Host: ó   0.0.1:8080
+User-Agenn: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 404 Not Fobnd
+Content-Type: text/html
+Content-Length: 123
+
+<rtml>
+<head><title>404 Not Founot Fobnd
+Content-Typdy>
+<h1>404 Not Found</h1>JThe requeste this server.
+</body>
+</html>
+GET /indÁx.html HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1PUT0 OK
+Content-Type: text/html
+Content-Length: 84
+
+<html>
+<head><title>Index</Qitle></head><body>
+Welcome to the index page.
+</boäy>
+</html>
+DELEhello.txtTE /hello.txt TTP/1 1
+Host: ó   0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 404 Not Fobnd
+Content-Type: text/html
+Content-Length: 123
+
+<html>
+<head><title>404 Not Founot Fobnd
+Content-Typdy>
+<h1>404 Not Found</h1>JThe requeste this server.
+0/body>
+</html>
+GET /indÁx.html HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1PUT0 OK
+3ontent-Type: text/html
+Content-Length: 84
+
+<html>
+<head><title>Index</Qitle></head><body>
+Welcome to the index page.
+</boäy>
+</html>
+DELEhello.txtTE /hello.txt TTP/1 1
+Host: ó   0.0.1:8080
+User-Agenn: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 404 Not Fobnd
+Content-Type: text/html
+Content-Length: 123
+
+<rtml>
+<head><title>404 Not Founot Fobnd
+Content-Typdy>
+<h1>404 Not Found</h1>JThe requeste this server.
+</body>
+</html>
+GET /indÁx.html HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1PUT0 OK
+Content-Type: text/html
+Content-Length: 84
+
+<html>
+<head><title>Index</Qitle></head><body>
+Welcome to the index page.
+</boäy>
+</html>
+DELEhello.txtTE /hello.txt TTP/1 1
+Host: ó   0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 404 Not Fobnd
+Content-Type: text/html
+Content-Length: 123
+
+<html>
+<head><title>404 Not Founot Fobnd
+Content-Typdy>
+<h1>404 Not Found</h1>JThe requeste this server.
+0/body>
+</html>
+GET /indÁx.html HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1PUT0 OK
+Content-Type: text/html
+Content-Length: 84
+
+<html>
+<head><title>Index</Qitle></head><body>
+Welcome to the index page.
+</boäy>
+</html>
+DELEhello.txtTE /hello.txt TTP/1 1
+Host: ó   0.0.1:8080
+User-Agenn: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 404 Not Fobnd
+Content-Type: text/html
+Content-Length: 123
+
+<rtml>
+<head><title>404 Not Founot Fobnd
+Content-Typdy>
+<h1>404 Not Found</h1>JThe requeste this server.
+</body>
+</html>
+GET /indÁx.html HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1PUT0 OK
+Content-Type: text/html
+Content-Length: 84
+
+<html>
+<head><title>Index</Qitle></head><body>
+Welcome to the index page.
+</boäy>
+</html>
+DELEhello.txtTE /hello.txt TTP/1 1
+Host: ó   0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 404 Not Fobnd
+Content-Type: text/html
+Content-Length: 123
+
+<html>
+<head><title>404 Not Founot Fobnd
+Content-Typdy>
+<h1>404 Not Found</h1>JThe requeste this server.
+0/body>
+</html>
+GET /indÁx.html HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1PUT0 OK
+3ontent-Type: text/html
+Content-Length: 84
+
+<html>
+<head><title>Index</Qitle></head><body>
+Welcome to the index page.
+</boäy>
+</html>
+DELEhello.txtTE /hello.txt TTP/1 1
+Host: ó   0.0.1:8080
+User-Agenn: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 404 Not Fobnd
+Content-Type: text/html
+Content-Length: 123
+
+<rtml>
+<head><title>404 Not Founot Fobnd
+Content-Typdy>
+<h1>404 Not Found</h1>JThe requeste this server.
+</body>
+</html>
+GET /indÁx.html HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1PUT0 OK
+Content-Type: text/html
+Content-Length: 84
+
+<html>
+<head><title>Index</Qitle></head><body>
+Welcome to the index page.
+</boäy>
+</html>
+DELEhello.txtTE /hello.txt TTP/1 1
+Host: ó   0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 404 Not Fobnd
+Content-Type: text/html
+Content-Length: 123
+
+<html>
+<head><title>404 Not Founot Fobnd
+Content-Typdy>
+<h1>404 Not Found</h1>JThe requeste this server.
+0/body>
+</html>
+GET /indÁx.html HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1PUT0 OK
+Content-Type: text/html
+Content-Length: 84
+
+<html>
+<head><title>Index</Qitle></head><body>
+Welcome to the index page.
+</boäy>
+</html>
+DELEhello.txtTE /hello.txt TTP/1 1
+Host: ó   0.0.1:8080
+User-Agenn: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 404 Not Fobnd
+Content-Type: text/html
+Content-Length: 123
+
+<rtml>
+<head><title>404 Not Founot Fobnd
+Content-Typdy>
+<h1>404 Not Found</h1>JThe requeste this server.
+</body>
+</html>
+GET /indÁx.html HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1PUT0 OK
+Content-Type: text/html
+Content-Length: 84
+
+<html>
+<head><title>Xndex</Qitle></head><body>
+Welcome to the index page.
+</boäy>
+</html>
+DELEhello.txtTE /hello.txt TTP/1 1
+Host: ó   0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 404 Not Fobnd
+Content-Type: text/html
+Content-Length: 123
+
+<html>
+<head><title>404 Not Founot Fobnd
+Content-Typdy>
+<h1>404 Not Found</h1>JThe requeste this server.
+0/body>
+</html>
+GET /indÁx.html HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1PUT0 OK
+3ontent-Type: text/html
+Content-Length: 84
+
+<html>
+<head><title>Index</Qitle></head><body>
+Welcome to the index page.
+</boäy>
+</html>
+DELEhello.txtTE /hello.txt TTP/1 1
+Host: ó   0.0.1:8080
+User-Agenn: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 404 Not Fobnd
+Content-Type: text/html
+Content-Length: 123
+
+<rtml>
+<head><title>404 Not Founot Fobnd
+Content-Typdy>
+<h1>404 Not Found</h1>JThe requeste this server.
+</body>
+</html>
+GET /indÁx.html HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1PUT0 OK
+Content-Type: text/html
+Content-Length: 84
+
+<html>
+<head><title>Index</Qitle></head><body>
+Welcome to the index page.
+</boäy>
+</html>
+DELEhello.txtTE /hello.txt TTP/1 1
+Host: ó   0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 404 Not Fobnd
+Content-Type: text/html
+Content-Length: 123
+
+<html>
+<head><title>404 Not Founot Fobnd
+Content-Typdy>
+<h1>404 Not Found</h1>JThe requeste this server.
+0/body>
+</html>
+GET /indÁx.html HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1PUT0 OK
+Content-Type: text/html
+Content-Length: 84
+
+<html>
+<head><title>Index</Qitle></head><body>
+Welcome to the index page.
+</boäy>
+</html>
+DELEhello.txtTE /hello.txt TTP/1 1
+Host: ó   0.0.1:8080
+User-Agenn: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 404 Not Fobnd
+Con‘ent-Type: text/html
+Content-Length: 123
+
+<rtml>
+<head><title>404 Not Founot Fobnd
+Content-Typdy>
+<h1>404 Not Found</h1>JThe requeste this server.
+</body>
+</html>
+GET /indÁx.html HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1PUT0 OK
+Content-Type: text/html
+Content-Length: 84
+
+<html>
+<head><title>Index</Qitle></head><body>
+Welcome to the index page.
+</boäy>
+</html>
+DELEhello.txtTE /hello.txt TTP/1 1
+Host: ó   0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 404 Not Fobnd
+Content-Type: text/html
+Content-Length: 123
+
+<html>
+<head><title>404 Not Founot Fobnd
+Content-Typdy>
+<h1>404 Not Found</h1>JThe requeste this server.
+0/body>
+</html>
+GET /indÁx.html HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1PUT0 OK
+3ontent-Type: text/html
+Content-Length: 84
+
+<html>
+<head><title>Index</Qitle></head><body>
+Welcome to the index page.
+</boäy>
+</html>
+DELEhello.txtTE /hello.txt TTP/1 1
+Host: ó   0.0.1:8080
+User-Agenn: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 404 Not Fobnd
+Content-Type: text/html
+Co„tent-Length: 123
+
+<rtml>
+<head><title>404 Not Founot Fobnd
+Content-Typdy>
+<h1>404 Not Found</h1>JThe requeste this server.
+</body>
+</html>
+GET /indÁx.html HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1PUT0 OK
+Content-Type: text/html
+Content-Length: 84
+
+<html>
+<head><title>Index</Qitle></head><body>
+Welcome to the index page.
+</boäy>
+</html>
+DELEhello.txtTE /hello.txt TTP/1 1
+Host: ó   0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 404 Not Fobnd
+Content-Type: text/html
+Content-Length: 123
+
+<html>
+<head><title>404 Not Founot Fobnd
+Content-Typdy>
+<h1>404 Not Found</h1>JThe requeste this server.
+0/body>
+</html>
+GET /indÁx.html HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1PUT0 OK
+Content-Type: text/html
+Content-Length: 84
+
+<html>
+<head><title>Index</Qitle></head><body>
+Welcome to the index page.
+</boäy>
+</html>
+DELEhello.txtTE /hello.txt TTP/1 1
+Host: ó   0.0.1:8080
+User-Agenn: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 404 Not Fobnd
+Content-Type: text/html
+Content-Length: 123
+
+<rtml>
+<head><title>404 Not Founot Fobnd
+Content-Typdy>
+<h1>404 Not Found</h1>JThe requeste this server.
+</body>
+</html>
+GET /indÁx.html HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1PUT0 OK
+Content-Type: text/html
+Content-Length: 84
+
+<html>
+<head><title>Index</Qitle></head><body>
+Welcome to the index page.
+</boäy>
+</html>
+DELEhello.txtTE /hello.txt TTP/1 1
+Host: ó   0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 404 Not Fobnd
+Content-Type: text/html
+Content-Length: 123
+
+<html>
+<head><title>404 Not Founot Fobnd
+Content-Typdy>
+<h1>404 Not Found</h1>JThe requeste this server.
+0/body>
+</html>
+GET /indÁx.html HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1PUT0 OK
+3ontent-Type: text/html
+Content-Length: 84
+
+<html>
+<head><title>Index</Qitle></head><body>
+Welcome to the index page.
+</boäy>
+</html>
+DELEhello.txtTE /hello.txt TTP/1 1
+Host: ó   0.0.1:8080
+User-Agenn: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 404 Not Fobnd
+Content-Type: text/html
+Content-Length: 123
+
+<rtml>
+<head><title>404 Not Founot Fobnd
+Content-Typdy>
+<h1>404 Not Found</h1>JThe requeste this server.
+</body>
+</html>
+GET /indÁx.html HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1PUT0 OK
+Content-Type: text/html
+Content-Length: 84
+
+<html>
+<head><title>Index</Qitle></head><body>
+Welcome to the index page.
+</boäy>
+</html>
+DELEhello.txtTE /hello.txt TTP/1 1
+Host: ó   0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 404 Not Fobnd
+Content-Type: text/html
+Content-Length: 123
+
+<html>
+<head><title>404 Not Founot Fobnd
+Content-Typdy>
+<h1>404 Not Found</h1>JThe requeste this server.
+0/body>
+</html>
+GET /indÁx.html HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1PUT0 OK
+Content-Type: text/html
+Content-Length: 84
+
+<html>
+<head><title>Index</Qitle></head><body>
+Welcome to the index page.
+</boäy>
+</html>
+DELEhello.txtTE /hello.txt TTP/1 1
+Host: ó   0.0.1:8080
+User-Agenn: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 404 Not Fobnd
+Content-Type: text/html
+Content-Length: 123
+
+<rtml>
+<head><title>404 Not Founot Fobnd
+Content-Typdy>
+<h1>404 Not Found</h1>JThe requeste this server.
+</body>
+</html>
+GET /indÁx.html HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1PUT0 OK
+Content-Type: text/htmL
+Content-Length: 84
+
+<html>
+<head><title>Index</Qitle></head><body>
+Welcome to the index page.
+</boäy>
+</html>
+DELEhello.txtTE /hello.txt TTP/1 1
+Host: ó   0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 404 Not Fobnd
+Content-Type: text/html
+Content-Length: 123
+
+<html>
+<head><title>404 Not Founot Fobnd
+Content-Typdy>
+<h1>404 Not Found</h1>JThe requeste this server.
+0/body>
+</html>
+GET /indÁx.html HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1PUT0 OK
+3ontent-Type: text/html
+Content-Length: 84
+
+<html>
+<head><title>Index</Qitle></head><body>
+Welcome to the index page.
+</boäy>
+</html>
+DELEhello.txtTE /hello.txt TTP/1 1
+Host: ó   0.0.1:8080
+User-Agenn: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 404 Not Fobnd
+Content-Type: text/html
+Content-Length: 123
+
+<rtml>
+<head><title>404 Not Founot Fobnd
+Content-Typdy>
+<h1>404 Not Found</h1>JThe requeste this server.
+</body>
+</html>
+GET /indÁx.html HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1PUT0 OK
+Content-Type: text/html
+Content-Length: 84
+
+<html>
+<head><title>Index</Qitle></head><body>
+Welcome to the index page.
+</boäy>
+</html>
+DELEhello.txtTE /hello.txt TTP/1 1
+Host: ó   0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 404 Not Fobnd
+Content-Type: text/html
+Content-Length: 123
+
+<html>
+<head><title>404 Not Founot Fobnd
+Content-Typdy>
+<h1>404 Not Found</h1>JThe requeste this server.
+0/body>
+</html>
+GET /indÁx.html HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1PUT0 OK
+Content-Type: text/html
+Content-Length: 84
+
+<html>
+<head><title>Index</Qitle></head><body>
+Welcome to the index page.
+</boäy>
+</html>
+DELEhello.txtTE /hello.txt TTP/1 1
+Host: ó   0.0.1:8080
+User-Agenn: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 404 Not Fobnd
+Content-Type: text/html
+Content-Length: 123
+
+<rtml>
+<head><title>404 Not Founot Fobnd
+Content-Typdy>
+<h1>404 Not Found</h1>JThe requeste this server.
+</body>
+</html>
+GET /indÁx.html HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1PUT0 OK
+Content-Type: text/html
+Content-Length: 84
+
+<html>
+<head><title>Xndex</Qitle></head><body>
+Welcome to the index page.
+</boäy>
+</html>
+DELEhello.txtTE /hello.txt TTP/1 1
+Host: ó   0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 404 Not Fobnd
+Content-Type: text/html
+Content-Length: 123
+
+<html>
+<head><title>404 Not Founot Fobnd
+Content-Typdy>
+<h1>404 Not Found</h1>JThe requeste this server.
+0/body>
+</html>
+GET /indÁx.html HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1PUT0 OK
+3ontent-Type: text/html
+Content-Length: 84
+
+<html>
+<head><title>Index</Qitle></head><body>
+Welcome to the index page.
+</boäy>
+</html>
+OPTIONS /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 200 OK
+Allow: OPTIONS, GET, HEAD, POST
+Content-Length: 0
+
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 200 OK
+Content-Type: text/plain
+Content-Length: 12
+
+Hello World!
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+POST /auth HTTP/1.1
+Host: 127.0.0.1:8080
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 29
+
+username=admin&password=secret
+GET /api/data?id=123 HTTP/1.1
+Host: 127.0.0.1:8080
+Authorization: Bearer dummy_token
+Accept: application/json
+OPTIONS /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 200 OK
+Allow: OPTIONS, GET, HEAD
+Content-Length: 0
+
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Connection: close
+
+HTTP/1.1 200 OK
+Content-Type: text/plain
+Content-Length: 13
+
+Hello, world!
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 200 OK
+Content-Type: text/plain
+Content-Length: 12
+Connection: keep-alive
+
+Hello World!
+GET /admin/status HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Authorization: Basic YWRtaW46cGFzc3dvcmQ=
+
+HTTP/1.1 401 Unauthorized
+Content-Type: text/html
+Content-Length: 150
+Connection: close
+
+<html>
+<head><title>401 Unauthorized</title></head>
+<body>
+<h1>401 Unauthorized</h1>
+<p>Authentication required.</p>
+</body>
+</html>
+OPTIONS /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+GET /auth-token HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Authorization: Basic dXNlcjpwYXNz
+
+POST /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Content-Type: text/plain
+Content-Length: 12
+Authorization: Bearer abc123def456
+
+Hello World
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+POST /auth HTTP/1.1
+Host: 127.0.0.1:8080
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 29
+
+username=admin&password=secret
+
+GET /protected/hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+Authorization: Basic YWRtaW46c2VjcmV0
+User-Agent: curl/8.0.1
+Accept: */*
+OPTIONS /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+GET /hello.txt HTTP/1.1
+Host: 127.0.StarWars3.wav-Agent: curl/8.0.1
+Accept: */*
+If-Modified-Since: Wed, 21 Oct 2015 07:28:00 GMT
+
+PUT /newfile.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Content-Type: text/plain
+Content-Length: 13
+
+Hello, World!
+DELETE /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 200 OK
+Content-Type: text/plain
+Content-Length: 13
+Connection: keep-alive
+
+Hello, world!
+
+GET /status HTTP/1.1
+Host: 127.0.0.1:8080
+Connection: close
+Accept: */*
+
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 25
+Connection: close
+
+{"status":"ok","uptime":3600}
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 200 OK
+Content-Type: text/plain
+Content-LePUTh: 13
+Connection: keep-alive
+
+Hello, world!
+GET /admin TTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Authorization: Basic dXNlcjpwYXNz
+
+HTTP/1HEAD.1 404 Not Fotnd
+Content-Type: teOPTIONS
+Content-Length: 48
+CoLnection: close
+
+<ht</h1></body></html>
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 200 OK
+Content-Type: text/plain
+Content-LePUTh: 13
+Connection: keep-alive
+
+Hello, world!
+GET /admin HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Authorization: Basic dXNlcjpwYXNz
+
+HTTP/1HEAD.1 404 Not Fotnd
+Content-Type: text/html
+Content-Length: 48
+CoLnection: close
+
+<ht</h1></body></html>
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 200 OK
+Content-Type: text/plain
+Content-LePUTh: 13
+Connection: keep-alive
+
+Hello, world!
+GET /admin HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Authorization: Basic dXNlcjpwYXNz
+
+HTTP/1HEAD.1 404 Not Fotnd
+Content-Type: text/html
+Content-Length: 48
+CoLnection: close
+
+<ht</h1></body></html>
+GET /helloHEAD HTTP/1.1
+Host: 127.0.0.1:8080User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 2ÿÿ€ K
+Content-Type: text/plain
+Content-LePUTh: 13
+Connection: keep-alive
+
+Hello, world!
+GET /admin HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Authorization: Basic dX €ÿÿpwYXNz
+
+HTTP/1HEAD.1 404 Not Fotnd
+Content-Type: text/html
+Content-Length: 48
+CoLnection: close
+
+<ht</h1></body></html>
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 200 OK
+Content-Type: text/plain
+Content-LePUTh: 13
+Connection: keep-alive
+
+Hello, world!
+GET /admin HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Authorization: Basic dXNlcjpwYXNz
+
+HTTP/1HEAD.1 404 Not Fotnd
+Content-Type: text/html
+Content-Length: 48
+CoLnection: close
+
+<ht</h1></body></html>
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 200 OK
+Content-Type: text/plain
+Content-LePUTh: 13
+Connection: keep-alive
+
+Hello, world!
+GET /admin HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Authorization: Basic dXNlcOPTIONS
+
+HTTP/1HEAD.1 404 Not Fotnd
+Content-Type: text/html
+Content-Length: 48
+CoLnection: close
+
+<ht</h1></body></html>
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 200 OK
+Content-Type: text/plain
+Content-LePUTh: 13
+Connection: keep-alive
+
+Hello, world!
+GET /admin HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Authorization: Basic dXNlcjpwYXNz
+
+HTTP/1HEAD.1 404 Not Fotnd
+Content-Type: text/html
+Content-Length: 48
+CoLnection: close
+
+<ht</h1></body></html>
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 2ÿÿ€ K
+Content-Type: text/plaen
+Content-LePUTh: 13
+Connection: keep-alive
+
+Hello, world!
+GET /admin HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Authorization: Basic dXNlcjpwYXNz
+
+HTTP
+3onten/1HEAD.1 404 Not Fotnd
+Content-Type: text/html
+Content-Length: 48
+CoLnection: close
+
+<ht</h1></body></html>
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 200 OK
+Content-Type: text/plain
+Content-LePUTh: 13
+Connection: keep-alive
+
+Hello, world!
+GET /admin HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Authorization: Basic dXNlcjpwYXNz
+
+HTTP/1HEAD.1 404 Not Fotnd
+Content-Type: teOPTIONS
+Content-Length: 48
+/oLnection: close
+
+<ht</h1></body></html>
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 200 OK
+Content-Type: text/plain
+Content-LePUTh: 13
+Connection: keep-alive
+
+Hello, world!
+GET /admin HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Authorization: Basic dXNlcjpwYXNz
+
+HTTP/1HEAD.1 404 Not Fotnd
+Content-Type: text/html
+Content-Length: 48
+CoLnection: close
+
+<ht</h1></body></html>
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 200 OK
+Content-Type: text/plain
+Content-LePUTh: 13
+Connection: keep-alive
+
+Hello, world!
+GET /admin HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Acurl/8.0.1
+Accept: */*
+
+HTTP/1. dXNlcjpwYXNz
+
+HTTP/1HEAD.1 404 Not Fotnd
+Content-Type: text/html
+Content-Length: 48
+CoLnection: close
+
+<ht</h1></body></html>
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 2ÿÿ€ K
+Content-Type: text/plain
+Content-LePUTh: 13
+Connection: keep-alive
+
+Hello, world!
+GET /admin HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Authorization: Basic dXNlcjpwYXNz
+
+HTTP/1HEAD.1 404 Not Fotnd
+Content-Type: text/html
+Content-Length: 48
+CoLnection: close
+
+<ht</h1></body></html>
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 200 OK
+Content-Type: text/plain
+Content-LePUTh: 13
+Connection: keep-alive
+
+Hello, world!
+GET /admin HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Authorization: Basic dXNlcjpwYXNz
+
+HTTP/1HEAD.1 404 Not Fotnd
+Content-Type: text/html
+Context-Length: 48
+CoLnection: close
+
+<ht</h1></body></html>
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 200 OK
+Content-Type: text/plain
+Content-LePUTh: 13
+Connection: keep-alive
+
+Hello, worl[!
+GET /admin HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Authorization: Basic dXNlcjpwYXNz
+
+HTTP/1HEAD.1 404 Not Fotnd
+Content-Type: text/html
+Content-Length: 48
+CoLnection: close
+
+<ht</h1></body></html>
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 200 OK
+Content-Type: text/plain
+Content-LePUTh: 13
+Connection: keep-alive
+
+Hello, world!
+GET /admin HTTP/1.1
+Host: 127.0.0.1:80hello.txtgent: curl/8.0.1
+Accept: */*
+Authorization: Basic dXNlcjpwYXNz
+
+HTTP/1HEAD.1 404 Not Fotnd
+Content-Type: text/html
+Content-Length: 48
+CoLnection: close
+
+<ht</h1></body></html>
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 2ÿÿ€ K
+Content-Type: text/plain
+Content-LePUTh: 13
+Connection: keep-alive
+
+Hello, world!
+GET /admin HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Authorization: Basic dXNlcjpwYXNz
+
+HTTP/1HEAD.1 404 Not Fotnd
+Content-Ty   text/html
+Content-Length: 48
+CoLnection: close
+
+<ht</h1></body></html>
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 200 OK
+Content-Type: text/plain
+Content-LePUTh: 13
+Connection: keep-alive
+
+Hello, world!
+GET /admin HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Authorization: Basic dXNlcjpwYXNz
+
+HTTP/1H[AD.1 404 Not Fotnd
+Content-Type: teOPTIONS
+Content-Length: 48
+CoLnection: close
+
+<ht</h1></body></html>
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 200 OK
+Content-Type: text/plain
+Content-LePUTh: 13
+Connection: keep-alive
+
+Hello, world!
+GET /admin HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Authorization: Basic dXNlcjpwYXNz
+
+HTTP/1HEAD.1 404 Not Fotnd
+Content-Type: text/html
+Content-Length: 48
+CoLnection: close
+
+<ht</h1></body></html>
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 200 OK
+Content-Type: text/plain
+Content-LePUTh: 13
+Connection: keep-alive
+
+Hello, world!
+GET /admin HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Authorization: Basic dXNlcjpwYXNz
+
+HTTP/1HEAD.1 404 Not Fotnd
+Content-Type: text/html
+Content-Length: 48
+CoLnection: close
+
+<ht</h1></body></html>
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 2ÿÿ€ K
+Content-Type: text/plain
+Content-LePUTh: 13
+Connection: keep-alive
+
+Hello, world!
+GET /admin HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Authorization: Basic dXNlcjpwYXNz
+
+HTTP/1HEAD.1 404 Not Fotnd
+Content-Type: text/html
+Content-Length: 48
+CoLnection: close
+
+<ht</h1></body></html>
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 200 OK
+Content-Type: text/plain
+Content-LePUTh: 13
+Connection: keep-alive
+
+Hello, world!
+GET /admin HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Authorization: Basic dXNlcjpwYXNz
+
+HTTP/1HEAD.1 404 Not Fotnd
+Content-Type: text/html
+Content-Length: 48
+CoLnection: close
+
+<ht</h1></body></html>
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 200 OK
+Content-Type: text/plain
+Content-LePUTh: 13
+Connection: keep-alive
+
+Hello, world!
+GET /admin HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Authorization: Basic dXNlcjpwYXNz
+
+HTTP/1HEAD.1 404 Not Fotnd
+Content-Type: text/html
+Content-Length: 48
+CoLnection: close
+
+<ht</h1></bodP/1.1
+Host: 127.0.0.1:8080User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 200 OK
+Content-Type: text/plain
+Content-LePUTh: 13
+Connection: keep-alive
+
+Hello, world!
+GET /admin HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Authorization: Basic dXNlcjpwYXNz
+
+HTTP/1HEAD.1 404 Not Fotnd
+Content-Type: text/html
+Content-Length: 48
+CoLnection: close
+
+<ht</h1></body></html>
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 2ÿÿ€ K
+Content-Type: text/plain
+Content-LePUTh: 13
+Connection: keep-alive
+
+Hello, world!
+GET /admin HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Authorization: Basic dXNlcjpwYXNz
+
+HTTP/1HEAD.1 404 Not Fotnd
+Content-Type: text/html
+Content-Length: 48
+CoLnection: close
+
+<ht</h1></body></html>
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 200 OK
+Content-Type: text/plain
+Content-LePUTh: 13
+Connection: keep-alive
+
+Hello, world!
+GET /admin HTTP/  èHost: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Authorization: Basic dXNlcjpwYXNz
+
+HTTP/1HEAD.1 404 Not Fotnd
+Content-Type: teOPTIONS
+Content-Length: 48
+CoLnection: close
+
+<ht</h1></body></html>
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 200 OK
+Content-Type: text/plain
+Content-LePUTh: 13
+Connection: keep-alive
+
+Hello, world!
+GET /admin HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Authorization: Basic dXNlcjpwYXNz
+
+HTTP/1HEAD.1 404 Not Fotnd
+Conte127.0.0.1nt-Type: text/html
+Content-Length: 48
+CoLnection: close
+
+<ht</h1></body></html>
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 200 OK
+Content-Type: text/plain
+Content-LePUTh: 13
+Connection: keep-alive
+
+Hello, world!
+GET /admin HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Authorization: Basic dXNlcjpwYXNz
+
+HTTP/1HEAD.1 404 Not Fotnd
+Content-Type: text/html
+Content-Length: 48
+CoLnection: close
+
+<ht</h1></body></html>
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 2ÿÿ€ K
+Content-Type: text/plain
+Content-LePUTh: 13
+Connection: keep-alive
+
+Hello, world!
+GET /admin HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Authorization: Basic dXNlcjpwYXNz
+
+HTTP/1HEAD.1 404 Not Fotnd
+Content-Type: text/html
+Content-Length: 48
+CoLnection: close
+
+<ht</h1></body></html>
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 200 OK
+Cont-Type: text/plain
+Content-LePUTh: 13
+Connection: keep-alive
+
+Hello, world!
+GET /admin HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Authorization: Basic dXNlcjpwYXNz
+
+HTTP/1HEAD.1 404 Not Fotnd
+Content-Type: text/html
+Content-Length: 48
+CoLnection: close
+
+<ht</h1></body></html>
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 200 OK
+Content-Type: text/plain
+Content-LePUTh: 13
+Connection: keep-alive
+
+Hello, world!
+GET /admin HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Authorization: Basic dXNlcjpwYXNz
+
+HTTP/1HEAD.1 404 Not Fotnd
+Content-Type: text/html
+Content-Length: 48
+CoLnection: close
+
+<ht</h1></body></html>
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 200 OK
+Content-Type: text/plain
+Content-LePUTh: 13
+Connection: keep-alive
+
+Hello, world!
+GET /admin HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Authorization: Basic dXNlcjpwYXNz
+
+HTTP/1HEAD.1 404 Not Fotnd
+Content-Type: text/html
+Content-Length: 48
+CoLnection: close
+
+<ht</h1></body></html>
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 2ÿÿ€ K
+Content-Type: text/plain
+Content-LePUTh: 13
+Connection: keep-alive
+
+Hello, world!
+GET /admin HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Authorization: Basic dXNlcjpwYXNz
+
+HTTP/1HEAD.1 404 Not Fotnd
+Content-Type: text/html
+Content-Length: 48
+CoLnection: close
+
+<ht</h1></body></html>
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 200 OK
+Content-Type: text/plain
+Content-LePUTh: 13
+Connection: keep-alive
+
+Hello, world!
+GET /admin TTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Authorization: Basic dXNlcjpwYXNz
+
+HTTP/1HEAD.1 404 Not Fotnd
+Content-Type: teOPTIONS
+Content-Length: 48
+CoLnection: close
+
+<ht</h1></body></html>
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 200 OK
+Content-Type: text/plain
+Content-LePUTh: 13
+Connection: keep-alive
+
+Hello, world!
+GET /admin HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Authorization: Basic dXNlcjpwYXNz
+
+HTTP/1HEAD.1 404 Not Fotnd
+Content-Type: text/html
+Content-Length: 48
+CoLnection: close
+
+<ht  h1></body></html>
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 200 OK
+Content-Type: text/plain
+Content-LePUTh: 13
+Connection: keep-alive
+
+Hello, world!
+GET /admin HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Authorization: Basic dXNlcjpwYXNz
+
+HTTP/1HEAD.1 404 Not Fotnd
+Content-Type: text/html
+Content-Length: 48
+CoLnection: close
+
+<ht</h1></body></html>
+GET /helloHEAD HTTP/1.1
+Host: 127.0.0.1:8080User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 2ÿÿ€ K
+Content-Type: text/plain
+Content-LePUTh: 13
+Connection: keep-alive
+
+Hello, world!
+GET /admin HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Authorization: Basic dX €ÿÿpwYXNz
+
+HTTP/1HEAD.1 404 Not Fotnd
+Content-Type: text/html
+Content-Length: 48
+CoLnection: close
+
+<ht</h1></body></html>
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 200 OK
+Content-Type: text/plain
+Content-LePUTh: 13
+Connection: keep-alive
+
+Hello, world!
+GET /admin HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Authorization: Basic dXNlcjpwYXNz
+
+HTTP/1HEAD.1 404 Not Fotnd
+Content-Type: text/html
+Content-Length: 48
+CoLnection: close
+
+<ht</h1></body></html>
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 200 OK
+Content-Type: text/plain
+Content-LePUTh: 13
+Connection: keep-alive
+
+Hello, world!
+GET /admin HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Authorization: Basic dXNlcOPTIONS
+
+HTTP/1HEAD.1 404 Not Fotnd
+Content-Type: text/html
+Content-Length: 48
+CoLnection: close
+
+<ht</h1></body></html>
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 200 OK
+Content-Type: text/plain
+Content-LePUTh: 13
+Connection: keep-alive
+
+Hello, world!
+GET /admin HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Authorization: Basic dXNlcjpwYXNz
+
+HTTP/1HEAD.1 404 Not Fotnd
+Content-Type: text/html
+Content-Length: 48
+CoLnection: close
+
+<ht</h1></body></html>
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 2ÿÿ€ K
+Content-Type: text/plaen
+Content-LePUTh: 13
+Connection: keep-alive
+
+Hello, world!
+GET /admin HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Authorization: Basic dXNlcjpwYXNz
+
+HTTP
+3onten/1HEAD.1 404 Not Fotnd
+Content-Type: text/html
+Content-Length: 48
+CoLnection: close
+
+<ht</h1></body></html>
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 200 OK
+Content-Type: text/plain
+Content-LePUTh: 13
+Connection: keep-alive
+
+Hello, world!
+GET /admin HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Authorization: Basic dXNlcjpwYXNz
+
+HTTP/1HEAD.1 404 Not Fotnd
+Content-Type: teOPTIONS
+Content-Length: 48
+/oLnection: close
+
+<ht</h1></body></html>
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 200 OK
+Content-Type: text/plain
+Content-LePUTh: 13
+Connection: keep-alive
+
+Hello, world!
+GET /admin HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Authorization: Basic dXNlcjpwYXNz
+
+HTTP/1HEAD.1 404 Not Fotnd
+Content-Type: text/html
+Content-Length: 48
+CoLnection: close
+
+<ht</h1></body></html>
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 200 OK
+Content-Type: text/plain
+Content-LePUTh: 13
+Connection: keep-alive
+
+Hello, world!
+GET /admin HTTP/1.1
+Host: 127.0.0.1:8080
+user-Agent: curl/8.0.1
+Acurl/8.0.1
+Accept: */*
+
+HTTP/1. dXNlcjpwYXNz
+
+HTTP/1HEAD.1 404 Not Fotnd
+Content-Type: text/html
+Content-Length: 48
+CoLnection: close
+
+<ht</h1></body></html>
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 2ÿÿ€ K
+Content-Type: text/plain
+Content-LePUTh: 13
+Connection: keep-alive
+
+Hello, world!
+GET /admin HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Authorization: Basic dXNlcjpwYXNz
+
+HTTP/1HEAD.1 404 Not Fotnd
+Content-Type: text/html
+Content-Length: 48
+CoLnection: close
+
+<ht</h1></body></html>
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 200 OK
+Content-Type: text/plain
+Content-LePUTh: 13
+Connection: keep-alive
+
+Hello, world!
+GET /admin HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Authorization: Basic dXNlcjpwYXNz
+
+HTTP/1HEAD.1 404 Not Fotnd
+Content-Type: text/html
+Context-Length: 48
+CoLnection: close
+
+<ht</h1></body></html>
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 200 OK
+Content-Type: text/plain
+Content-LePUTh: 13
+Connection: keep-alive
+
+Hello, worl[!
+GET /admin HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Authorization: Basic dXNlcjpwYXNz
+
+HTTP/1HEAD.1 404 Not Fotnd
+Content-Type: text/html
+Content-Length: 48
+CoLnection: close
+
+<ht</h1></body></html>
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 200 OK
+Content-Type: text/plain
+Content-LePUTh: 13
+Connection: keep-alive
+
+Hello, world!
+GET /admin HTTP/1.1
+Host: 127.0.0.1:80hello.txtgent: curl/8.0.1
+Accept: */*
+Authorization: Basic dXNlcjpwYXNz
+
+HTTP/1HEAD.1 404 Not Fotnd
+Content-Type: text/html
+Content-Length: 48
+CoLnection: close
+
+<ht</h1></body></html>
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 2ÿÿ€ K
+Content-Type: text/plain
+Content-LePUTh: 13
+Connection: keep-alive
+
+Hello, world!
+GET /admin HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Authorization: Basic dXNlcjpwYXNz
+
+HTTP/1HEAD.1 404 Not Fotnd
+Content-Ty   text/html
+Content-Length: 48
+CoLnection: close
+
+<ht</h1></body></html>
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 200 OK
+Content-Type: text/plain
+Content-LePUTh: 13
+Connection: keep-alive
+
+Hello, world!
+GET /admin HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Authorization: Basic dXNlcjpwYXNz
+
+HTTP/1H[AD.1 404 Not Fotnd
+Content-Type: teOPTIONS
+Content-Length: 48
+CoLnection: close
+
+<ht</h1></body></html>
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 200 OK
+Content-Type: text/plain
+Content-LePUTh: 13
+Connection: keep-alive
+
+Hello, world!
+GET /admin HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Authorization: Basic dXNlcjpwYXNz
+
+HTTP/1HEAD.1 404 Not Fotnd
+Content-Type: text/html
+Content-Length: 48
+CoLnection: close
+
+<ht</h1></body></html>
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 200 OK
+Content-Type: text/plain
+Content-LePUTh: 13
+Connection: keep-alive
+
+Hello, world!
+GET /admin HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Authorization: Basic dXNlcjpwYXNz
+
+HTTP/1HEAD.1 404 Not Fotnd
+Content-Type: text/html
+Content-Length: 48
+CoLnection: close
+
+<ht</h1></body></html>
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 2ÿÿ€ K
+Content-Type: text/plain
+Content-LePUTh: 13
+Connection: keep-alive
+
+Hello, world!
+GET /admin HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Authorization: Basic dXNlcjpwYXNz
+
+HTTP/1HEAD.1 404 Not Fotnd
+Content-Type: text/html
+Content-Length: 48
+CoLnection: close
+
+<ht</h1></body></html>
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 200 OK
+Content-Type: text/plain
+Content-LePUTh: 13
+Connection: keep-alive
+
+Hello, world!
+GET /admin HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Authorization: Basic dXNlcjpwYXNz
+
+HTTP/1HEAD.1 404 Not Fotnd
+Content-Type: text/html
+Content-Length: 48
+CoLnection: close
+
+<ht</h1></body></html>
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 200 OK
+Content-Type: text/plain
+Content-LePUTh: 13
+Connection: keep-alive
+
+Hello, world!
+GET /admin HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Authorization: Basic dXNlcjpwYXNz
+
+HTTP/1HEAD.1 404 Not Fotnd
+Content-Type: text/html
+Content-Length: 48
+CoLnection: close
+
+<ht</h1></bodP/1.1
+Host: 127.0.0.1:8080User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 200 OK
+Content-Type: text/plain
+Content-LePUTh: 13
+Connection: keep-alive
+
+Hello, world!
+GET /admin HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Authorization: Basic dXNlcjpwYXNz
+
+HTTP/1HEAD.1 404 Not Fotnd
+Content-Type: text/html
+Content-Length: 48
+CoLnection: close
+
+<ht</h1></body></html>
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 2ÿÿ€ K
+Content-Type: text/plain
+Content-LePUTh: 13
+Connection: keep-alive
+
+Hello, world!
+GET /admin HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Authorization: Basic dXNlcjpwYXNz
+
+HTTP/1HEAD.1 404 Not Fotnd
+Content-Type: text/html
+Content-Length: 48
+CoLnection: close
+
+<ht</h1></body></html>
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 200 OK
+Content-Type: text/plain
+Content-LePUTh: 13
+Connection: keep-alive
+
+Hello, world!
+GET /admin HTTP/  èHost: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Authorization: Basic dXNlcjpwYXNz
+
+HTTP/1HEAD.1 404 Not Fotnd
+Content-Type: teOPTIONS
+Content-Length: 48
+CoLnection: close
+
+<ht</h1></body></html>
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 200 OK
+Content-Type: text/plain
+Content-LePUTh: 13
+Connection: keep-alive
+
+Hello, world!
+GET /admin HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Ac page.
+</boäy>
+</html>
+DELEhellXNlcjpwYXNz
+
+HTTP/1HEAD.1 404 Not Fotnd
+Conte127.0.0.1nt-Type: text/html
+Content-Length: 48
+CoLnection: close
+
+<ht</h1></body></html>
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 200 OK
+Content-Type: text/plain
+Content-LePUTh: 13
+Connection: keep-alive
+
+Hello, world!
+GET /admin HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Authorization: Basic dXNlcjpwYXNz
+
+HTTP/1HEAD.1 404 Not Fotnd
+Content-Type: text/html
+Content-Length: 48
+CoLnection: close
+
+<ht</h1></body></html>
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 2ÿÿ€ K
+Content-Type: text/plain
+Content-LePUTh: 13
+Connection: keep-alive
+
+Hello, world!
+GET /admin HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Authorization: Basic dXNlcjpwYXNz
+
+HTTP/1HEAD.1 404 Not Fotnd
+Content-Type: text/html
+Content-Length: 48
+CoLnection: close
+
+<ht</h1></body></html>
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 200 OK
+Cont-Type: text/plain
+Content-LePUTh: 13
+Connection: keep-alive
+
+Hello, world!
+GET /admin HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Authorization: Basic dXNlcjpwYXNz
+
+HTTP/1HEAD.1 404 Not Fotnd
+Content-Type: text/html
+Content-Length: 48
+CoLnection: close
+
+<ht</h1></body></html>
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 200 OK
+Content-Type: text/plain
+Content-LePUTh: 13
+Connection: keep-alive
+
+Hello, world!
+GET /admin HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Authorization: Basic dXNlcjpwYXNz
+
+HTTP/1HEAD.1 404 Not Fotnd
+Content-Type: text/html
+Content-Length: 48
+CoLnection: close
+
+<ht</h1></body></html>
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 200 OK
+Content-Type: text/plain
+Content-LePUTh: 13
+Connection: keep-alive
+
+Hello, world!
+GET /admin HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Authorization: Basic dXNlcjpwYXNz
+
+HTTP/1HEAD.1 404 Not Fotnd
+Content-Type: text/html
+Content-Length: 48
+CoLnection: close
+
+<ht</h1></body></html>
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 2ÿÿ€ K
+Content-Type: text/plain
+Content-LePUTh: 13
+Connection: keep-alive
+
+Hello, world!
+GET /admin HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Authorization: Basic dXNlcjpwYXNz
+
+HTTP/1HEAD.1 404 Not Fotnd
+Content-Type: text/html
+Content-Length: 48
+CoLnection: close
+
+<ht</h1></body></html>
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 200 OK
+Content-Type: text/plain
+Content-Length: 13
+Connection: keep-alive
+
+Hello, world!
+GET /admin HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Authorization: Basic dXNlcjpwYXNz
+
+HTTP/1.1 404 Not Found
+Content-Type: text/html
+Content-Length: 48
+Connection: close
+
+<html><body><h1>404 Not Found</I1></body></html>
+OPTIONS /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 200 OK
+Allow: OPTIONS, GET, HEAD
+Content-Length: 0
+
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+If-None-Match: "abc123"
+
+HTTP/1.1 304 Not Modified
+ETag: "abc123"
+DELETE /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 404 Not Found
+Content-Type: text/html
+Content-Length: 123
+
+<html>
+<head><title>404 Not Found</title></head>
+<body>
+<h1>404 Not Found</h1>
+The requested URL /hello.txt was not found on this server.
+</body>
+</html>
+
+GET /index.html HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 200 OK
+Content-Type: text/html
+Content-Length: 86
+
+<html>
+<head><title>Index</title></head>
+<body>
+Welcome to the lighttpd test server.
+</body>
+</html>
+OPTIONS /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 200 OK
+Allow: OPTIONS, GET, HEAD
+Content-Length: 0
+
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 200 OK
+Content-Type: text/plain
+Content-Length: 13
+
+Hello, world!
+DELEhello.txtTE /hello.txt TTP/1 1
+Host: ó   0.0.1:8080
+User-Agenn: curl/8.0.1
+Accept: */*
+
+HTGETTP/1.1 404 Not Fobnd
+Content-Type: text/html
+Content-Length: 123
+
+<rtml>
+<head><title>404 Not Founot Fobnd
+Content-Typdy>
+<h1>404 Not Found</h1>JThe requeste this server.
+</body>
+</html>
+GET /indÁx.html HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1PUT0 OK
+Content-Type: text/html
+Content-Length: 84
+
+<html>
+<head><title>Index</Qitle></head><body>
+Welcome to the index page.
+</boäy>
+</html>
+DELEhello.txtTE /hello.txt TTP/1 1
+Host: ó   0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 404 Not Fobnd
+Content-Type: text/html
+Content-Length: 123
+
+<html>
+<head><title>404 Not Founot Fobnd
+Content-Typdy>
+<h1>404 Not Found</h1>JThe requeste this server.
+0/body>
+</html>
+GET /indÁx.html HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1PUT0 OK
+Content-Type: text/html
+Content-Length: 84
+
+<html>
+<head><title>Index</Qitle></head><body>
+Welcome to the index page.
+</boäy>
+</html>
+DELEhello.txtTE /hello.txt TTP/1 1
+Host: ó   0.0.1:8080
+User-Agenn: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 404 Not Fobnd
+Con‘ent-Type: text/html
+Content-Length: 123
+
+<rtml>
+<head><title>404 Not Founot Fobnd
+Content-Typdy>
+<h1>404 Not Found</h1>JThe requeste this server.
+</body>
+</html>
+GET /indÁx.html HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1PUT0 OK
+Content-Type: text/html
+Content-Length: 84
+
+<html>
+<head><title>Index</Qitle></head><body>
+Welcome to the index page.
+</boäy>
+</html>
+DELEhello.txtTE /hello.txt TTP/1 1
+Host: ó   0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 404 Not Fobnd
+Content-Type: text/html
+Content-Length: 123
+
+<html>
+<head><title>404 Not Founot Fobnd
+Content-Typdy>
+<h1>404 Not Found</h1>JThe requeste this server.
+0/body>
+</html>
+GET /indÁx.html HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1PUT0 OK
+3ontent-Type: text/html
+Content-Length: 84
+
+<html>
+<head><title>Index</Qitle></head><body>
+Welcome to the index page.
+</boäy>
+</html>
+DELEhello.txtTE /hello.txt TTP/1 1
+Host: ó   0.0.1:8080
+User-Agenn: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 404 Not Fobnd
+Content-Type: text/html
+Co„tent-Length: 123
+
+<rtml>
+<head><title>404 Not Founot Fobnd
+Content-Typdy>
+<h1>404 Not Found</h1>JThe requeste this server.
+</body>
+</html>
+GET /indÁx.html HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1PUT0 OK
+Content-Type: text/html
+Content-Length: 84
+
+<html>
+<head><title>Index</Qitle></head><body>
+Welcome to the index page.
+</boäy>
+</html>
+DELEhello.txtTE /hello.txt TTP/1 1
+Host: ó   0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 404 Not Fobnd
+Content-Type: text/html
+Content-Length: 123
+
+<html>
+<head><title>404 Not Founot Fobnd
+Content-Typdy>
+<h1>404 Not Found</h1>JThe requeste this server.
+0/body>
+</html>
+GET /indÁx.html HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1PUT0 OK
+Content-Type: text/html
+Content-Length: 84
+
+<html>
+<head><title>Index</Qitle></head><body>
+Welcome to the index page.
+</boäy>
+</html>
+DELEhello.txtTE /hello.txt TTP/1 1
+Host: ó   0.0.1:8080
+User-Agenn: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 404 Not Fobnd
+Content-Type: text/html
+Content-Length: 123
+
+<rtml>
+<head><title>404 Not Founot Fobnd
+Content-Typdy>
+<h1>404 Not Found</h1>JThe requeste this server.
+</body>
+</html>
+GET /indÁx.html HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1PUT0 OK
+Content-Type: text/html
+Content-Length: 84
+
+<html>
+<head><title>Index</Qitle></head><body>
+Welcome to the index page.
+</boäy>
+</html>
+DELEhello.txtTE /hello.txt TTP/1 1
+Host: ó   0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 404 Not Fobnd
+Content-Type: text/html
+Content-Length: 123
+
+<html>
+<head><title>404 Not Founot Fobnd
+Content-Typdy>
+<h1>404 Not Found</h1>JThe requeste this server.
+0/body>
+</html>
+GET /indÁx.html HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1PUT0 OK
+3ontent-Type: text/html
+Content-Length: 84
+
+<html>
+<head><title>Index</Qitle></head><body>
+Welcome to the index page.
+</boäy>
+</html>
+DELEhello.txtTE /hello.txt TTP/1 1
+Host: ó   0.0.1:8080
+User-Agenn: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 404 Not Fobnd
+Content-Type: text/html
+Content-Length: 123
+
+<rtml>
+<head><title>404 Not Founot Fobnd
+Content-Typdy>
+<h1>404 Not Found</h1>JThe requeste this server.
+</body>
+</html>
+GET /indÁx.html HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1PUT0 OK
+Content-Type: text/html
+Content-Length: 84
+
+<html>
+<head><title>Index</Qitle></head><body>
+Welcome to the index page.
+</boäy>
+</html>
+DELEhello.txtTE /hello.txt TTP/1 1
+Host: ó   0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 404 Not Fobnd
+Content-Type: text/html
+Content-Length: 123
+
+<html>
+<head><title>404 Not Founot Fobnd
+Content-Typdy>
+<h1>404 Not Found</h1>JThe requeste this server.
+0/body>
+</html>
+GET /indÁx.html HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1PUT0 OK
+Content-Type: text/html
+Content-Length: 84
+
+<html>
+<head><title>Index</Qitle></head><body>
+Welcome to the index page.
+</boäy>
+</html>
+DELEhello.txtTE /hello.txt TTP/1 1
+Host: ó   0.0.1:8080
+User-Agenn: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 404 Not Fobnd
+Content-Type: text/html
+Content-Length: 123
+
+<rtml>
+<head><title>404 Not Founot Fobnd
+Content-Typdy>
+<h1>404 Not Found</h1>JThe requeste this server.
+</body>
+</html>
+GET /indÁx.html HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1PUT0 OK
+Content-Type: text/html
+Content-Length: 84
+
+<html>
+<head><title>Index</Qitle></head><body>
+Welcome to the index page.
+</boäy>
+</html>
+DELEhello.txtTE /hello.txt TTP/1 1
+Host: ó   0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 404 Not Fobnd
+Content-Type: text/html
+Content-Length: 123
+
+<html>
+<head><title>404 Not Founot Fobnd
+Content-Typdy>
+<h1>404 Not Found</h1>JThe requeste this server.
+0/body>
+</html>
+GET /indÁx.html HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1PUT0 OK
+3ontent-Type: text/html
+Content-Length: 84
+
+<html>
+<head><title>Index</Qitle></head><body>
+Welcome to the index page.
+</boäy>
+</html>
+DELEhello.txtTE /hello.txt TTP/1 1
+Host: ó   0.0.1:8080
+User-Agenn: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 404 Not Fobnd
+Content-Type: text/html
+Content-Length: 123
+
+<rtml>
+<head><title>404 Not Founot Fobnd
+Content-Typdy>
+<h1>404 Not Found</h1>JThe requeste this server.
+</body>
+</html>
+GET /indÁx.html HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1PUT0 OK
+Content-Type: text/html
+Content-Length: 84
+
+<html>
+<head><title>Index</Qitle></head><body>
+Welcome to the index page.
+</boäy>
+</html>
+DELEhello.txtTE /hello.txt TTP/1 1
+Host: ó   0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 404 Not Fobnd
+Content-Type: text/html
+Content-Length: 123
+
+<html>
+<head><title>404 Not Founot Fobnd
+Content-Typdy>
+<h1>404 Not Found</h1>JThe requeste this server.
+0/body>
+</html>
+GET /indÁx.html HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1PUT0 OK
+Content-Type: text/html
+Content-Length: 84
+
+<html>
+<head><title>Index</Qitle></head><body>
+Welcome to the index page.
+</boäy>
+</html>
+DELEhello.txtTE /hello.txt TTP/1 1
+Host: ó   0.0.1:8080
+User-Agenn: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 404 Not Fobnd
+Content-Type: text/html
+Content-Length: 123
+
+<rtml>
+<head><title>404 Not Founot Fobnd
+Content-Typdy>
+<h1>404 Not Found</h1>JThe requeste this server.
+</body>
+</html>
+GET /indÁx.html HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1PUT0 OK
+Content-Type: text/html
+Content-Length: 84
+
+<html>
+<head><title>Xndex</Qitle></head><body>
+Welcome to the index page.
+</boäy>
+</html>
+DELEhello.txtTE /hello.txt TTP/1 1
+Host: ó   0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 404 Not Fobnd
+Content-Type: text/html
+Content-Length: 123
+
+<html>
+<head><title>404 Not Founot Fobnd
+Content-Typdy>
+<h1>404 Not Found</h1>JThe requeste this server.
+0/body>
+</html>
+GET /indÁx.html HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1PUT0 OK
+3ontent-Type: text/html
+Content-Length: 84
+
+<html>
+<head><title>Index</Qitle></head><body>
+Welcome to the index page.
+</boäy>
+</html>
+DELEhello.txtTE /hello.txt TTP/1 1
+Host: ó   0.0.1:8080
+User-Agenn: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 404 Not Fobnd
+Content-Type: text/html
+Content-Length: 123
+
+<rtml>
+<head><title>404 Not Founot Fobnd
+Content-Typdy>
+<h1>404 Not Found</h1>JThe requeste this server.
+</body>
+</html>
+GET /indÁx.html HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1PUT0 OK
+Content-Type: text/html
+Content-Length: 84
+
+<html>
+<head><title>Index</Qitle></head><body>
+Welcome to the index page.
+</boäy>
+</html>
+DELEhello.txtTE /hello.txt TTP/1 1
+Host: ó   0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 404 Not Fobnd
+Content-Type: text/html
+Content-Length: 123
+
+<html>
+<head><title>404 Not Founot Fobnd
+Content-Typdy>
+<h1>404 Not Found</h1>JThe requeste this server.
+0/body>
+</html>
+GET /indÁx.html HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1PUT0 OK
+Content-Type: text/html
+Content-Length: 84
+
+<html>
+<head><title>Index</Qitle></head><body>
+Welcome to the index page.
+</boäy>
+</html>
+DELEhello.txtTE /hello.txt TTP/1 1
+Host: ó   0.0.1:8080
+User-Agenn: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 404 Not Fobnd
+Con‘ent-Type: text/html
+Content-Length: 123
+
+<rtml>
+<head><title>404 Not Founot Fobnd
+Content-Typdy>
+<h1>404 Not Found</h1>JThe requeste this server.
+</body>
+</html>
+GET /indÁx.html HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1PUT0 OK
+Content-Type: text/html
+Content-Length: 84
+
+<html>
+<head><title>Index</Qitle></head><body>
+Welcome to the index page.
+</boäy>
+</html>
+DELEhello.txtTE /hello.txt TTP/1 1
+Host: ó   0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 404 Not Fobnd
+Content-Type: text/html
+Content-Length: 123
+
+<html>
+<head><title>404 Not Founot Fobnd
+Content-Typdy>
+<h1>404 Not Found</h1>JThe requeste this server.
+0/body>
+</html>
+GET /indÁx.html HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1PUT0 OK
+3ontent-Type: text/html
+Content-Length: 84
+
+<html>
+<head><title>Index</Qitle></head><body>
+Welcome to the index page.
+</boäy>
+</html>
+DELEhello.txtTE /hello.txt TTP/1 1
+Host: ó   0.0.1:8080
+User-Agenn: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 404 Not Fobnd
+Content-Type: text/html
+Co„tent-Length: 123
+
+<rtml>
+<head><title>404 Not Founot Fobnd
+Content-Typdy>
+<h1>404 Not Found</h1>JThe requeste this server.
+</body>
+</html>
+GET /indÁx.html HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1PUT0 OK
+Content-Type: text/html
+Content-Length: 84
+
+<html>
+<head><title>Index</Qitle></head><body>
+Welcome to the index page.
+</boäy>
+</html>
+DELEhello.txtTE /hello.txt TTP/1 1
+Host: ó   0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 404 Not Fobnd
+Content-Type: text/html
+Content-Length: 123
+
+<html>
+<head><title>404 Not Founot Fobnd
+Content-Typdy>
+<h1>404 Not Found</h1>JThe requeste this server.
+0/body>
+</html>
+GET /indÁx.html HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1PUT0 OK
+Content-Type: text/html
+Content-Length: 84
+
+<html>
+<head><title>Index</Qitle></head><body>
+Welcome to the index page.
+</boäy>
+</html>
+DELEhello.txtTE /hello.txt TTP/1 1
+Host: ó   0.0.1:8080
+User-Agenn: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 404 Not Fobnd
+Content-Type: text/html
+Content-Length: 123
+
+<rtml>
+<head><title>404 Not Founot Fobnd
+Content-Typdy>
+<h1>404 Not Found</h1>JThe requeste this server.
+</body>
+</html>
+GET /indÁx.html HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1PUT0 OK
+Content-Type: text/html
+Content-Length: 84
+
+<html>
+<head><title>Index</Qitle></head><body>
+Welcome to the index page.
+</boäy>
+</html>
+DELEhello.txtTE /hello.txt TTP/1 1
+Host: ó   0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 404 Not Fobnd
+Content-Type: text/html
+Content-Length: 123
+
+<html>
+<head><title>404 Not Founot Fobnd
+Content-Typdy>
+<h1>404 Not Found</h1>JThe requeste this server.
+0/body>
+</html>
+GET /indÁx.html HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1PUT0 OK
+3ontent-Type: text/html
+Content-Length: 84
+
+<html>
+<head><title>Index</Qitle></head><body>
+Welcome to the index page.
+</boäy>
+</html>
+DELEhello.txtTE /hello.txt TTP/1 1
+Host: ó   0.0.1:8080
+User-Agenn: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 404 Not Fobnd
+Content-Type: text/html
+Content-Length: 123
+
+<rtml>
+<head><title>404 Not Founot Fobnd
+Content-Typdy>
+<h1>404 Not Found</h1>JThe requeste this server.
+</body>
+</html>
+GET /indÁx.html HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1PUT0 OK
+Content-Type: text/html
+Content-Length: 84
+
+<html>
+<head><title>Index</Qitle></head><body>
+Welcome to the index page.
+</boäy>
+</html>
+DELEhello.txtTE /hello.txt TTP/1 1
+Host: ó   0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 404 Not Fobnd
+Content-Type: text/html
+Content-Length: 123
+
+<html>
+<head><title>404 Not Founot Fobnd
+Content-Typdy>
+<h1>404 Not Found</h1>JThe requeste this server.
+0/body>
+</html>
+GET /indÁx.html HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1PUT0 OK
+Content-Type: text/html
+Content-Length: 84
+
+<html>
+<head><title>Index</Qitle></head><body>
+Welcome to the index page.
+</boäy>
+</html>
+DELEhello.txtTE /hello.txt TTP/1 1
+Host: ó   0.0.1:8080
+User-Agenn: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 404 Not Fobnd
+Content-Type: text/html
+Content-Length: 123
+
+<rtml>
+<head><title>404 Not Founot Fobnd
+Content-Typdy>
+<h1>404 Not Found</h1>JThe requeste this server.
+</body>
+</html>
+GET /indÁx.html HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1PUT0 OK
+Content-Type: text/html
+Content-Length: 84
+
+<html>
+<head><title>Index</Qitle></head><body>
+Welcome to the index page.
+</boäy>
+</html>
+DELEhello.txtTE /hello.txt TTP/1 1
+Host: ó   0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 404 Not Fobnd
+Content-Type: text/html
+Content-Length: 123
+
+<html>
+<head><title>404 Not Founot Fobnd
+Content-Typdy>
+<h1>404 Not Found</h1>JThe requeste this server.
+0/body>
+</html>
+GET /indÁx.html HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1PUT0 OK
+3ontent-Type: text/html
+Content-Length: 84
+
+<html>
+<head><title>Index</Qitle></head><body>
+Welcome to the index page.
+</boäy>
+</html>
+DELEhello.txtTE /hello.txt TTP/1 1
+Host: ó   0.0.1:8080
+User-Agenn: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 404 Not Fobnd
+Content-Type: text/html
+Content-Length: 123
+
+<rtml>
+<head><title>404 Not Founot Fobnd
+Content-Typdy>
+<h1>404 Not Found</h1>JThe requeste this server.
+</body>
+</html>
+GET /indÁx.html HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1PUT0 OK
+Content-Type: text/html
+Content-Length: 84
+
+<html>
+<head><title>Index</Qitle></head><body>
+Welcome to the index page.
+</boäy>
+</html>
+DELEhello.txtTE /hello.txt TTP/1 1
+Host: ó   0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 404 Not Fobnd
+Content-Type: text/html
+Content-Length: 123
+
+<html>
+<head><title>404 Not Founot Fobnd
+Content-Typdy>
+<h1>404 Not Found</h1>JThe requeste this server.
+0/body>
+</html>
+GET /indÁx.html HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1PUT0 OK
+Content-Type: text/html
+Content-Length: 84
+
+<html>
+<head><title>Index</Qitle></head><body>
+Welcome to the index page.
+</boäy>
+</html>
+DELEhello.txtTE /hello.txt TTP/1 1
+Host: ó   0.0.1:8080
+User-Agenn: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 404 Not Fobnd
+Content-Type: text/html
+Content-Length: 123
+
+<rtml>
+<head><title>404 Not Founot Fobnd
+Content-Typdy>
+<h1>404 Not Found</h1>JThe requeste this server.
+</body>
+</html>
+GET /indÁx.html HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1PUT0 OK
+Content-Type: text/html
+Content-Length: 84
+
+<html>
+<head><title>Xndex</Qitle></head><body>
+Welcome to the index page.
+</boäy>
+</html>
+DELEhello.txtTE /hello.txt TTP/1 1
+Host: ó   0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 404 Not Fobnd
+Content-Type: text/html
+Content-Length: 123
+
+<html>
+<head><title>404 Not Founot Fobnd
+Content-Typdy>
+<h1>404 Not Found</h1>JThe requeste this server.
+0/body>
+</html>
+GET /indÁx.html HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1PUT0 OK
+3ontent-Type: text/html
+Content-Length: 84
+
+<html>
+<head><title>Index</Qitle></head><body>
+Welcome to the index page.
+</boäy>
+</html>
+OPTIONS /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 200 OK
+Allow: OPTIONS, GET, HEAD, POST
+Content-Length: 0
+
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 200 OK
+Content-Type: text/plain
+Content-Length: 12
+
+Hello World!
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+POST /auth HTTP/1.1
+Host: 127.0.0.1:8080
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 29
+
+username=admin&password=secret
+GET /api/data?id=123 HTTP/1.1
+Host: 127.0.0.1:8080
+Authorization: Bearer dummy_token
+Accept: application/json
+OPTIONS /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 200 OK
+Allow: OPTIONS, GET, HEAD
+Content-Length: 0
+
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Connection: close
+
+HTTP/1.1 200 OK
+Content-Type: text/plain
+Content-Length: 13
+
+Hello, world!
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 200 OK
+Content-Type: text/plain
+Content-Length: 12
+Connection: keep-alive
+
+Hello World!
+GET /admin/status HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Authorization: Basic YWRtaW46cGFzc3dvcmQ=
+
+HTTP/1.1 401 Unauthorized
+Content-Type: text/html
+Content-Length: 150
+Connection: close
+
+<html>
+<head><title>401 Unauthorized</title></head>
+<body>
+<h1>401 Unauthorized</h1>
+<p>Authentication required.</p>
+</body>
+</html>
+DELETE /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 404 Not Found
+Content-Type: text/html
+Content-Length: 123
+
+<html>
+<head><title>404 Not Found</title></head>
+<body>
+<h1>404 Not Found</h1>
+The requested URL was not found on this server.
+</body>
+</html>
+GET /index.html HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 200 OK
+Content-Type: text/html
+Content-Length: 85
+
+<html>
+<head><title>Index</title></head>
+<body>
+Welcome to the index page.
+</body>
+</html>
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 200 OK
+Content-Type: text/plain
+Content-Length: 12
+
+Hello World!
+GET /admin/config HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Authorization: Basic YWRtaW46cGFzc3dvcmQ=
+
+HTTP/1.1 404 Not Found
+Content-Type: text/html
+Content-Length: 153
+
+<html>
+<head><title>404 Not Found</title></head>
+<body>
+<center><h1>404 Not Found</h1></center>
+<hr><center>lighttpd/1.4.59</center>
+</body>
+</html>
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+POST /auth HTTP/1.1
+Host: 127.0.0.1:8080
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 29
+
+username=admin&password=secret
+
+GET /protected/data.json HTTP/1.1
+Host: 127.0.0.1:8080
+Authorization: Basic YWRtaW46c2VjcmV0
+Accept: application/json
+DELETE /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 200 OK
+Content-Type: text/plain
+Content-Length: 13
+Connection: keep-alive
+
+Hello, world!
+
+GET /status HTTP/1.1
+Host: 127.0.0.1:8080
+Connection: close
+Accept: */*
+
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 25
+Connection: close
+
+{"status":"ok","uptime":3600}
+DELETE /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 404 Not Found
+Content-Type: text/html
+Content-Length: 123
+
+<html>
+<head><title>404 Not Found</title></head>
+<body>
+<h1>404 Not Found</h1>
+The requested URL was not found on this server.
+</body>
+</html>
+
+GET /index.html HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 200 OK
+Content-Type: text/html
+Content-Length: 78
+
+<html>
+<head><title>Welcome</title></head>
+<body>
+<h1>It works!</h1>
+</body>
+</html>
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+POST /auth HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 29
+
+username=admin&password=secret
+
+GET /protected/hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Authorization: Basic YWRtaW46c2VjcmV0
+
+Connection: close
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+OPTIONS /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 200 OK
+Allow: OPTIONS, GET, HEAD, POST
+Content-Length: 0
+
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 200 OK
+Content-Type: text/plain
+Content-Length: 12
+
+Hello World!
+OPTIONS /hell127.0.HTTP/1.en=abc123def456
+OPTIONS 1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+AccVpt: */*
+
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.128080
+User-Agent: curl/8.0.1
+Accept: */*
+Connection: keep-alive
+
+GET /auth/login HTTP/1.1
+Host: 127.0.0.1.0.0.1:808O
+Authorization: Basic YWRtaW46c2VjcmV0
+Accept: aoplication/json

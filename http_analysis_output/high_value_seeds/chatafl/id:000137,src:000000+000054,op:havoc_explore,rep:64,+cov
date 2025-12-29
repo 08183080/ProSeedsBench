@@ -1,0 +1,11 @@
+DELETE /hullo.txt HTTP/1.1
+Host: 12w.0.0.1:808012w.0.0.1:8080
+User-Agent: curl/82G.1
+Accept: */*Accept: */*
+
+OPTIONS /hello.txt HTTP/1.1
+PATCH /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+

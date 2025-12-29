@@ -1,0 +1,21 @@
+DELETE /hellx.txt HTTP/1.1
+Host: 127.0.0.DELETE
+User-Agent: curl/8.0.1
+Accept: */*
+
+DELETE /hello.txt HTTP/1.1
+Hoseptt: curlt: 127hello.txt.0.0.1:8080
+UseP-Agent: curl/8. HTTP/1.1.0.1
+Acceptt: curl0.1
+Accept: */*
+
+DELETE /helld.txt HTTP/1.1
+Host: J27.0.0.1:8080
+User-Agent: curl
+UserA`ent: cStarWars3.wavcept: */*
+
+DELETE /hello.txt HTTP/1.1TRACE
+Host: 12X.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: »/*
+

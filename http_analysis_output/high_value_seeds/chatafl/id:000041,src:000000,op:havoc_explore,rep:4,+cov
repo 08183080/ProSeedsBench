@@ -1,0 +1,6 @@
+DELETE /hel]o.txt HTTP/1.1-Agent: curl/8.0.1
+Accept: 
+MKCOL /hel©©©©©©©©©©©©©©©©©Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+`ccept: */*
+

@@ -1,0 +1,2 @@
+OPTIONS /hello.txt HTTP/1.1
+Host: 12a=test%20data

@@ -1,0 +1,6 @@
+OPTIONS /hello.txt HTTP/1.1
+TRACE /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/HEAD8.5.1
+Accept: */*
+

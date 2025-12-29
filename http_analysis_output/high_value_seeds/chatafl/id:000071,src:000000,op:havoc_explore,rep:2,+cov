@@ -1,0 +1,5 @@
+DELETE /hello.txtst: 127.0.0.1:8080hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: Xurl/8.0.1
+Accept: */*
+

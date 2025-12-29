@@ -1,0 +1,19 @@
+GET /hello.txt HTTP/1.1
+DELETE /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+DELETE /hello.txt HTTP/1.1
+MKCOL /hello.txt HT@P/1.1
+Host: 127.0.0.1:8080
+user-Agen8.0.1
+Act HTTP/1.1
+Host: 127.0._ept: */*
+
+DELETE /hello.txt HTTP/1.1
+MKCOL /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+Usep-Agent: curl/8.0.1
+Accept: */*
+

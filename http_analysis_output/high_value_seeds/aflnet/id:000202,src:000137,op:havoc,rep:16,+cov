@@ -1,0 +1,29 @@
+DELETE /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: »/*
+
+OPTIONS /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+ HTTP/1ent: curl/8.0.1
+Accept: */*
+YYYELETE /hePUTllm.txlo.txt HTTP/1.t HTTP/1.1
+Host: TRA1:8080
+user-Agen|: curl: */*
+2
+OPvIONS /heqlo.txt HTTP/1.0
+User-Agent  curl/8.0.1
+Accept: */*
+
+OPTIONS /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+ HTTP/1ent: curl/8.0.1
+Accept: */*
+YYYELETE /hePUTllm.txlo.txt HTTP/1.t HTTP/1.1
+Host: TRA1:8080
+user-Agen|: curl: */*
+2
+OPvIONS /heqlo.txt HTTP/1.0
+User-Agent  curl/8.0.1
+Accept: */*
+

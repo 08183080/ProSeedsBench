@@ -1,0 +1,26 @@
+OPTIONS /hello.txt HTTP/1.1
+UNLOCK /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+OPTIONS /hello.txt HTTP/1.1
+DELETE /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+OPTIONS /o.tøt HTTP/1.1
+Host¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢: 1:7.0.0.1:8080
+#UsTRACEermAgent: curl/8.#.1User-Agent: curl/8.0.1?e
+8ON5ECT8ON5ECTŽDELETE /hello.txt HT€P/1.1
+MKCOL /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-AgenT:cept: */*
+
+OPTIONS /hello.txt HTTP/1.1
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+

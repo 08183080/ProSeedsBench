@@ -1,0 +1,32 @@
+OPTIONS /hello.txt HjTP/1.en=abc123def456
+OPTIONS 1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.128080
+User-Agent: curl/8.0.1
+Accept: */*
+Connection: keep-alive
+
+GET /auth/login HTTP/1.1
+Host: 127.0.0.1.0.0.1:808O
+Authorization: Basic YWRtaW46c2VjcmV0
+Accept: aoplication/json
+OPTIONS /hello.txt HTTP/1.en=abc123def456
+OPTIONS 1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.128080
+User-Agent: curl/8.0.1
+Accept: */*
+Connection: keep-alive
+
+GET /auth/login HTTP/1.1
+Host: 127.0.0.1.0.0.1:808O
+Authorization: Basic YWRtaW46c2VjcmV0
+Accept: aoplication/json

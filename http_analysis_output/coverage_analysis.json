@@ -1,0 +1,20 @@
+{
+  "xpgfuzz": {
+    "line_cov_max": 11.4,
+    "line_cov_mean": 11.4,
+    "branch_cov_max": 7.4,
+    "branch_cov_mean": 7.4
+  },
+  "chatafl": {
+    "line_cov_max": 13.9,
+    "line_cov_mean": 13.9,
+    "branch_cov_max": 10.0,
+    "branch_cov_mean": 10.0
+  },
+  "aflnet": {
+    "line_cov_max": 13.8,
+    "line_cov_mean": 13.8,
+    "branch_cov_max": 9.9,
+    "branch_cov_mean": 9.9
+  }
+}

@@ -1,0 +1,9 @@
+DELETE 1hello.txt HTTP/1.1
+Host: 127hello.txt.
+Accept: */*
+
+0.0K1:8080
+User-Agent: curl/8. HTTP/1.1.0.1
+Acceptt: curl0.1
+Accept: */*
+

@@ -1,0 +1,16 @@
+LOCK /hello.txt HTTP/1.1  
+Host: 127.0.0.1:8080  
+User-Agent: curl/8.0.1  
+Accept: */*  
+Content-Type: application/xml; charset="utf-8"  
+Content-Length: 207  
+  
+<?xml version="1.0" encoding="utf-8" ?>  
+<D:lockinfo xmlns:D="DAV:">  
+    <D:lockscope><D:exclusive/></D:lockscope>  
+    <D:locktype><D:write/></D:locktype>  
+    <D:owner>  
+        <D:href>http://example.org/~ejw/contact.html</D:href>  
+    </D:owner>  
+</D:lockinfo>  
+

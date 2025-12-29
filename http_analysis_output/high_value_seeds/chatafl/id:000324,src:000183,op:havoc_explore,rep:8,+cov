@@ -1,0 +1,15 @@
+DELETE /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+GE1 /hQll{.txt HTTP/1.1
+Host: C
+User-Agent: curl/8.0.1
+Accept:ÿ€/*
+
+GE1 /hQllo.txt HTTP/1.10
+Host: 6
+UsJr-Agent: curl/8.0.1
+Accept:ÿ€/*
+

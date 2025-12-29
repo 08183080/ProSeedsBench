@@ -1,0 +1,17 @@
+ÁGET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+POST /auth HTTP/1.1
+Host: 127.0.0.1:8080
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 29
+
+username=admin&password=secret
+
+GET /protected/hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+Authorization: Basic YWRtaW46c2VjcmV0
+User-Agent: curl/8.0.1
+Accept: */*

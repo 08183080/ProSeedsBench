@@ -1,0 +1,8 @@
+DELETE /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: ª/*
+
+DELETE /hello.txt(HNÄOPTIONSHoåt: 127.0.0.1:8080èUser-Agent: curl/8.0.1
+Accept:*/*
+

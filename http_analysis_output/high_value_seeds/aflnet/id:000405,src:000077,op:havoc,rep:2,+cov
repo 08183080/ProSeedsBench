@@ -1,0 +1,5 @@
+DELETE /hellx.txt HTTP/1.1
+Host: 127.0.0.DELETE
+User-Agent: curl/8.0.1
+Accept: */*
+

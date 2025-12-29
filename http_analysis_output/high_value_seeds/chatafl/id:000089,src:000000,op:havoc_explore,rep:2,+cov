@@ -1,0 +1,6 @@
+DELETE /hello.txt HTTP/hello.txt1.1
+MKCOL /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+Usmr-Agent: curl/8.0.1
+Accept: */*
+

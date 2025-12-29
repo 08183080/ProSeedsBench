@@ -1,0 +1,13 @@
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+DELETE /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: DELETE /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl
+DELETE /hello.txtt: curl
+curl
+DELETE /hello.txtt: curl

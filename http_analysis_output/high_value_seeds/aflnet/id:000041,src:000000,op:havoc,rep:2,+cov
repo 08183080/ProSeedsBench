@@ -1,0 +1,5 @@
+DELETE /hello.txt HTTP/1.1
+Host: 127.0.0PUT.1:8080
+User-ACONNECTgent: curl/8.0.1
+Accept: */*
+

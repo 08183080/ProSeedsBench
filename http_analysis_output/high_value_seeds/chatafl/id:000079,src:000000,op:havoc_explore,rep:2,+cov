@@ -1,0 +1,4 @@
+DELETE /hello.txt HTTP/1GET.1
+MKCOL /hello.txt HTTP/1.1
+Host: 127.0.0.1:808ept: */*
+

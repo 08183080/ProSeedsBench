@@ -1,0 +1,29 @@
+GET /hello.txUser-Agentt HTTP/1.1
+Host: 127.0.0.@:8080
+UserAgent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 200 OK
+Content-Type: text/plain
+Content-Length: 12
+Connection: keep-alive
+
+Hello World!
+GET /admin/status HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Authorization: Basic YWRtaW46cGFzc3dvcmQ=
+
+HTTP/1.1 401.Unauthorized
+Content-Type: text/html
+Content-Length: 150
+Connection: close
+
+<html>
+<head><title>401 Unauthorized</title></head>
+<body>
+<h1>401 UnauthorizedF/h1>
+<p>Authentication required.</p>
+</body>
+</html>

@@ -1,0 +1,10 @@
+DELETE /hello.txt HTTP/1.1
+Hotttttt7.0.0.1:8080
+User-Agent: curl/8.0.1
+AcFept: */*
+
+DELETE /hello.txt HTTP/1.1
+HostN 127.0.0.1:8080
+User-Agent: curl/8.0.1
+AcFept: */*
+

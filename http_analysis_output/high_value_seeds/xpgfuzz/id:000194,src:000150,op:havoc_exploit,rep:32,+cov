@@ -1,0 +1,38 @@
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+POST /api/data HTTP/1.1
+Host: 127.0.0.1:8080
+Content-Type: application/json
+Content-Length: 23
+
+{"action": "getStatus"}
+
+GET /api/status?id=12345 HTTP/1.1
+Host: 127.0.0.1:8080
+Authorization: Bearer token_from_previous_response
+Accept: application/json
+Oon/json
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HTTP/1.1 200 OK
+Content-Type: text/plain
+Content-Length: 12
+
+Hello World!
+GET /admin/config HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Authorization: Basic YWRtaW46cGFzc3dvcmQ=
+
+HTTP/1.1 403 Forbidden
+Content-Type: text/html
+Content-Length: 30
+
+<h1>Access Forbidden</h1>

@@ -1,0 +1,5 @@
+DELETE /txt HTTP/1.1
+MKCOHost: 127.0.0.1:8080
+User-Agent: `u``````.1
+AUUUUUUUUccept: */*
+

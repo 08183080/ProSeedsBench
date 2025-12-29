@@ -1,0 +1,25 @@
+OPTIONS /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Rgent: curl/8.0.1
+A\cept: */*
+
+DELETE /hello.txt HTTP/1.1
+ost: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Acceptt: curl/
+OPTIONS /hello.tt HTTP/1.1
+Host: 127.0.0.1:8080.txt HTTP/1.1
+Host
+User-Agent: curp/8.0.1
+Accept: */*
+
+OPTIONS /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Rgent: curl/8.0.1
+Accept: */*
+
+DELETE /hello.txt HTFP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+AcceptZ */*
+

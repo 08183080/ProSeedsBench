@@ -1,0 +1,6 @@
+OPTIONS /hello.txt HTTP/1.1
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:080d
+User-Agent: curl/8.0.1
+Accep:::::::
+S

@@ -1,0 +1,5 @@
+OPTIONS *hello.txt HTTP/1.1
+TRACE /hello.txt HTTP/1.1
+Hos: curl/8.0.1
+Accept: */*
+

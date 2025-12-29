@@ -1,0 +1,2368 @@
+文件,函数名,函数签名,起始行,总行数,已执行行数,行覆盖率(%)
+lighttpd1-gcov/src/http_kv.c,http_version_buf,http_version_buf (http_version_t i),1,51,0,0.00
+lighttpd1-gcov/src/http_kv.c,http_method_buf,http_method_buf (http_method_t i),146,51,13,25.49
+lighttpd1-gcov/src/http_kv.c,keyvalue_from_key,"keyvalue_from_key (const keyvalue *kv, const int k)",155,51,16,31.37
+lighttpd1-gcov/src/http_kv.c,http_method_key_get,"http_method_key_get (const char *s, const size_t slen)",166,41,15,36.59
+lighttpd1-gcov/src/http_kv.c,http_status_append,"http_status_append (buffer * const b, const int status)",175,32,12,37.50
+lighttpd1-gcov/src/http-header-glue.c,http_response_delay,http_response_delay (connection * const con),1,51,0,0.00
+lighttpd1-gcov/src/http-header-glue.c,http_response_omit_header,"http_response_omit_header (request_st * const r, const data_string * const ds)",148,51,6,11.76
+lighttpd1-gcov/src/http-header-glue.c,http_response_send_1xx,http_response_send_1xx (request_st * const r),159,51,7,13.73
+lighttpd1-gcov/src/http-header-glue.c,http_response_check_1xx,"http_response_check_1xx (request_st * const r, buffer * const restrict b, uint32_t hlen, uint32_t dlen)",1091,51,0,0.00
+lighttpd1-gcov/src/gw_backend.c,gw_hash,"gw_hash(const char *str, const uint32_t len, uint32_t hash)",1,51,0,0.00
+lighttpd1-gcov/src/ck.h,__attribute_nonnull__,__attribute_nonnull__(),1,51,2,3.92
+lighttpd1-gcov/src/ck.h,__attribute_nonnull__,__attribute_nonnull__(),59,51,0,0.00
+lighttpd1-gcov/src/ck.h,__attribute_nonnull__,__attribute_nonnull__(),65,51,0,0.00
+lighttpd1-gcov/src/ck.h,__attribute_nonnull__,__attribute_nonnull__(),85,34,0,0.00
+lighttpd1-gcov/src/ck.h,__attribute_nonnull__,__attribute_nonnull__(),93,26,0,0.00
+lighttpd1-gcov/src/ck.h,__attribute_nonnull__,__attribute_nonnull__(),99,20,0,0.00
+lighttpd1-gcov/src/mod_auth.c,http_auth_cache_entry_init,"http_auth_cache_entry_init (const struct http_auth_require_t * const require, const int dalgo, const char *k, const uint32_t klen, const char *username, const uint32_t ulen, const char *pw, const uint32_t pwlen)",1,51,0,0.00
+lighttpd1-gcov/src/mod_auth.c,http_auth_cache_entry_free,http_auth_cache_entry_free (void *data),60,51,0,0.00
+lighttpd1-gcov/src/mod_auth.c,http_auth_cache_free,http_auth_cache_free (http_auth_cache *ac),88,51,0,0.00
+lighttpd1-gcov/src/mod_auth.c,http_auth_cache_init,http_auth_cache_init (const array *opts),96,51,0,0.00
+lighttpd1-gcov/src/mod_auth.c,http_auth_cache_hash,"http_auth_cache_hash (const struct http_auth_require_t * const require, const char *username, const uint32_t ulen)",107,51,0,0.00
+lighttpd1-gcov/src/mod_auth.c,http_auth_cache_query,"http_auth_cache_query (splay_tree ** const sptree, const int ndx)",122,51,0,0.00
+lighttpd1-gcov/src/mod_auth.c,mod_auth_tag_old_entries,"mod_auth_tag_old_entries (splay_tree * const t, int * const keys, int * const ndx, const time_t max_age, const unix_time64_t cur_ts)",132,51,0,0.00
+lighttpd1-gcov/src/mod_auth.c,mod_auth_periodic_cleanup,"mod_auth_periodic_cleanup(splay_tree **sptree_ptr, const time_t max_age, const unix_time64_t cur_ts)",154,51,0,0.00
+lighttpd1-gcov/src/mod_auth.c,TRIGGER_FUNC,TRIGGER_FUNC(mod_auth_periodic),170,51,0,0.00
+lighttpd1-gcov/src/mod_auth.c,mod_auth_send_400_bad_request,mod_auth_send_400_bad_request (request_st * const r),191,51,0,0.00
+lighttpd1-gcov/src/mod_auth.c,mod_auth_send_401_unauthorized_basic,"mod_auth_send_401_unauthorized_basic (request_st * const r, const buffer * const realm)",739,51,0,0.00
+lighttpd1-gcov/src/mod_auth.c,mod_auth_basic_misconfigured,"mod_auth_basic_misconfigured (request_st * const r, const struct http_auth_backend_t * const backend)",751,51,0,0.00
+lighttpd1-gcov/src/mod_auth.c,mod_auth_check_basic,"mod_auth_check_basic(request_st * const r, void *p_d, const struct http_auth_require_t * const require, const struct http_auth_backend_t * const backend)",767,51,0,0.00
+lighttpd1-gcov/src/mod_auth.c,mod_auth_digest_mutate,"mod_auth_digest_mutate (http_auth_info_t * const ai, const http_auth_digest_params_t * const dp, const buffer * const method)",784,51,0,0.00
+lighttpd1-gcov/src/mod_auth.c,mod_auth_append_nonce,"mod_auth_append_nonce (buffer *b, unix_time64_t cur_ts, const struct http_auth_require_t *require, int dalgo, int *rndptr)",902,51,0,0.00
+lighttpd1-gcov/src/mod_auth.c,mod_auth_digest_www_authenticate,"mod_auth_digest_www_authenticate (buffer *b, unix_time64_t cur_ts, const struct http_auth_require_t *require, int nonce_stale)",993,51,0,0.00
+lighttpd1-gcov/src/mod_auth.c,mod_auth_send_401_unauthorized_digest,"mod_auth_send_401_unauthorized_digest(request_st * const r, const struct http_auth_require_t * const require, int nonce_stale)",1057,51,0,0.00
+lighttpd1-gcov/src/mod_auth.c,mod_auth_digest_authentication_info,"mod_auth_digest_authentication_info (buffer *b, unix_time64_t cur_ts, const struct http_auth_require_t *require, int dalgo)",1112,51,0,0.00
+lighttpd1-gcov/src/mod_auth.c,mod_auth_digest_get,"mod_auth_digest_get (request_st * const r, void *p_d, const struct http_auth_require_t * const require, const struct http_auth_backend_t * const backend, http_auth_info_t * const ai)",1125,51,0,0.00
+lighttpd1-gcov/src/mod_auth.c,mod_auth_digest_misconfigured,"mod_auth_digest_misconfigured (request_st * const r, const struct http_auth_backend_t * const backend)",1135,51,0,0.00
+lighttpd1-gcov/src/mod_auth.c,mod_auth_digest_parse_authorization,"mod_auth_digest_parse_authorization (http_auth_digest_params_t * const dp, const char *c)",1210,51,0,0.00
+lighttpd1-gcov/src/mod_auth.c,mod_auth_digest_validate_userstar,"mod_auth_digest_validate_userstar (request_st * const r, http_auth_digest_params_t * const dp, http_auth_info_t * const ai)",1227,51,0,0.00
+lighttpd1-gcov/src/mod_auth.c,mod_auth_digest_validate_params,"mod_auth_digest_validate_params (request_st * const r, const struct http_auth_require_t * const require, http_auth_digest_params_t * const dp, http_auth_info_t * const ai)",1297,51,0,0.00
+lighttpd1-gcov/src/mod_auth.c,mod_auth_digest_validate_nonce,"mod_auth_digest_validate_nonce (request_st * const r, const struct http_auth_require_t * const require, http_auth_digest_params_t * const dp, http_auth_info_t * const ai)",1362,51,0,0.00
+lighttpd1-gcov/src/mod_auth.c,mod_auth_check_digest,"mod_auth_check_digest (request_st * const r, void *p_d, const struct http_auth_require_t * const require, const struct http_auth_backend_t * const backend)",1446,51,0,0.00
+lighttpd1-gcov/src/connections.c,connection_handle_request_start_state,"connection_handle_request_start_state (request_st * const r, connection * const con)",1,51,4,7.84
+lighttpd1-gcov/src/connections.c,connection_write_throttled,"connection_write_throttled (const connection * const con, off_t max_bytes)",172,51,14,27.45
+lighttpd1-gcov/src/connections.c,connection_write_throttle,"connection_write_throttle (connection * const con, off_t max_bytes)",231,51,13,25.49
+lighttpd1-gcov/src/connections.c,connection_write_chunkqueue,"connection_write_chunkqueue (connection * const con, chunkqueue * const restrict cq, off_t max_bytes)",256,51,13,25.49
+lighttpd1-gcov/src/connections.c,connection_transition_h2,"connection_transition_h2 (request_st * const h2r, connection * const con)",266,51,13,25.49
+lighttpd1-gcov/src/connections.c,__attribute_nonnull__,__attribute_nonnull__(),464,51,12,23.53
+lighttpd1-gcov/src/connections.c,connection_log_state,"connection_log_state (const request_st * const r, const char * const tag)",650,51,15,29.41
+lighttpd1-gcov/src/connections.c,connection_state_machine_loop,"connection_state_machine_loop (request_st * const r, connection * const con)",652,51,15,29.41
+lighttpd1-gcov/src/connections.c,connection_revents_err,"connection_revents_err (request_st * const r, connection * const con)",663,51,16,31.37
+lighttpd1-gcov/src/connections.c,connection_set_fdevent_interest,"connection_set_fdevent_interest (request_st * const r, connection * const con)",744,51,0,0.00
+lighttpd1-gcov/src/connections.c,connection_state_machine,connection_state_machine (connection * const con),799,51,18,35.29
+lighttpd1-gcov/src/connections.c,connection_check_timeout,"connection_check_timeout (connection * const con, const unix_time64_t cur_ts)",862,51,17,33.33
+lighttpd1-gcov/src/connections.c,connection_periodic_maint,"connection_periodic_maint (server * const srv, const unix_time64_t cur_ts)",874,51,10,19.61
+lighttpd1-gcov/src/connections.c,connection_graceful_shutdown_maint,connection_graceful_shutdown_maint (server * const srv),906,51,4,7.84
+lighttpd1-gcov/src/network.c,network_accept_tcp_nagle_disable,network_accept_tcp_nagle_disable (const int fd),1,51,9,17.65
+lighttpd1-gcov/src/network.c,network_abstract_socket_enc,"network_abstract_socket_enc (buffer * const restrict abstract,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>137</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                             unsigned char * const restrict sun_path,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>138</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                             const uint32_t len)",34,51,22,43.14
+lighttpd1-gcov/src/network.c,network_abstract_socket_dec,"network_abstract_socket_dec (const buffer * const restrict abstract,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>164</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                             char * const restrict sun_path,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>165</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                             const uint32_t plen)",139,51,0,0.00
+lighttpd1-gcov/src/network.c,network_abstract_socket_parse,"network_abstract_socket_parse (const buffer *abstract,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>190</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                               sock_addr *addr, socklen_t *addr_len,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>191</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                               log_error_st *errh)",166,51,1,1.96
+lighttpd1-gcov/src/mod_extforward.c,CONNECTION_FUNC,CONNECTION_FUNC(mod_extforward_handle_con_close),1,51,0,0.00
+lighttpd1-gcov/src/mod_extforward.c,CONNECTION_FUNC,CONNECTION_FUNC(mod_extforward_handle_con_accept),1148,51,0,0.00
+lighttpd1-gcov/src/ls-hpack/lshpack.c,lshpack_arr_push,"lshpack_arr_push (struct lshpack_arr *arr, uintptr_t val)",1,51,0,0.00
+lighttpd1-gcov/src/ls-hpack/lshpack.c,henc_hist_size,henc_hist_size (unsigned max_capacity),209,51,0,0.00
+lighttpd1-gcov/src/ls-hpack/lshpack.c,lshpack_enc_init,lshpack_enc_init (struct lshpack_enc *enc),286,51,0,0.00
+lighttpd1-gcov/src/ls-hpack/lshpack.c,lshpack_enc_cleanup,lshpack_enc_cleanup (struct lshpack_enc *enc),293,51,0,0.00
+lighttpd1-gcov/src/ls-hpack/lshpack.c,henc_use_hist,henc_use_hist (struct lshpack_enc *enc),327,51,0,0.00
+lighttpd1-gcov/src/ls-hpack/lshpack.c,lshpack_enc_use_hist,"lshpack_enc_use_hist (struct lshpack_enc *enc, int on)",341,51,0,0.00
+lighttpd1-gcov/src/ls-hpack/lshpack.c,lshpack_enc_hist_used,lshpack_enc_hist_used (const struct lshpack_enc *enc),363,51,0,0.00
+lighttpd1-gcov/src/ls-hpack/lshpack.c,lshpack_enc_get_static_nameval,lshpack_enc_get_static_nameval (const struct lsxpack_header *input),381,51,0,0.00
+lighttpd1-gcov/src/ls-hpack/lshpack.c,lshpack_enc_get_static_name,lshpack_enc_get_static_name (const struct lsxpack_header *input),430,51,0,0.00
+lighttpd1-gcov/src/ls-hpack/lshpack.c,update_hash,update_hash (struct lsxpack_header *input),456,51,0,0.00
+lighttpd1-gcov/src/ls-hpack/lshpack.c,lshpack_enc_get_stx_tab_id,lshpack_enc_get_stx_tab_id (struct lsxpack_header *input),478,51,0,0.00
+lighttpd1-gcov/src/ls-hpack/lshpack.c,henc_calc_table_id,"henc_calc_table_id (const struct lshpack_enc *enc,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>538</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                                    const struct lshpack_enc_table_entry *entry)",499,51,0,0.00
+lighttpd1-gcov/src/ls-hpack/lshpack.c,henc_find_table_id,"henc_find_table_id (struct lshpack_enc *enc, lsxpack_header_t *input,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>548</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                    int *val_matched)",539,51,0,0.00
+lighttpd1-gcov/src/ls-hpack/lshpack.c,lshpack_enc_enc_int,"lshpack_enc_enc_int (unsigned char *dst, unsigned char *const end,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>654</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                                        uint32_t value, uint8_t prefix_bits)",549,51,0,0.00
+lighttpd1-gcov/src/ls-hpack/lshpack.c,lshpack_enc_huff_encode,"lshpack_enc_huff_encode (const unsigned char *src,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>700</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>    const unsigned char *const src_end, unsigned char *const dst, int dst_len)",655,51,0,0.00
+lighttpd1-gcov/src/ls-hpack/lshpack.c,lshpack_enc_enc_str,"lshpack_enc_enc_str (unsigned char *const dst, size_t dst_len,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>835</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                        const unsigned char *str, unsigned str_len)",701,51,0,0.00
+lighttpd1-gcov/src/ls-hpack/lshpack.c,henc_drop_oldest_entry,henc_drop_oldest_entry (struct lshpack_enc *enc),836,51,0,0.00
+lighttpd1-gcov/src/ls-hpack/lshpack.c,henc_remove_overflow_entries,henc_remove_overflow_entries (struct lshpack_enc *enc),909,51,0,0.00
+lighttpd1-gcov/src/ls-hpack/lshpack.c,henc_grow_tables,henc_grow_tables (struct lshpack_enc *enc),932,51,0,0.00
+lighttpd1-gcov/src/ls-hpack/lshpack.c,lshpack_enc_push_entry,"lshpack_enc_push_entry (struct lshpack_enc *enc,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>990</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                        const struct lsxpack_header *input)",940,51,0,0.00
+lighttpd1-gcov/src/ls-hpack/lshpack.c,henc_resize_history,henc_resize_history (struct lshpack_enc *enc),991,51,0,0.00
+lighttpd1-gcov/src/ls-hpack/lshpack.c,henc_hist_add,"henc_hist_add (struct lshpack_enc *enc, uint32_t nameval_hash)",1043,51,0,0.00
+lighttpd1-gcov/src/ls-hpack/lshpack.c,lshpack_enc_encode,"lshpack_enc_encode (struct lshpack_enc *enc, unsigned char *dst,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>1111</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>        unsigned char *dst_end, lsxpack_header_t *input)",1089,51,0,0.00
+lighttpd1-gcov/src/ls-hpack/lshpack.c,lshpack_enc_set_max_capacity,"lshpack_enc_set_max_capacity (struct lshpack_enc *enc, unsigned max_capacity)",1112,51,0,0.00
+lighttpd1-gcov/src/ls-hpack/lshpack.c,lshpack_enc_iter_init,"lshpack_enc_iter_init (struct lshpack_enc *enc, void **iter)",1203,51,0,0.00
+lighttpd1-gcov/src/ls-hpack/lshpack.c,lshpack_enc_iter_next,"lshpack_enc_iter_next (struct lshpack_enc *enc, void **iter,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>1221</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                                        struct enc_dyn_table_entry *retval)",1213,51,0,0.00
+lighttpd1-gcov/src/ls-hpack/lshpack.c,lshpack_dec_init,lshpack_dec_init (struct lshpack_dec *dec),1222,51,0,0.00
+lighttpd1-gcov/src/ls-hpack/lshpack.c,lshpack_dec_cleanup,lshpack_dec_cleanup (struct lshpack_dec *dec),1277,51,0,0.00
+lighttpd1-gcov/src/ls-hpack/lshpack.c,lshpack_dec_dec_int,"lshpack_dec_dec_int (const unsigned char **src_p, const unsigned char *src_end,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>1309</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                                        unsigned prefix_bits, uint32_t *value_p)",1287,51,0,0.00
+lighttpd1-gcov/src/ls-hpack/lshpack.c,hdec_drop_oldest_entry,hdec_drop_oldest_entry (struct lshpack_dec *dec),1310,51,0,0.00
+lighttpd1-gcov/src/ls-hpack/lshpack.c,hdec_remove_overflow_entries,hdec_remove_overflow_entries (struct lshpack_dec *dec),1358,51,0,0.00
+lighttpd1-gcov/src/ls-hpack/lshpack.c,hdec_update_max_capacity,"hdec_update_max_capacity (struct lshpack_dec *dec, uint32_t new_capacity)",1370,51,0,0.00
+lighttpd1-gcov/src/ls-hpack/lshpack.c,lshpack_dec_set_max_capacity,"lshpack_dec_set_max_capacity (struct lshpack_dec *dec, unsigned max_capacity)",1378,51,0,0.00
+lighttpd1-gcov/src/ls-hpack/lshpack.c,hdec_huff_dec4bits,"hdec_huff_dec4bits (uint8_t src_4bits, unsigned char *dst,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>1394</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                                        struct decode_status *status)",1386,51,0,0.00
+lighttpd1-gcov/src/ls-hpack/lshpack.c,lshpack_dec_huff_decode_full,"lshpack_dec_huff_decode_full (const unsigned char *src, int src_len,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>1419</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                                            unsigned char *dst, int dst_len)",1395,51,0,0.00
+lighttpd1-gcov/src/ls-hpack/lshpack.c,hdec_dec_str,"hdec_dec_str (unsigned char *dst, size_t dst_len, const unsigned char **src,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>1460</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>        const unsigned char *src_end)",1420,51,0,0.00
+lighttpd1-gcov/src/ls-hpack/lshpack.c,hdec_get_table_entry,"hdec_get_table_entry (struct lshpack_dec *dec, uint32_t index)",1461,51,0,0.00
+lighttpd1-gcov/src/ls-hpack/lshpack.c,lshpack_dec_push_entry,"lshpack_dec_push_entry (struct lshpack_dec *dec,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>1526</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                                        const struct lsxpack_header *xhdr)",1508,51,0,0.00
+lighttpd1-gcov/src/ls-hpack/lshpack.c,lshpack_dec_copy_value,"lshpack_dec_copy_value (lsxpack_header_t *output, char *dest, const char *val,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>1565</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                       unsigned val_len)",1527,51,0,0.00
+lighttpd1-gcov/src/ls-hpack/lshpack.c,lshpack_dec_copy_name,"lshpack_dec_copy_name (lsxpack_header_t *output, char **dest, const char *name,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>1586</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                       unsigned name_len)",1566,51,0,0.00
+lighttpd1-gcov/src/ls-hpack/lshpack.c,lshpack_dec_decode,"lshpack_dec_decode (struct lshpack_dec *dec,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>1613</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>    const unsigned char **src, const unsigned char *src_end,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>1614</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>    struct lsxpack_header *output)",1587,51,0,0.00
+lighttpd1-gcov/src/ls-hpack/lshpack.c,lshpack_dec_huff_decode,"lshpack_dec_huff_decode (const unsigned char *src, int src_len,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>1869</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                                            unsigned char *dst, int dst_len)",1615,51,0,0.00
+lighttpd1-gcov/src/mod_expire.c,mod_expire_set_header,"mod_expire_set_header (request_st * const r, const time_t * const off)",1,51,0,0.00
+lighttpd1-gcov/src/ls-hpack/lsxpack_header.h,lsxpack_header_set_idx,"lsxpack_header_set_idx(lsxpack_header_t *hdr, int hpack_idx,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>70</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                       const char *val, size_t val_len)",1,51,0,0.00
+lighttpd1-gcov/src/ls-hpack/lsxpack_header.h,lsxpack_header_set_qpack_idx,"lsxpack_header_set_qpack_idx(lsxpack_header_t *hdr, int qpack_idx,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>83</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                       const char *val, size_t val_len)",71,51,0,0.00
+lighttpd1-gcov/src/ls-hpack/lsxpack_header.h,lsxpack_header_set_offset,"lsxpack_header_set_offset(lsxpack_header_t *hdr, const char *buf,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>97</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                          size_t name_offset, size_t name_len,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>98</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                          size_t val_len)",84,51,0,0.00
+lighttpd1-gcov/src/ls-hpack/lsxpack_header.h,lsxpack_header_set_offset2,"lsxpack_header_set_offset2(lsxpack_header_t *hdr, const char *buf,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>114</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                           size_t name_offset, size_t name_len,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>115</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                           size_t val_offset, size_t val_len)",99,51,0,0.00
+lighttpd1-gcov/src/ls-hpack/lsxpack_header.h,lsxpack_header_prepare_decode,"lsxpack_header_prepare_decode(lsxpack_header_t *hdr,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>131</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                              char *out, size_t offset, size_t len)",116,51,0,0.00
+lighttpd1-gcov/src/ls-hpack/lsxpack_header.h,lsxpack_header_get_name,lsxpack_header_get_name(const lsxpack_header_t *hdr),132,38,0,0.00
+lighttpd1-gcov/src/ls-hpack/lsxpack_header.h,lsxpack_header_get_value,lsxpack_header_get_value(const lsxpack_header_t *hdr),146,24,0,0.00
+lighttpd1-gcov/src/ls-hpack/lsxpack_header.h,lsxpack_header_get_dec_size,lsxpack_header_get_dec_size(const lsxpack_header_t *hdr),153,17,0,0.00
+lighttpd1-gcov/src/ls-hpack/lsxpack_header.h,lsxpack_header_mark_val_changed,lsxpack_header_mark_val_changed(lsxpack_header_t *hdr),157,13,0,0.00
+lighttpd1-gcov/src/log.c,log_buffer_tstr,log_buffer_tstr (const unix_time64_t t),1,51,0,0.00
+lighttpd1-gcov/src/log.c,__attribute_nonnull__,__attribute_nonnull__(),124,51,14,27.45
+lighttpd1-gcov/src/log.c,log_buffer_timestamp,log_buffer_timestamp (buffer * const restrict b),139,51,15,29.41
+lighttpd1-gcov/src/log.c,__attribute_nonnull__,__attribute_nonnull__(),141,51,14,27.45
+lighttpd1-gcov/src/log.c,log_buffer_prefix,"log_buffer_prefix (buffer * const restrict b,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>174</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                   const char * const restrict filename,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>175</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                   const unsigned int line)",172,51,15,29.41
+lighttpd1-gcov/src/log.c,log_buffer_append_encoded,"log_buffer_append_encoded (buffer * const b,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>191</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                           const char * const s, const size_t n)",176,51,17,33.33
+lighttpd1-gcov/src/log.c,__attribute_nonnull__,__attribute_nonnull__(),192,51,15,29.41
+lighttpd1-gcov/src/log.c,log_buffer_vsprintf,"log_buffer_vsprintf (buffer * const restrict b,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>206</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                     const char * const restrict fmt, va_list ap)",204,51,20,39.22
+lighttpd1-gcov/src/log.c,__attribute_nonnull__,__attribute_nonnull__(),207,51,21,41.18
+lighttpd1-gcov/src/log.c,log_buffer_prepare,"log_buffer_prepare (const log_error_st * const errh,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>248</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                    const char * const restrict filename,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>249</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                    const unsigned int line)",246,51,13,25.49
+lighttpd1-gcov/src/log.c,__attribute_nonnull__,__attribute_nonnull__(),250,51,12,23.53
+lighttpd1-gcov/src/log.c,log_error_write,"log_error_write (const log_error_st * const errh, buffer * const restrict b)",263,51,6,11.76
+lighttpd1-gcov/src/log.c,log_error_append_winerror,"log_error_append_winerror (buffer * const b, DWORD dwMessageId)",265,51,5,9.80
+lighttpd1-gcov/src/log.c,log_error_append_strerror,"log_error_append_strerror (buffer * const b, const int errnum)",284,51,6,11.76
+lighttpd1-gcov/src/log.c,log_error_va_list_impl,"log_error_va_list_impl (const log_error_st *errh,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>313</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                        const char * const restrict filename,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>314</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                        const unsigned int line,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>315</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                        const char * const restrict fmt, va_list ap,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>316</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                        const int perr)",302,51,12,23.53
+lighttpd1-gcov/src/log.c,log_error,"log_error(log_error_st * const errh,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>348</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>          const char * const filename, const unsigned int line,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>349</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>          const char *fmt, ...)",317,51,14,27.45
+lighttpd1-gcov/src/log.c,log_perror,"log_perror (log_error_st * const errh,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>360</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>            const char * const filename, const unsigned int line,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>361</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>            const char * const fmt, ...)",350,51,4,7.84
+lighttpd1-gcov/src/log.c,log_serror,"log_serror (log_error_st * const errh,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>373</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>            const char * const filename, const unsigned int line,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>374</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>            const char * const fmt, ...)",362,51,0,0.00
+lighttpd1-gcov/src/log.c,log_error_multiline,"log_error_multiline (log_error_st *errh,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>386</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                     const char * const restrict filename,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>387</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                     const unsigned int line,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>388</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                     const char * const restrict multiline,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>389</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                     const size_t len,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>390</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                     const char * const restrict fmt, ...)",375,51,1,1.96
+lighttpd1-gcov/src/log.c,log_set_global_errh,"log_set_global_errh (log_error_st * const errh, const int ts_high_precision)",391,46,5,10.87
+lighttpd1-gcov/src/http_header.c,http_header_parse_hoff,"http_header_parse_hoff (const char *n, const uint32_t clen, unsigned short hoff[8192])",1,51,0,0.00
+lighttpd1-gcov/src/http_range.c,http_range_coalesce,"http_range_coalesce (off_t * const restrict ranges, int n)",1,51,3,5.88
+lighttpd1-gcov/src/http_range.c,http_range_parse_next,"http_range_parse_next (const char * restrict s, const off_t len,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>82</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                       off_t * const restrict ranges)",41,51,0,0.00
+lighttpd1-gcov/src/http_range.c,http_range_parse,"http_range_parse (const char * restrict s, const off_t content_length,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>114</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                  off_t ranges[RMAX*2])",83,51,0,0.00
+lighttpd1-gcov/src/http_range.c,http_range_single,"http_range_single (request_st * const r, const off_t ranges[2])",115,51,0,0.00
+lighttpd1-gcov/src/http_range.c,http_range_multi,"http_range_multi (request_st * const r,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>199</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                  const off_t ranges[RMAX*2], const int n)",153,51,0,0.00
+lighttpd1-gcov/src/http_range.c,http_range_not_satisfiable,"http_range_not_satisfiable (request_st * const r, const off_t content_length)",200,51,0,0.00
+lighttpd1-gcov/src/http_range.c,http_range_process,"http_range_process (request_st * const r, const buffer * const http_range)",277,51,0,0.00
+lighttpd1-gcov/src/http_range.c,http_range_rfc7233,http_range_rfc7233 (request_st * const r),292,51,0,0.00
+lighttpd1-gcov/src/buffer.h,__attribute_nonnull__,__attribute_nonnull__(),1,51,0,0.00
+lighttpd1-gcov/src/buffer.h,__attribute_nonnull__,__attribute_nonnull__(),40,51,0,0.00
+lighttpd1-gcov/src/buffer.h,__attribute_nonnull__,__attribute_nonnull__(),48,51,0,0.00
+lighttpd1-gcov/src/buffer.h,__attribute_nonnull__,__attribute_nonnull__(),58,51,0,0.00
+lighttpd1-gcov/src/buffer.h,__attribute_nonnull__,__attribute_nonnull__(),66,51,0,0.00
+lighttpd1-gcov/src/buffer.h,__attribute_nonnull__,__attribute_nonnull__(),75,51,0,0.00
+lighttpd1-gcov/src/buffer.h,__attribute_nonnull__,__attribute_nonnull__(),83,51,0,0.00
+lighttpd1-gcov/src/buffer.h,__attribute_nonnull__,__attribute_nonnull__(),93,51,0,0.00
+lighttpd1-gcov/src/buffer.h,__attribute_nonnull__,__attribute_nonnull__(),100,51,0,0.00
+lighttpd1-gcov/src/buffer.h,__attribute_nonnull__,__attribute_nonnull__(),120,51,0,0.00
+lighttpd1-gcov/src/buffer.h,__attribute_nonnull__,__attribute_nonnull__(),124,51,0,0.00
+lighttpd1-gcov/src/buffer.h,__attribute_nonnull__,__attribute_nonnull__(),126,51,0,0.00
+lighttpd1-gcov/src/buffer.h,__attribute_nonnull__,__attribute_nonnull__(),134,51,0,0.00
+lighttpd1-gcov/src/buffer.h,__attribute_nonnull__,__attribute_nonnull__(),136,51,0,0.00
+lighttpd1-gcov/src/buffer.h,__attribute_nonnull__,__attribute_nonnull__(),141,51,0,0.00
+lighttpd1-gcov/src/buffer.h,__attribute_nonnull__,__attribute_nonnull__(),143,51,0,0.00
+lighttpd1-gcov/src/buffer.h,__attribute_nonnull__,__attribute_nonnull__(),146,51,0,0.00
+lighttpd1-gcov/src/buffer.h,__attribute_nonnull__,__attribute_nonnull__(),150,51,0,0.00
+lighttpd1-gcov/src/buffer.h,__attribute_nonnull__,__attribute_nonnull__(),154,51,0,0.00
+lighttpd1-gcov/src/buffer.h,__attribute_nonnull__,__attribute_nonnull__(),158,51,0,0.00
+lighttpd1-gcov/src/buffer.h,__attribute_nonnull__,__attribute_nonnull__(),162,51,0,0.00
+lighttpd1-gcov/src/buffer.h,__attribute_nonnull__,__attribute_nonnull__(),166,51,2,3.92
+lighttpd1-gcov/src/buffer.h,__attribute_nonnull__,__attribute_nonnull__(),169,51,2,3.92
+lighttpd1-gcov/src/buffer.h,__attribute_nonnull__,__attribute_nonnull__(),171,51,2,3.92
+lighttpd1-gcov/src/buffer.h,__attribute_nonnull__,__attribute_nonnull__(),184,51,6,11.76
+lighttpd1-gcov/src/buffer.h,__attribute_nonnull__,__attribute_nonnull__(),191,51,6,11.76
+lighttpd1-gcov/src/buffer.h,__attribute_nonnull__,__attribute_nonnull__(),194,51,6,11.76
+lighttpd1-gcov/src/buffer.h,__attribute_nonnull__,__attribute_nonnull__(),198,51,6,11.76
+lighttpd1-gcov/src/buffer.h,__attribute_nonnull__,__attribute_nonnull__(),201,51,6,11.76
+lighttpd1-gcov/src/buffer.h,__attribute_nonnull__,__attribute_nonnull__(),203,51,6,11.76
+lighttpd1-gcov/src/buffer.h,__attribute_nonnull__,__attribute_nonnull__(),249,51,11,21.57
+lighttpd1-gcov/src/buffer.h,__attribute_nonnull__,__attribute_nonnull__(),253,51,12,23.53
+lighttpd1-gcov/src/buffer.h,__attribute_nonnull__,__attribute_nonnull__(),266,51,18,35.29
+lighttpd1-gcov/src/buffer.h,__attribute_nonnull__,__attribute_nonnull__(),273,51,18,35.29
+lighttpd1-gcov/src/buffer.h,__attribute_nonnull__,__attribute_nonnull__(),281,51,17,33.33
+lighttpd1-gcov/src/buffer.h,__attribute_nonnull__,__attribute_nonnull__(),289,51,19,37.25
+lighttpd1-gcov/src/buffer.h,__attribute_nonnull__,__attribute_nonnull__(),296,51,20,39.22
+lighttpd1-gcov/src/buffer.h,__attribute_nonnull__,__attribute_nonnull__(),302,51,17,33.33
+lighttpd1-gcov/src/buffer.h,__attribute_nonnull__,__attribute_nonnull__(),308,51,14,27.45
+lighttpd1-gcov/src/buffer.h,__attribute_nonnull__,__attribute_nonnull__(),315,51,10,19.61
+lighttpd1-gcov/src/buffer.h,__attribute_nonnull__,__attribute_nonnull__(),321,51,10,19.61
+lighttpd1-gcov/src/buffer.h,__attribute_nonnull__,__attribute_nonnull__(),328,51,7,13.73
+lighttpd1-gcov/src/http_date.c,http_date_parse_RFC_850,"http_date_parse_RFC_850 (const char *s, struct tm * const tm)",1,51,0,0.00
+lighttpd1-gcov/src/http_date.c,http_date_parse_asctime,"http_date_parse_asctime (const char * const s, struct tm * const tm)",43,51,0,0.00
+lighttpd1-gcov/src/http_date.c,http_date_parse_IMF_fixdate,"http_date_parse_IMF_fixdate (const char * const s, struct tm * const tm)",127,51,0,0.00
+lighttpd1-gcov/src/http_date.c,http_date_str_to_tm,"http_date_str_to_tm (const char * const s, const uint32_t len,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>238</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                     struct tm * const tm)",181,51,0,0.00
+lighttpd1-gcov/src/http_date.c,http_date_time_to_str,"http_date_time_to_str (char * const s, const size_t sz, const unix_time64_t t)",239,51,5,9.80
+lighttpd1-gcov/src/http_date.c,http_date_if_modified_since,"http_date_if_modified_since (const char * const ifmod, const uint32_t ifmodlen,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>285</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                             const unix_time64_t lmtime)",269,30,4,13.33
+lighttpd1-gcov/src/rand.c,li_arcfour_init_random_key_hashed,li_arcfour_init_random_key_hashed(struct arcfour_ctx *ctx),1,51,0,0.00
+lighttpd1-gcov/src/h2.c,h2_u32,h2_u32 (const uint8_t * const s),1,51,0,0.00
+lighttpd1-gcov/src/h2.c,h2_u31,h2_u31 (const uint8_t * const s),242,51,0,0.00
+lighttpd1-gcov/src/h2.c,h2_u24,h2_u24 (const uint8_t * const s),253,51,0,0.00
+lighttpd1-gcov/src/h2.c,h2_u16,h2_u16 (const uint8_t * const s),261,51,0,0.00
+lighttpd1-gcov/src/h2.c,__attribute_nonnull__,__attribute_nonnull__(),279,51,0,0.00
+lighttpd1-gcov/src/h2.c,h2_get_stream_req,"h2_get_stream_req (const h2con * const h2c, const uint32_t h2id)",287,51,0,0.00
+lighttpd1-gcov/src/h2.c,h2_send_settings_ack,h2_send_settings_ack (connection * const con),290,51,0,0.00
+lighttpd1-gcov/src/h2.c,h2_send_rst_stream_id,"h2_send_rst_stream_id (uint32_t h2id, connection * const con, const request_h2error_t e)",301,51,0,0.00
+lighttpd1-gcov/src/h2.c,h2_send_rst_stream_state,"h2_send_rst_stream_state (request_st * const r, h2con * const h2c)",318,51,0,0.00
+lighttpd1-gcov/src/h2.c,h2_send_rst_stream,"h2_send_rst_stream (request_st * const r, connection * const con, const request_h2error_t e)",342,51,0,0.00
+lighttpd1-gcov/src/h2.c,h2_send_goaway_rst_stream,h2_send_goaway_rst_stream (connection * const con),356,51,0,0.00
+lighttpd1-gcov/src/h2.c,h2_send_goaway,"h2_send_goaway (connection * const con, const request_h2error_t e)",366,51,0,0.00
+lighttpd1-gcov/src/h2.c,h2_send_goaway_e,"h2_send_goaway_e (connection * const con, const request_h2error_t e)",382,51,0,0.00
+lighttpd1-gcov/src/h2.c,h2_send_refused_stream,"h2_send_refused_stream (uint32_t h2id, connection * const con)",426,51,0,0.00
+lighttpd1-gcov/src/h2.c,h2_recv_goaway,"h2_recv_goaway (connection * const con, const uint8_t * const s, uint32_t len)",434,51,0,0.00
+lighttpd1-gcov/src/h2.c,h2_recv_rst_stream,"h2_recv_rst_stream (connection * const con, const uint8_t * const s, const uint32_t len)",480,51,0,0.00
+lighttpd1-gcov/src/h2.c,h2_recv_ping,"h2_recv_ping (connection * const con, uint8_t * const s, const uint32_t len)",516,51,0,0.00
+lighttpd1-gcov/src/h2.c,h2_apply_priority_update,"h2_apply_priority_update (h2con * const h2c, const request_st * const r, const uint32_t rpos)",560,51,0,0.00
+lighttpd1-gcov/src/h2.c,__attribute_nonnull__,__attribute_nonnull__(),599,51,0,0.00
+lighttpd1-gcov/src/h2.c,h2_parse_priority_update,"h2_parse_priority_update (const char * const prio, const uint32_t len)",626,51,0,0.00
+lighttpd1-gcov/src/h2.c,h2_recv_priority_update,"h2_recv_priority_update (connection * const con, const uint8_t * const s, const uint32_t len)",629,51,0,0.00
+lighttpd1-gcov/src/h2.c,h2_recv_priority,"h2_recv_priority (connection * const con, const uint8_t * const s, const uint32_t len)",672,51,0,0.00
+lighttpd1-gcov/src/h2.c,h2_recv_window_update,"h2_recv_window_update (connection * const con, const uint8_t * const s, const uint32_t len)",723,51,0,0.00
+lighttpd1-gcov/src/h2.c,h2_send_window_update,"h2_send_window_update (connection * const con, uint32_t h2id, const uint32_t len)",771,51,0,0.00
+lighttpd1-gcov/src/h2.c,h2_send_window_update_unit,"h2_send_window_update_unit (connection * const con, request_st * const r, const uint32_t len)",825,51,0,0.00
+lighttpd1-gcov/src/h2.c,h2_parse_frame_settings,"h2_parse_frame_settings (connection * const con, const uint8_t *s, uint32_t len)",850,51,0,0.00
+lighttpd1-gcov/src/h2.c,h2_recv_settings,"h2_recv_settings (connection * const con, const uint8_t * const s, const uint32_t len)",861,51,0,0.00
+lighttpd1-gcov/src/h2.c,h2_recv_end_data,"h2_recv_end_data (request_st * const r, connection * const con, const uint32_t alen)",944,51,0,0.00
+lighttpd1-gcov/src/h2.c,h2_recv_data,"h2_recv_data (connection * const con, const uint8_t * const s, const uint32_t len)",975,51,0,0.00
+lighttpd1-gcov/src/h2.c,h2_recv_reqbody,h2_recv_reqbody (request_st * const r),995,51,0,0.00
+lighttpd1-gcov/src/h2.c,h2_frame_cq_compact,"h2_frame_cq_compact (chunkqueue * const cq, uint32_t len)",1201,51,0,0.00
+lighttpd1-gcov/src/h2.c,h2_recv_continuation,"h2_recv_continuation (uint32_t n, uint32_t clen, const off_t cqlen, chunkqueue * const cq, connection * const con)",1232,51,0,0.00
+lighttpd1-gcov/src/h2.c,h2_recv_trailers_r,"h2_recv_trailers_r (connection * const con, h2con * const h2c, const uint32_t id, const uint32_t flags)",1248,51,0,0.00
+lighttpd1-gcov/src/h2.c,h2_parse_headers_frame,"h2_parse_headers_frame (request_st * const restrict r, const unsigned char *psrc, const uint32_t plen, const int trailers)",1383,51,0,0.00
+lighttpd1-gcov/src/h2.c,h2_recv_headers,"h2_recv_headers (connection * const con, uint8_t * const s, uint32_t flen)",1420,51,0,0.00
+lighttpd1-gcov/src/h2.c,h2_parse_frames,h2_parse_frames (connection * const con),1535,51,0,0.00
+lighttpd1-gcov/src/h2.c,h2_want_read,h2_want_read (connection * const con),1741,51,0,0.00
+lighttpd1-gcov/src/h2.c,h2_recv_client_connection_preface,h2_recv_client_connection_preface (connection * const con),1882,51,0,0.00
+lighttpd1-gcov/src/h2.c,h2_read_client_connection_preface,"h2_read_client_connection_preface (struct connection * const con, chunkqueue * const cq, off_t max_bytes)",1921,51,0,0.00
+lighttpd1-gcov/src/h2.c,h2_send_goaway_graceful,h2_send_goaway_graceful (connection * const con),1954,51,0,0.00
+lighttpd1-gcov/src/h2.c,h2_init_con,"h2_init_con (request_st * const restrict h2r, connection * const restrict con)",1981,51,0,0.00
+lighttpd1-gcov/src/h2.c,h2_send_hpack,"h2_send_hpack (request_st * const r, connection * const con, const char *data, uint32_t dlen, const uint32_t flags)",1996,51,0,0.00
+lighttpd1-gcov/src/h2.c,h2_log_response_header_lsx,"h2_log_response_header_lsx(request_st * const r, const lsxpack_header_t * const lsx)",2077,51,0,0.00
+lighttpd1-gcov/src/h2.c,h2_log_response_header,"h2_log_response_header(request_st * const r, const int len, const char * const hdr)",2152,51,0,0.00
+lighttpd1-gcov/src/h2.c,h2_send_headers,"h2_send_headers (request_st * const r, connection * const con)",2163,51,0,0.00
+lighttpd1-gcov/src/h2.c,h2_send_headers_block,"h2_send_headers_block (request_st * const r, connection * const con, const char * const hdrs, const uint32_t hlen, uint32_t flags)",2171,51,0,0.00
+lighttpd1-gcov/src/h2.c,h2_send_1xx_block,"h2_send_1xx_block (request_st * const r, connection * const con, const char * const hdrs, const uint32_t hlen)",2394,51,0,0.00
+lighttpd1-gcov/src/h2.c,h2_send_1xx,"h2_send_1xx (request_st * const r, connection * const con)",2485,51,0,0.00
+lighttpd1-gcov/src/h2.c,h2_send_100_continue,"h2_send_100_continue (request_st * const r, connection * const con)",2492,51,0,0.00
+lighttpd1-gcov/src/h2.c,h2_recv_expect_100,h2_recv_expect_100 (request_st * const r),2516,51,0,0.00
+lighttpd1-gcov/src/h2.c,h2_send_end_stream_trailers,"h2_send_end_stream_trailers (request_st * const r, connection * const con, const buffer * const trailers)",2535,51,0,0.00
+lighttpd1-gcov/src/h2.c,h2_send_cqheaders,"h2_send_cqheaders (request_st * const r, connection * const con)",2560,51,0,0.00
+lighttpd1-gcov/src/h2.c,h2_send_data,"h2_send_data (request_st * const r, connection * const con, const char *data, uint32_t dlen)",2600,51,0,0.00
+lighttpd1-gcov/src/h2.c,h2_send_cqdata,"h2_send_cqdata (request_st * const r, connection * const con, chunkqueue * const cq, uint32_t dlen)",2620,51,0,0.00
+lighttpd1-gcov/src/h2.c,h2_send_end_stream_data,"h2_send_end_stream_data (request_st * const r, connection * const con)",2694,51,0,0.00
+lighttpd1-gcov/src/h2.c,h2_send_end_stream,"h2_send_end_stream (request_st * const r, connection * const con)",2791,51,0,0.00
+lighttpd1-gcov/src/h2.c,h2_init_stream,"h2_init_stream (request_st * const h2r, connection * const con)",2824,51,0,0.00
+lighttpd1-gcov/src/h2.c,h2_release_stream,"h2_release_stream (request_st * const r, connection * const con)",2852,51,0,0.00
+lighttpd1-gcov/src/h2.c,h2_retire_stream,"h2_retire_stream (request_st *r, connection * const con)",2891,51,0,0.00
+lighttpd1-gcov/src/h2.c,h2_retire_con,"h2_retire_con (request_st * const h2r, connection * const con)",2917,51,0,0.00
+lighttpd1-gcov/src/h2.c,h2_con_upgrade_h2c,"h2_con_upgrade_h2c (request_st * const h2r, connection * const con)",2937,51,0,0.00
+lighttpd1-gcov/src/h2.c,__attribute_nonnull__,__attribute_nonnull__(),2987,51,0,0.00
+lighttpd1-gcov/src/h2.c,h2_upgrade_h2c,"h2_upgrade_h2c (request_st * const r, connection * const con)",3090,51,0,0.00
+lighttpd1-gcov/src/h2.c,h2_send_goaway_delayed,h2_send_goaway_delayed (connection * const con),3092,51,0,0.00
+lighttpd1-gcov/src/h2.c,h2_check_timeout,"h2_check_timeout (connection * const con, const unix_time64_t cur_ts)",3127,51,0,0.00
+lighttpd1-gcov/src/algo_xxhash.h,Comparison,"Comparison (single thread, Windows Seven 32 bits, using SMHasher on a Core 2 Duo @3GHz)",1,51,0,0.00
+lighttpd1-gcov/src/algo_xxhash.h,XXH_readLE32_align,"XXH_readLE32_align(const void* ptr, XXH_alignment align)",64,51,0,0.00
+lighttpd1-gcov/src/algo_xxhash.h,XXH32_finalize,"XXH32_finalize(xxh_u32 h32, const xxh_u8* ptr, size_t len, XXH_alignment align)",1882,51,0,0.00
+lighttpd1-gcov/src/algo_xxhash.h,XXH32_endian_align,"XXH32_endian_align(const xxh_u8* input, size_t len, xxh_u32 seed, XXH_alignment align)",2015,51,0,0.00
+lighttpd1-gcov/src/algo_xxhash.h,XXH32_update,"XXH32_update(XXH32_state_t* state, const void* input, size_t len)",2104,51,0,0.00
+lighttpd1-gcov/src/algo_xxhash.h,XXH_readLE64_align,"XXH_readLE64_align(const void* ptr, XXH_alignment align)",2195,51,0,0.00
+lighttpd1-gcov/src/algo_xxhash.h,XXH64_finalize,"XXH64_finalize(xxh_u64 h64, const xxh_u8* ptr, size_t len, XXH_alignment align)",2421,51,0,0.00
+lighttpd1-gcov/src/algo_xxhash.h,XXH64_endian_align,"XXH64_endian_align(const xxh_u8* input, size_t len, xxh_u64 seed, XXH_alignment align)",2482,51,0,0.00
+lighttpd1-gcov/src/algo_xxhash.h,XXH64_update,"XXH64_update (XXH64_state_t* state, const void* input, size_t len)",2518,51,0,0.00
+lighttpd1-gcov/src/algo_xxhash.h,XXH_mult32to64,"XXH_mult32to64(xxh_u64 x, xxh_u64 y)",2610,51,0,0.00
+lighttpd1-gcov/src/algo_xxhash.h,XXH_mult64to128,"XXH_mult64to128(xxh_u64 lhs, xxh_u64 rhs)",3258,51,0,0.00
+lighttpd1-gcov/src/algo_xxhash.h,XXH3_mul128_fold64,"XXH3_mul128_fold64(xxh_u64 lhs, xxh_u64 rhs)",3285,51,0,0.00
+lighttpd1-gcov/src/algo_xxhash.h,XXH3_len_1to3_64b,"XXH3_len_1to3_64b(const xxh_u8* input, size_t len, const xxh_u8* secret, XXH64_hash_t seed)",3419,51,0,0.00
+lighttpd1-gcov/src/algo_xxhash.h,XXH3_len_4to8_64b,"XXH3_len_4to8_64b(const xxh_u8* input, size_t len, const xxh_u8* secret, XXH64_hash_t seed)",3494,51,0,0.00
+lighttpd1-gcov/src/algo_xxhash.h,XXH3_len_9to16_64b,"XXH3_len_9to16_64b(const xxh_u8* input, size_t len, const xxh_u8* secret, XXH64_hash_t seed)",3516,51,0,0.00
+lighttpd1-gcov/src/algo_xxhash.h,XXH3_len_0to16_64b,"XXH3_len_0to16_64b(const xxh_u8* input, size_t len, const xxh_u8* secret, XXH64_hash_t seed)",3532,51,0,0.00
+lighttpd1-gcov/src/algo_xxhash.h,XXH3_len_17to128_64b,"XXH3_len_17to128_64b(const xxh_u8* XXH_RESTRICT input, size_t len,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>3619</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                     const xxh_u8* XXH_RESTRICT secret, size_t secretSize,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>3620</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                     XXH64_hash_t seed)",3549,51,0,0.00
+lighttpd1-gcov/src/algo_xxhash.h,XXH3_len_129to240_64b,"XXH3_len_129to240_64b(const xxh_u8* XXH_RESTRICT input, size_t len,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>3649</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                      const xxh_u8* XXH_RESTRICT secret, size_t secretSize,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>3650</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                      XXH64_hash_t seed)",3621,51,0,0.00
+lighttpd1-gcov/src/algo_xxhash.h,XXH3_scalarRound,"XXH3_scalarRound(void* XXH_RESTRICT acc,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>3762</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                 void const* XXH_RESTRICT input,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>3763</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                 void const* XXH_RESTRICT secret,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>3764</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                 size_t i)",3651,51,0,0.00
+lighttpd1-gcov/src/algo_xxhash.h,XXH3_scalarScrambleRound,"XXH3_scalarScrambleRound(void* XXH_RESTRICT acc,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>3786</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                         void const* XXH_RESTRICT secret,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>3787</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                         size_t i)",3765,51,0,0.00
+lighttpd1-gcov/src/algo_xxhash.h,XXH3_accumulate_512_avx512,"XXH3_accumulate_512_avx512(void* XXH_RESTRICT acc,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>3812</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                     const void* XXH_RESTRICT input,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>3813</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                     const void* XXH_RESTRICT secret)",3788,51,0,0.00
+lighttpd1-gcov/src/algo_xxhash.h,XXH3_scrambleAcc_avx512,"XXH3_scrambleAcc_avx512(void* XXH_RESTRICT acc, const void* XXH_RESTRICT secret)",3814,51,0,0.00
+lighttpd1-gcov/src/algo_xxhash.h,XXH3_initCustomSecret_avx512,"XXH3_initCustomSecret_avx512(void* XXH_RESTRICT customSecret, xxh_u64 seed64)",3861,51,0,0.00
+lighttpd1-gcov/src/algo_xxhash.h,XXH3_accumulate_512_avx2,"XXH3_accumulate_512_avx2( void* XXH_RESTRICT acc,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>3921</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                    const void* XXH_RESTRICT input,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>3922</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                    const void* XXH_RESTRICT secret)",3885,51,0,0.00
+lighttpd1-gcov/src/algo_xxhash.h,XXH3_scrambleAcc_avx2,"XXH3_scrambleAcc_avx2(void* XXH_RESTRICT acc, const void* XXH_RESTRICT secret)",3923,51,0,0.00
+lighttpd1-gcov/src/algo_xxhash.h,XXH3_accumulate_512_sse2,"XXH3_accumulate_512_sse2( void* XXH_RESTRICT acc,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>4026</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                    const void* XXH_RESTRICT input,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>4027</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                    const void* XXH_RESTRICT secret)",3955,51,0,0.00
+lighttpd1-gcov/src/algo_xxhash.h,XXH3_scrambleAcc_sse2,"XXH3_scrambleAcc_sse2(void* XXH_RESTRICT acc, const void* XXH_RESTRICT secret)",4028,51,0,0.00
+lighttpd1-gcov/src/algo_xxhash.h,XXH3_accumulate_512_neon,"XXH3_accumulate_512_neon( void* XXH_RESTRICT acc,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>4127</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                    const void* XXH_RESTRICT input,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>4128</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                    const void* XXH_RESTRICT secret)",4061,51,0,0.00
+lighttpd1-gcov/src/algo_xxhash.h,XXH3_scrambleAcc_neon,"XXH3_scrambleAcc_neon(void* XXH_RESTRICT acc, const void* XXH_RESTRICT secret)",4129,51,0,0.00
+lighttpd1-gcov/src/algo_xxhash.h,XXH3_accumulate_512_vsx,"XXH3_accumulate_512_vsx(  void* XXH_RESTRICT acc,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>4231</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                    const void* XXH_RESTRICT input,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>4232</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                    const void* XXH_RESTRICT secret)",4169,51,0,0.00
+lighttpd1-gcov/src/algo_xxhash.h,XXH3_scrambleAcc_vsx,"XXH3_scrambleAcc_vsx(void* XXH_RESTRICT acc, const void* XXH_RESTRICT secret)",4233,51,0,0.00
+lighttpd1-gcov/src/algo_xxhash.h,XXH3_accumulate_512_scalar,"XXH3_accumulate_512_scalar(void* XXH_RESTRICT acc,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>4301</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                     const void* XXH_RESTRICT input,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>4302</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                     const void* XXH_RESTRICT secret)",4267,51,0,0.00
+lighttpd1-gcov/src/algo_xxhash.h,XXH3_scrambleAcc_scalar,"XXH3_scrambleAcc_scalar(void* XXH_RESTRICT acc, const void* XXH_RESTRICT secret)",4303,51,0,0.00
+lighttpd1-gcov/src/algo_xxhash.h,XXH3_initCustomSecret_scalar,"XXH3_initCustomSecret_scalar(void* XXH_RESTRICT customSecret, xxh_u64 seed64)",4312,51,0,0.00
+lighttpd1-gcov/src/algo_xxhash.h,XXH3_accumulate,"XXH3_accumulate(     xxh_u64* XXH_RESTRICT acc,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>4448</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                const xxh_u8* XXH_RESTRICT input,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>4449</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                const xxh_u8* XXH_RESTRICT secret,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>4450</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                      size_t nbStripes,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>4451</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                      XXH3_f_accumulate_512 f_acc512)",4321,51,0,0.00
+lighttpd1-gcov/src/algo_xxhash.h,XXH3_hashLong_internal_loop,"XXH3_hashLong_internal_loop(xxh_u64* XXH_RESTRICT acc,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>4465</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                      const xxh_u8* XXH_RESTRICT input, size_t len,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>4466</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                      const xxh_u8* XXH_RESTRICT secret, size_t secretSize,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>4467</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                            XXH3_f_accumulate_512 f_acc512,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>4468</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                            XXH3_f_scrambleAcc f_scramble)",4452,51,0,0.00
+lighttpd1-gcov/src/algo_xxhash.h,XXH3_mix2Accs,"XXH3_mix2Accs(const xxh_u64* XXH_RESTRICT acc, const xxh_u8* XXH_RESTRICT secret)",4469,51,0,0.00
+lighttpd1-gcov/src/algo_xxhash.h,XXH3_mergeAccs,"XXH3_mergeAccs(const xxh_u64* XXH_RESTRICT acc, const xxh_u8* XXH_RESTRICT secret, xxh_u64 start)",4498,51,0,0.00
+lighttpd1-gcov/src/algo_xxhash.h,XXH3_hashLong_64b_internal,"XXH3_hashLong_64b_internal(const void* XXH_RESTRICT input, size_t len,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>4536</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                           const void* XXH_RESTRICT secret, size_t secretSize,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>4537</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                           XXH3_f_accumulate_512 f_acc512,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>4538</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                           XXH3_f_scrambleAcc f_scramble)",4506,51,0,0.00
+lighttpd1-gcov/src/algo_xxhash.h,XXH3_hashLong_64b_withSecret,"XXH3_hashLong_64b_withSecret(const void* XXH_RESTRICT input, size_t len,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>4559</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                             XXH64_hash_t seed64, const xxh_u8* XXH_RESTRICT secret, size_t secretLen)",4539,51,0,0.00
+lighttpd1-gcov/src/algo_xxhash.h,XXH3_hashLong_64b_default,"XXH3_hashLong_64b_default(const void* XXH_RESTRICT input, size_t len,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>4573</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                          XXH64_hash_t seed64, const xxh_u8* XXH_RESTRICT secret, size_t secretLen)",4560,51,0,0.00
+lighttpd1-gcov/src/algo_xxhash.h,XXH3_hashLong_64b_withSeed_internal,"XXH3_hashLong_64b_withSeed_internal(const void* input, size_t len,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>4592</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                                    XXH64_hash_t seed,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>4593</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                                    XXH3_f_accumulate_512 f_acc512,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>4594</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                                    XXH3_f_scrambleAcc f_scramble,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>4595</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                                    XXH3_f_initCustomSecret f_initSec)",4574,51,0,0.00
+lighttpd1-gcov/src/algo_xxhash.h,XXH3_hashLong_64b_withSeed,"XXH3_hashLong_64b_withSeed(const void* input, size_t len,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>4613</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                           XXH64_hash_t seed, const xxh_u8* secret, size_t secretLen)",4596,51,0,0.00
+lighttpd1-gcov/src/algo_xxhash.h,XXH3_64bits_internal,"XXH3_64bits_internal(const void* XXH_RESTRICT input, size_t len,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>4626</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                     XXH64_hash_t seed64, const void* XXH_RESTRICT secret, size_t secretLen,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>4627</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                     XXH3_hashLong64_f f_hashLong)",4614,51,0,0.00
+lighttpd1-gcov/src/algo_xxhash.h,XXH3_64bits_withSecret,"XXH3_64bits_withSecret(const void* input, size_t len, const void* secret, size_t secretSize)",4628,51,0,0.00
+lighttpd1-gcov/src/algo_xxhash.h,XXH3_64bits_withSeed,"XXH3_64bits_withSeed(const void* input, size_t len, XXH64_hash_t seed)",4658,51,0,0.00
+lighttpd1-gcov/src/algo_xxhash.h,XXH3_64bits_withSecretandSeed,"XXH3_64bits_withSecretandSeed(const void* input, size_t len, const void* secret, size_t secretSize, XXH64_hash_t seed)",4665,51,0,0.00
+lighttpd1-gcov/src/algo_xxhash.h,XXH3_copyState,"XXH3_copyState(XXH3_state_t* dst_state, const XXH3_state_t* src_state)",4671,51,0,0.00
+lighttpd1-gcov/src/algo_xxhash.h,XXH3_reset_internal,"XXH3_reset_internal(XXH3_state_t* statePtr,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>4770</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                    XXH64_hash_t seed,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>4771</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                    const void* secret, size_t secretSize)",4764,51,0,0.00
+lighttpd1-gcov/src/algo_xxhash.h,XXH3_64bits_reset,XXH3_64bits_reset(XXH3_state_t* statePtr),4772,51,0,0.00
+lighttpd1-gcov/src/algo_xxhash.h,XXH3_64bits_reset_withSecret,"XXH3_64bits_reset_withSecret(XXH3_state_t* statePtr, const void* secret, size_t secretSize)",4798,51,0,0.00
+lighttpd1-gcov/src/algo_xxhash.h,XXH3_64bits_reset_withSeed,"XXH3_64bits_reset_withSeed(XXH3_state_t* statePtr, XXH64_hash_t seed)",4807,51,0,0.00
+lighttpd1-gcov/src/algo_xxhash.h,XXH3_64bits_reset_withSecretandSeed,"XXH3_64bits_reset_withSecretandSeed(XXH3_state_t* statePtr, const void* secret, size_t secretSize, XXH64_hash_t seed64)",4818,51,0,0.00
+lighttpd1-gcov/src/algo_xxhash.h,XXH3_consumeStripes,"XXH3_consumeStripes(xxh_u64* XXH_RESTRICT acc,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>4844</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                    size_t* XXH_RESTRICT nbStripesSoFarPtr, size_t nbStripesPerBlock,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>4845</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                    const xxh_u8* XXH_RESTRICT input, size_t nbStripes,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>4846</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                    const xxh_u8* XXH_RESTRICT secret, size_t secretLimit,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>4847</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                    XXH3_f_accumulate_512 f_acc512,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>4848</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                    XXH3_f_scrambleAcc f_scramble)",4830,51,0,0.00
+lighttpd1-gcov/src/algo_xxhash.h,XXH3_update,"XXH3_update(XXH3_state_t* XXH_RESTRICT const state,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>4876</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>            const xxh_u8* XXH_RESTRICT input, size_t len,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>4877</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>            XXH3_f_accumulate_512 f_acc512,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>4878</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>            XXH3_f_scrambleAcc f_scramble)",4849,51,0,0.00
+lighttpd1-gcov/src/algo_xxhash.h,XXH3_64bits_update,"XXH3_64bits_update(XXH3_state_t* state, const void* input, size_t len)",4879,51,0,0.00
+lighttpd1-gcov/src/algo_xxhash.h,XXH3_digest_long,"XXH3_digest_long (XXH64_hash_t* acc,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>5000</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                  const XXH3_state_t* state,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>5001</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                  const unsigned char* secret)",4992,51,0,0.00
+lighttpd1-gcov/src/algo_xxhash.h,XXH3_len_1to3_128b,"XXH3_len_1to3_128b(const xxh_u8* input, size_t len, const xxh_u8* secret, XXH64_hash_t seed)",5002,51,0,0.00
+lighttpd1-gcov/src/algo_xxhash.h,XXH3_len_4to8_128b,"XXH3_len_4to8_128b(const xxh_u8* input, size_t len, const xxh_u8* secret, XXH64_hash_t seed)",5071,51,0,0.00
+lighttpd1-gcov/src/algo_xxhash.h,XXH3_len_9to16_128b,"XXH3_len_9to16_128b(const xxh_u8* input, size_t len, const xxh_u8* secret, XXH64_hash_t seed)",5100,51,0,0.00
+lighttpd1-gcov/src/algo_xxhash.h,XXH3_len_0to16_128b,"XXH3_len_0to16_128b(const xxh_u8* input, size_t len, const xxh_u8* secret, XXH64_hash_t seed)",5127,51,0,0.00
+lighttpd1-gcov/src/algo_xxhash.h,XXH128_mix32B,"XXH128_mix32B(XXH128_hash_t acc, const xxh_u8* input_1, const xxh_u8* input_2,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>5221</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>              const xxh_u8* secret, XXH64_hash_t seed)",5202,51,0,0.00
+lighttpd1-gcov/src/algo_xxhash.h,XXH3_len_17to128_128b,"XXH3_len_17to128_128b(const xxh_u8* XXH_RESTRICT input, size_t len,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>5233</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                      const xxh_u8* XXH_RESTRICT secret, size_t secretSize,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>5234</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                      XXH64_hash_t seed)",5222,51,0,0.00
+lighttpd1-gcov/src/algo_xxhash.h,XXH3_len_129to240_128b,"XXH3_len_129to240_128b(const xxh_u8* XXH_RESTRICT input, size_t len,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>5266</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                       const xxh_u8* XXH_RESTRICT secret, size_t secretSize,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>5267</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                       XXH64_hash_t seed)",5235,51,0,0.00
+lighttpd1-gcov/src/algo_xxhash.h,XXH3_hashLong_128b_internal,"XXH3_hashLong_128b_internal(const void* XXH_RESTRICT input, size_t len,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>5315</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                            const xxh_u8* XXH_RESTRICT secret, size_t secretSize,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>5316</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                            XXH3_f_accumulate_512 f_acc512,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>5317</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                            XXH3_f_scrambleAcc f_scramble)",5268,51,0,0.00
+lighttpd1-gcov/src/algo_xxhash.h,XXH3_hashLong_128b_default,"XXH3_hashLong_128b_default(const void* XXH_RESTRICT input, size_t len,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>5343</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                           XXH64_hash_t seed64,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>5344</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                           const void* XXH_RESTRICT secret, size_t secretLen)",5318,51,0,0.00
+lighttpd1-gcov/src/algo_xxhash.h,XXH3_hashLong_128b_withSecret,"XXH3_hashLong_128b_withSecret(const void* XXH_RESTRICT input, size_t len,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>5357</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                              XXH64_hash_t seed64,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>5358</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                              const void* XXH_RESTRICT secret, size_t secretLen)",5345,51,0,0.00
+lighttpd1-gcov/src/algo_xxhash.h,XXH3_hashLong_128b_withSeed_internal,"XXH3_hashLong_128b_withSeed_internal(const void* XXH_RESTRICT input, size_t len,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>5367</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                                XXH64_hash_t seed64,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>5368</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                                XXH3_f_accumulate_512 f_acc512,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>5369</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                                XXH3_f_scrambleAcc f_scramble,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>5370</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                                XXH3_f_initCustomSecret f_initSec)",5359,51,0,0.00
+lighttpd1-gcov/src/algo_xxhash.h,XXH3_hashLong_128b_withSeed,"XXH3_hashLong_128b_withSeed(const void* input, size_t len,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>5388</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                            XXH64_hash_t seed64, const void* XXH_RESTRICT secret, size_t secretLen)",5371,51,0,0.00
+lighttpd1-gcov/src/algo_xxhash.h,XXH3_128bits_internal,"XXH3_128bits_internal(const void* input, size_t len,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>5400</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                      XXH64_hash_t seed64, const void* XXH_RESTRICT secret, size_t secretLen,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>5401</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                      XXH3_hashLong128_f f_hl128)",5389,51,0,0.00
+lighttpd1-gcov/src/algo_xxhash.h,XXH3_128bits_withSecret,"XXH3_128bits_withSecret(const void* input, size_t len, const void* secret, size_t secretSize)",5402,51,0,0.00
+lighttpd1-gcov/src/algo_xxhash.h,XXH3_128bits_withSeed,"XXH3_128bits_withSeed(const void* input, size_t len, XXH64_hash_t seed)",5433,51,0,0.00
+lighttpd1-gcov/src/algo_xxhash.h,XXH3_128bits_withSecretandSeed,"XXH3_128bits_withSecretandSeed(const void* input, size_t len, const void* secret, size_t secretSize, XXH64_hash_t seed)",5442,51,0,0.00
+lighttpd1-gcov/src/algo_xxhash.h,XXH128,"XXH128(const void* input, size_t len, XXH64_hash_t seed)",5451,51,0,0.00
+lighttpd1-gcov/src/algo_xxhash.h,XXH3_128bits_reset,XXH3_128bits_reset(XXH3_state_t* statePtr),5460,51,0,0.00
+lighttpd1-gcov/src/algo_xxhash.h,XXH3_128bits_reset_withSecret,"XXH3_128bits_reset_withSecret(XXH3_state_t* statePtr, const void* secret, size_t secretSize)",5475,51,0,0.00
+lighttpd1-gcov/src/algo_xxhash.h,XXH3_128bits_reset_withSeed,"XXH3_128bits_reset_withSeed(XXH3_state_t* statePtr, XXH64_hash_t seed)",5482,51,0,0.00
+lighttpd1-gcov/src/algo_xxhash.h,XXH3_128bits_reset_withSecretandSeed,"XXH3_128bits_reset_withSecretandSeed(XXH3_state_t* statePtr, const void* secret, size_t secretSize, XXH64_hash_t seed)",5489,51,0,0.00
+lighttpd1-gcov/src/algo_xxhash.h,XXH3_128bits_update,"XXH3_128bits_update(XXH3_state_t* state, const void* input, size_t len)",5496,51,0,0.00
+lighttpd1-gcov/src/algo_xxhash.h,XXH128_canonicalFromHash,"XXH128_canonicalFromHash(XXH128_canonical_t* dst, XXH128_hash_t hash)",5503,51,0,0.00
+lighttpd1-gcov/src/algo_xxhash.h,XXH128_hashFromCanonical,XXH128_hashFromCanonical(const XXH128_canonical_t* src),5566,51,0,0.00
+lighttpd1-gcov/src/algo_xxhash.h,XXH3_generateSecret,"XXH3_generateSecret(void* secretBuffer, size_t secretSize, const void* customSeed, size_t customSeedSize)",5579,51,0,0.00
+lighttpd1-gcov/src/algo_xxhash.h,XXH3_generateSecret_fromSeed,"XXH3_generateSecret_fromSeed(void* secretBuffer, XXH64_hash_t seed)",5603,51,0,0.00
+lighttpd1-gcov/src/chunk.c,mmap_pagemask,mmap_pagemask (void),1,51,5,9.80
+lighttpd1-gcov/src/chunk.c,mmap_align_offset,mmap_align_offset (off_t start),34,51,8,15.69
+lighttpd1-gcov/src/chunk.c,__attribute_nonnull__,__attribute_nonnull__(),48,51,10,19.61
+lighttpd1-gcov/src/chunk.c,__attribute_nonnull__,__attribute_nonnull__(),151,51,0,0.00
+lighttpd1-gcov/src/chunk.c,chunk_file_pread,"chunk_file_pread (int fd, void *buf, size_t count, off_t offset)",163,51,0,0.00
+lighttpd1-gcov/src/chunk.c,__attribute_nonnull__,__attribute_nonnull__(),171,51,0,0.00
+lighttpd1-gcov/src/chunk.c,chunkqueue_write_data,"chunkqueue_write_data (const int fd, const void *buf, size_t len)",484,51,6,11.76
+lighttpd1-gcov/src/chunk.c,chunkqueue_write_chunk_file_intermed,"chunkqueue_write_chunk_file_intermed (const int fd, chunk * const restrict c, log_error_st * const errh)",1374,51,0,0.00
+lighttpd1-gcov/src/chunk.c,chunkqueue_write_chunk_file,"chunkqueue_write_chunk_file (const int fd, chunk * const restrict c, log_error_st * const errh)",1388,51,0,0.00
+lighttpd1-gcov/src/chunk.c,chunkqueue_write_chunk_mem,"chunkqueue_write_chunk_mem (const int fd, const chunk * const restrict c)",1408,51,0,0.00
+lighttpd1-gcov/src/chunk.c,chunkqueue_write_chunk,"chunkqueue_write_chunk (const int fd, chunkqueue * const restrict cq, log_error_st * const restrict errh)",1445,51,1,1.96
+lighttpd1-gcov/src/chunk.c,chunkqueue_write_chunk_to_pipe,"chunkqueue_write_chunk_to_pipe (const int fd, chunkqueue * const restrict cq, log_error_st * const restrict errh)",1454,51,4,7.84
+lighttpd1-gcov/src/chunk.c,chunkqueue_small_resp_optim,chunkqueue_small_resp_optim (chunkqueue * const restrict cq),1471,51,5,9.80
+lighttpd1-gcov/src/chunk.c,chunk_setjmp_memcpy_cb,"chunk_setjmp_memcpy_cb (void *dst, const void *src, off_t len)",1489,51,4,7.84
+lighttpd1-gcov/src/chunk.c,chunkqueue_peek_data,"chunkqueue_peek_data (chunkqueue * const cq,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>1559</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                      char ** const data, uint32_t * const dlen,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>1560</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                      log_error_st * const errh)",1548,51,0,0.00
+lighttpd1-gcov/src/chunk.c,chunkqueue_read_data,"chunkqueue_read_data (chunkqueue * const cq,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>1667</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                      char * const data, const uint32_t dlen,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>1668</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                      log_error_st * const errh)",1561,51,0,0.00
+lighttpd1-gcov/src/chunk.c,chunkqueue_read_squash,"chunkqueue_read_squash (chunkqueue * const restrict cq, log_error_st * const restrict errh)",1669,51,0,0.00
+lighttpd1-gcov/src/chunk.c,chunkqueue_chunk_file_viewadj,"chunkqueue_chunk_file_viewadj (chunk * const c, off_t n, log_error_st * restrict errh)",1682,51,0,0.00
+lighttpd1-gcov/src/http_cgi.c,http_cgi_local_redir,http_cgi_local_redir (request_st * const r),1,51,0,0.00
+lighttpd1-gcov/src/http_cgi.c,http_cgi_encode_varname,"http_cgi_encode_varname (buffer * const b, const char * const restrict s, const size_t len, const int is_http_header)",24,51,0,0.00
+lighttpd1-gcov/src/http_cgi.c,http_cgi_headers,"http_cgi_headers (request_st * const r, http_cgi_opts * const opts, http_cgi_header_append_cb cb, void *vdata)",96,51,0,0.00
+lighttpd1-gcov/src/configparser.y,configparser_comp_key_id,"configparser_comp_key_id(const buffer * const obj_tag, const buffer * const comp_tag)",1,51,0,0.00
+lighttpd1-gcov/src/configparser.y,configparser_simplify_regex,configparser_simplify_regex(buffer * const b),163,51,0,0.00
+lighttpd1-gcov/src/configparser.y,configparser_parse_condition,"configparser_parse_condition(config_t * const ctx, const buffer * const obj_tag, const buffer * const comp_tag, config_cond_t cond, buffer * const rvalue)",204,51,0,0.00
+lighttpd1-gcov/src/configparser.y,configparser_parse_else_condition,configparser_parse_else_condition(config_t * const ctx),242,51,0,0.00
+lighttpd1-gcov/src/mod_vhostdb.c,vhostdb_cache_entry_init,"vhostdb_cache_entry_init (const buffer * const server_name, const buffer * const docroot)",1,51,0,0.00
+lighttpd1-gcov/src/mod_vhostdb.c,vhostdb_cache_entry_free,vhostdb_cache_entry_free (vhostdb_cache_entry *ve),50,51,0,0.00
+lighttpd1-gcov/src/mod_vhostdb.c,vhostdb_cache_free,vhostdb_cache_free (vhostdb_cache *vc),67,51,0,0.00
+lighttpd1-gcov/src/mod_vhostdb.c,vhostdb_cache_init,vhostdb_cache_init (const array *opts),73,51,0,0.00
+lighttpd1-gcov/src/mod_vhostdb.c,mod_vhostdb_cache_query,"mod_vhostdb_cache_query (request_st * const r, plugin_data * const p)",84,51,0,0.00
+lighttpd1-gcov/src/mod_vhostdb.c,mod_vhostdb_cache_insert,"mod_vhostdb_cache_insert (request_st * const r, plugin_data * const p, vhostdb_cache_entry * const ve)",99,51,0,0.00
+lighttpd1-gcov/src/mod_vhostdb.c,mod_vhostdb_tag_old_entries,"mod_vhostdb_tag_old_entries (splay_tree * const t, int * const keys, int * const ndx, const time_t max_age, const unix_time64_t cur_ts)",114,51,0,0.00
+lighttpd1-gcov/src/mod_vhostdb.c,mod_vhostdb_periodic_cleanup,"mod_vhostdb_periodic_cleanup(splay_tree **sptree_ptr, const time_t max_age, const unix_time64_t cur_ts)",322,51,0,0.00
+lighttpd1-gcov/src/mod_vhostdb.c,TRIGGER_FUNC,TRIGGER_FUNC(mod_vhostdb_periodic),338,51,0,0.00
+lighttpd1-gcov/src/request.c,http_request_state_append,"http_request_state_append (buffer * const b, request_state_t state)",1,51,0,0.00
+lighttpd1-gcov/src/request.c,http_request_state_short,http_request_state_short (request_state_t state),27,51,4,7.84
+lighttpd1-gcov/src/request.c,__attribute_nonnull__,__attribute_nonnull__(),52,51,7,13.73
+lighttpd1-gcov/src/request.c,__attribute_nonnull__,__attribute_nonnull__(),62,51,7,13.73
+lighttpd1-gcov/src/request.c,__attribute_nonnull__,__attribute_nonnull__(),73,51,7,13.73
+lighttpd1-gcov/src/request.c,li_restricted_strtoint64,"li_restricted_strtoint64 (const char *v, const uint32_t vlen, const char ** const err)",85,51,0,0.00
+lighttpd1-gcov/src/request.c,http_request_validate_pseudohdrs,"http_request_validate_pseudohdrs (request_st * const restrict r, const int scheme, const unsigned int http_parseopts)",348,51,0,0.00
+lighttpd1-gcov/src/request.c,http_request_parse_header,"http_request_parse_header (request_st * const restrict r, http_header_parse_ctx * const restrict hpctx)",567,51,0,0.00
+lighttpd1-gcov/src/request.c,http_request_parse,"http_request_parse (request_st * const restrict r, const int scheme_port)",634,51,0,0.00
+lighttpd1-gcov/src/request.c,http_request_parse_hoff,"http_request_parse_hoff (request_st * const restrict r, char * const restrict hdrs, const unsigned short * const restrict hoff, const int scheme_port)",1215,51,7,13.73
+lighttpd1-gcov/src/request.c,http_request_headers_fin,http_request_headers_fin (request_st * const restrict r),1288,51,13,25.49
+lighttpd1-gcov/src/request.c,http_request_headers_process,"http_request_headers_process (request_st * const restrict r, char * const restrict hdrs, const unsigned short * const restrict hoff, const int scheme_port)",1310,51,10,19.61
+lighttpd1-gcov/src/request.c,http_request_headers_process_h2,"http_request_headers_process_h2 (request_st * const restrict r, const int scheme_port)",1336,47,5,10.64
+lighttpd1-gcov/src/mod_accesslog.c,accesslog_append_buffer,"accesslog_append_buffer (buffer * const restrict dest,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>609</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                         const buffer * const restrict b, esc_fn_t esc_fn)",1,51,0,0.00
+lighttpd1-gcov/src/mod_accesslog.c,accesslog_append_bytes,"accesslog_append_bytes (buffer * const dest, off_t bytes, const uint32_t adj)",610,51,0,0.00
+lighttpd1-gcov/src/mod_accesslog.c,accesslog_append_cookie,"accesslog_append_cookie (buffer * const restrict dest,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>630</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                         const request_st * const restrict r,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>631</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                         const buffer * const restrict name,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>632</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                         esc_fn_t esc_fn)",619,51,0,0.00
+lighttpd1-gcov/src/mod_accesslog.c,accesslog_append_time,"accesslog_append_time (buffer * const b, const request_st * const r,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>660</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                       const format_field * const f,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>661</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                       unix_timespec64_t * const ts,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>662</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                       format_fields * const parsed_format)",633,51,0,0.00
+lighttpd1-gcov/src/mod_accesslog.c,accesslog_append_remote_addr_masked,"accesslog_append_remote_addr_masked (buffer * const b, const request_st * const r)",663,51,0,0.00
+lighttpd1-gcov/src/mod_accesslog.c,log_access_record_cold,"log_access_record_cold (buffer * const b, const request_st * const r,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>830</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                        const format_field * const f, esc_fn_t esc_fn)",787,51,0,0.00
+lighttpd1-gcov/src/request.h,request_set_state_error,"request_set_state_error(request_st * const r, const request_state_t state)",1,51,0,0.00
+lighttpd1-gcov/src/mod_ajp13.c,mod_ajp13_merge_config_cpv,"mod_ajp13_merge_config_cpv (plugin_config * const pconf, const config_plugin_value_t * const cpv)",1,51,0,0.00
+lighttpd1-gcov/src/mod_ajp13.c,mod_ajp13_merge_config,"mod_ajp13_merge_config (plugin_config * const pconf, const config_plugin_value_t *cpv)",38,51,0,0.00
+lighttpd1-gcov/src/mod_ajp13.c,mod_ajp13_patch_config,"mod_ajp13_patch_config (request_st * const r, plugin_data * const p)",66,51,0,0.00
+lighttpd1-gcov/src/mod_ajp13.c,SETDEFAULTS_FUNC,SETDEFAULTS_FUNC(mod_ajp13_set_defaults),75,51,0,0.00
+lighttpd1-gcov/src/mod_ajp13.c,ajp13_dec_uint16,ajp13_dec_uint16 (const uint8_t * const x),85,51,0,0.00
+lighttpd1-gcov/src/mod_ajp13.c,ajp13_enc_uint16_nc,"ajp13_enc_uint16_nc (uint8_t * const x, const uint32_t v)",160,51,0,0.00
+lighttpd1-gcov/src/mod_ajp13.c,ajp13_enc_uint16,"ajp13_enc_uint16 (uint8_t * const x, const uint32_t n, const uint32_t v)",167,51,0,0.00
+lighttpd1-gcov/src/mod_ajp13.c,ajp13_enc_byte,"ajp13_enc_byte (uint8_t * const x, const uint32_t n, const uint32_t v)",176,51,0,0.00
+lighttpd1-gcov/src/mod_ajp13.c,ajp13_enc_string,"ajp13_enc_string (uint8_t * const x, uint32_t n, const char * const s, const uint32_t len)",185,51,0,0.00
+lighttpd1-gcov/src/mod_ajp13.c,ajp13_stdin_append,ajp13_stdin_append (handler_ctx * const hctx),194,51,0,0.00
+lighttpd1-gcov/src/mod_ajp13.c,ajp13_stdin_append_n,"ajp13_stdin_append_n (handler_ctx * const hctx, const uint32_t n)",211,51,0,0.00
+lighttpd1-gcov/src/mod_ajp13.c,ajp13_method_byte,ajp13_method_byte (const http_method_t m),248,51,0,0.00
+lighttpd1-gcov/src/mod_ajp13.c,ajp13_enc_request_headers,"ajp13_enc_request_headers (uint8_t * const x, uint32_t n, const request_st * const r)",276,51,0,0.00
+lighttpd1-gcov/src/mod_ajp13.c,ajp13_enc_req_attribute,"ajp13_enc_req_attribute (uint8_t * const x, uint32_t n, const char * const k, const uint32_t klen, const char * const v, const uint32_t vlen)",360,51,0,0.00
+lighttpd1-gcov/src/mod_ajp13.c,ajp13_enc_attribute,"ajp13_enc_attribute (uint8_t * const x, uint32_t n, const buffer * const b, uint8_t code)",419,51,0,0.00
+lighttpd1-gcov/src/mod_ajp13.c,ajp13_enc_attributes,"ajp13_enc_attributes (uint8_t * const x, uint32_t n, request_st * const r)",431,51,0,0.00
+lighttpd1-gcov/src/mod_ajp13.c,ajp13_enc_server_name,"ajp13_enc_server_name (uint8_t * const x, const uint32_t n, const request_st * const r)",441,51,0,0.00
+lighttpd1-gcov/src/mod_ajp13.c,ajp13_env_add,"ajp13_env_add (void *venv, const char *k, size_t klen, const char *v, size_t vlen)",498,51,0,0.00
+lighttpd1-gcov/src/mod_ajp13.c,ajp13_create_env,ajp13_create_env (handler_ctx * const hctx),534,51,0,0.00
+lighttpd1-gcov/src/mod_ajp13.c,ajp13_expand_headers,"ajp13_expand_headers (buffer * const b, handler_ctx * const hctx, uint32_t plen)",544,51,0,0.00
+lighttpd1-gcov/src/mod_ajp13.c,ajp13_recv_0,"ajp13_recv_0(const request_st * const r, const handler_ctx * const hctx)",663,51,0,0.00
+lighttpd1-gcov/src/mod_ajp13.c,ajp13_recv_parse_loop,"ajp13_recv_parse_loop (request_st * const r, handler_ctx * const hctx)",768,51,0,0.00
+lighttpd1-gcov/src/mod_ajp13.c,ajp13_recv_parse,"ajp13_recv_parse (request_st * const r, struct http_response_opts_t * const opts, buffer * const b, size_t n)",786,51,0,0.00
+lighttpd1-gcov/src/mod_ajp13.c,ajp13_check_extension,"ajp13_check_extension (request_st * const r, void *p_d)",954,51,0,0.00
+lighttpd1-gcov/src/http_kv.h,__attribute_nonnull__,__attribute_nonnull__(),1,51,0,0.00
+lighttpd1-gcov/src/http_kv.h,__attribute_nonnull__,__attribute_nonnull__(),76,26,0,0.00
+lighttpd1-gcov/src/http_kv.h,__attribute_nonnull__,__attribute_nonnull__(),80,22,0,0.00
+lighttpd1-gcov/src/http_kv.h,__attribute_nonnull__,__attribute_nonnull__(),87,15,0,0.00
+lighttpd1-gcov/src/plugin.c,PLUGIN_CALL_FN_REQ_DATA,"PLUGIN_CALL_FN_REQ_DATA(PLUGIN_FUNC_HANDLE_URI_CLEAN, handle_uri_clean)",1,51,0,0.00
+lighttpd1-gcov/src/plugin.c,PLUGIN_CALL_FN_REQ_DATA,"PLUGIN_CALL_FN_REQ_DATA(PLUGIN_FUNC_HANDLE_DOCROOT, handle_docroot)",339,51,13,25.49
+lighttpd1-gcov/src/plugin.c,PLUGIN_CALL_FN_REQ_DATA,"PLUGIN_CALL_FN_REQ_DATA(PLUGIN_FUNC_HANDLE_PHYSICAL, handle_physical)",340,51,13,25.49
+lighttpd1-gcov/src/plugin.c,PLUGIN_CALL_FN_REQ_DATA,"PLUGIN_CALL_FN_REQ_DATA(PLUGIN_FUNC_HANDLE_SUBREQUEST_START, handle_subrequest_start)",341,51,13,25.49
+lighttpd1-gcov/src/plugin.c,PLUGIN_CALL_FN_REQ_DATA,"PLUGIN_CALL_FN_REQ_DATA(PLUGIN_FUNC_HANDLE_RESPONSE_START, handle_response_start)",342,51,13,25.49
+lighttpd1-gcov/src/plugin.c,PLUGIN_CALL_FN_REQ_DATA,"PLUGIN_CALL_FN_REQ_DATA(PLUGIN_FUNC_HANDLE_REQUEST_DONE, handle_request_done)",343,51,12,23.53
+lighttpd1-gcov/src/plugin.c,PLUGIN_CALL_FN_REQ_DATA,"PLUGIN_CALL_FN_REQ_DATA(PLUGIN_FUNC_HANDLE_REQUEST_RESET, handle_request_reset)",344,51,11,21.57
+lighttpd1-gcov/src/plugin.c,PLUGIN_CALL_FN_REQ_DATA,"PLUGIN_CALL_FN_REQ_DATA(PLUGIN_FUNC_HANDLE_REQUEST_ENV, handle_request_env)",345,51,10,19.61
+lighttpd1-gcov/src/plugin.c,PLUGIN_CALL_FN_CON_DATA,"PLUGIN_CALL_FN_CON_DATA(PLUGIN_FUNC_HANDLE_CONNECTION_ACCEPT, handle_connection_accept)",346,51,10,19.61
+lighttpd1-gcov/src/plugin.c,PLUGIN_CALL_FN_CON_DATA,"PLUGIN_CALL_FN_CON_DATA(PLUGIN_FUNC_HANDLE_CONNECTION_SHUT_WR, handle_connection_shut_wr)",360,51,9,17.65
+lighttpd1-gcov/src/plugin.c,PLUGIN_CALL_FN_CON_DATA,"PLUGIN_CALL_FN_CON_DATA(PLUGIN_FUNC_HANDLE_CONNECTION_CLOSE, handle_connection_close)",361,51,8,15.69
+lighttpd1-gcov/src/server.c,server_monotonic_secs,server_monotonic_secs (void),1,51,0,0.00
+lighttpd1-gcov/src/server.c,server_epoch_secs,"server_epoch_secs (server * const srv, unix_time64_t mono_ts_delta)",447,51,14,27.45
+lighttpd1-gcov/src/server.c,__attribute_nonnull__,__attribute_nonnull__(),460,51,13,25.49
+lighttpd1-gcov/src/mod_staticfile.c,mod_staticfile_not_handled,"mod_staticfile_not_handled(request_st * const r, const char * const msg)",1,51,2,3.92
+lighttpd1-gcov/src/mod_staticfile.c,mod_staticfile_process,"mod_staticfile_process (request_st * const r, plugin_config * const pconf)",103,51,3,5.88
+lighttpd1-gcov/src/ck.c,ck_memset_compat,"ck_memset_compat(void *s, int c, size_t n)",1,51,0,0.00
+lighttpd1-gcov/src/ck.c,ck_memclear_s,"ck_memclear_s (void * const s, const rsize_t smax, rsize_t n)",94,51,6,11.76
+lighttpd1-gcov/src/ck.c,ck_getenv_s,"ck_getenv_s (size_t * const restrict len,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>171</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>             char * const restrict value, const rsize_t maxsize,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>172</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>             const char * const restrict name)",124,51,7,13.73
+lighttpd1-gcov/src/ck.c,ck_strerror_s,"ck_strerror_s (char * const s, const rsize_t maxsize, const errno_t errnum)",173,51,0,0.00
+lighttpd1-gcov/src/ck.c,ck_memeq_const_time,"ck_memeq_const_time (const void *a, size_t alen, const void *b, size_t blen)",223,51,0,0.00
+lighttpd1-gcov/src/ck.c,ck_memeq_const_time_fixed_len,"ck_memeq_const_time_fixed_len (const void *a, const void *b, const size_t len)",279,51,0,0.00
+lighttpd1-gcov/src/ck.c,ck_malloc,ck_malloc (size_t nbytes),310,51,9,17.65
+lighttpd1-gcov/src/ck.c,ck_calloc,"ck_calloc (size_t nmemb, size_t elt_sz)",326,51,9,17.65
+lighttpd1-gcov/src/ck.c,ck_realloc_u32,"ck_realloc_u32 (void **list, size_t n, size_t x, size_t elt_sz)",335,51,8,15.69
+lighttpd1-gcov/src/ck.c,ck_backtrace,ck_backtrace (FILE *fp),344,51,4,7.84
+lighttpd1-gcov/src/ck.c,__attribute_nonnull__,__attribute_nonnull__(),368,51,0,0.00
+lighttpd1-gcov/src/ck.c,ck_bt_stderr,"ck_bt_stderr (const char *filename, unsigned int line, const char *msg, const char *fmt)",431,35,0,0.00
+lighttpd1-gcov/src/ck.c,ck_bt,"ck_bt (const char *filename, unsigned int line, const char *msg)",433,33,0,0.00
+lighttpd1-gcov/src/ck.c,ck_bt_abort,"ck_bt_abort (const char *filename, unsigned int line, const char *msg)",444,22,0,0.00
+lighttpd1-gcov/src/chunk.h,__attribute_nonnull__,__attribute_nonnull__(),1,51,0,0.00
+lighttpd1-gcov/src/chunk.h,__attribute_nonnull__,__attribute_nonnull__(),65,51,0,0.00
+lighttpd1-gcov/src/chunk.h,__attribute_nonnull__,__attribute_nonnull__(),92,51,0,0.00
+lighttpd1-gcov/src/chunk.h,__attribute_nonnull__,__attribute_nonnull__(),95,51,0,0.00
+lighttpd1-gcov/src/chunk.h,__attribute_nonnull__,__attribute_nonnull__(),169,51,4,7.84
+lighttpd1-gcov/src/chunk.h,__attribute_nonnull__,__attribute_nonnull__(),181,51,2,3.92
+lighttpd1-gcov/src/chunk.h,chunk_file_view_dptr,"chunk_file_view_dptr (const chunk_file_view * const cfv, off_t offset)",190,42,0,0.00
+lighttpd1-gcov/src/chunk.h,__attribute_nonnull__,__attribute_nonnull__(),194,38,0,0.00
+lighttpd1-gcov/src/chunk.h,chunk_file_view_dlen,"chunk_file_view_dlen (const chunk_file_view * const cfv, off_t offset)",200,32,0,0.00
+lighttpd1-gcov/src/chunk.h,chunkqueue_chunk_file_view,"chunkqueue_chunk_file_view (chunk * const c, const off_t n, log_error_st * const restrict errh)",204,28,0,0.00
+lighttpd1-gcov/src/fdevent_fdnode.c,fdnode_init,fdnode_init (void),1,51,15,29.41
+lighttpd1-gcov/src/fdevent_fdnode.c,fdnode_free,fdnode_free (fdnode *fdn),15,51,17,33.33
+lighttpd1-gcov/src/fdevent_fdnode.c,fdevent_register,"fdevent_register (fdevents *ev, int fd, fdevent_handler handler, void *ctx)",21,51,15,29.41
+lighttpd1-gcov/src/fdevent_fdnode.c,fdevent_unregister,"fdevent_unregister (fdevents *ev, fdnode *fdn)",27,51,12,23.53
+lighttpd1-gcov/src/fdevent_fdnode.c,fdevent_sched_close,"fdevent_sched_close (fdevents *ev, fdnode *fdn)",50,51,4,7.84
+lighttpd1-gcov/src/fdevent_fdnode.c,fdevent_fdnode_event_unsetter_retry,"fdevent_fdnode_event_unsetter_retry (fdevents *ev, fdnode *fdn)",68,51,5,9.80
+lighttpd1-gcov/src/fdevent_fdnode.c,fdevent_fdnode_event_unsetter,"fdevent_fdnode_event_unsetter (fdevents *ev, fdnode *fdn)",81,51,5,9.80
+lighttpd1-gcov/src/fdevent_fdnode.c,fdevent_fdnode_event_setter_retry,"fdevent_fdnode_event_setter_retry (fdevents *ev, fdnode *fdn, int events)",106,51,9,17.65
+lighttpd1-gcov/src/fdevent_fdnode.c,fdevent_fdnode_event_setter,"fdevent_fdnode_event_setter (fdevents *ev, fdnode *fdn, int events)",118,51,10,19.61
+lighttpd1-gcov/src/fdevent_fdnode.c,fdevent_fdnode_event_del,"fdevent_fdnode_event_del (fdevents *ev, fdnode *fdn)",143,35,9,25.71
+lighttpd1-gcov/src/fdevent_fdnode.c,fdevent_fdnode_event_set,"fdevent_fdnode_event_set (fdevents *ev, fdnode *fdn, int events)",157,21,5,23.81
+lighttpd1-gcov/src/fdevent_fdnode.c,fdevent_fdnode_event_add,"fdevent_fdnode_event_add (fdevents *ev, fdnode *fdn, int event)",163,15,2,13.33
+lighttpd1-gcov/src/fdevent_fdnode.c,fdevent_fdnode_event_clr,"fdevent_fdnode_event_clr (fdevents *ev, fdnode *fdn, int event)",169,9,0,0.00
+lighttpd1-gcov/src/fdevent.c,fdevent_load_file_bytes,"fdevent_load_file_bytes (char * const buf, const off_t sz, off_t off, const char * const fn, log_error_st *errh)",1,51,8,15.69
+lighttpd1-gcov/src/fdevent_impl.c,fdevent_config,"fdevent_config (const char **event_handler_name, log_error_st *errh)",1,51,1,1.96
+lighttpd1-gcov/src/fdevent_impl.c,fdevent_show_event_handlers,fdevent_show_event_handlers (void),49,51,8,15.69
+lighttpd1-gcov/src/fdevent_impl.c,fdevent_init,"fdevent_init (const char *event_handler, int *max_fds, int *cur_fds, log_error_st *errh)",131,51,7,13.73
+lighttpd1-gcov/src/fdevent_impl.c,fdevent_free,fdevent_free (fdevents *ev),170,51,17,33.33
+lighttpd1-gcov/src/fdevent_impl.c,fdevent_reset,fdevent_reset (fdevents *ev),250,51,6,11.76
+lighttpd1-gcov/src/fdevent_impl.c,fdevent_sched_run,fdevent_sched_run (fdevents * const ev),268,51,11,21.57
+lighttpd1-gcov/src/fdevent_impl.c,fdevent_poll,"fdevent_poll (fdevents * const ev, const int timeout_ms)",282,51,10,19.61
+lighttpd1-gcov/src/fdevent_impl.c,fdevent_linux_sysepoll_event_del,"fdevent_linux_sysepoll_event_del (fdevents *ev, fdnode *fdn)",313,51,21,41.18
+lighttpd1-gcov/src/fdevent_impl.c,fdevent_linux_sysepoll_event_set,"fdevent_linux_sysepoll_event_set (fdevents *ev, fdnode *fdn, int events)",329,51,17,33.33
+lighttpd1-gcov/src/fdevent_impl.c,fdevent_linux_sysepoll_poll,"fdevent_linux_sysepoll_poll (fdevents * const ev, int timeout_ms)",335,51,19,37.25
+lighttpd1-gcov/src/fdevent_impl.c,fdevent_linux_sysepoll_free,fdevent_linux_sysepoll_free (fdevents *ev),349,51,17,33.33
+lighttpd1-gcov/src/fdevent_impl.c,fdevent_linux_sysepoll_init,fdevent_linux_sysepoll_init (fdevents *ev),364,51,9,17.65
+lighttpd1-gcov/src/fdevent_impl.c,fdevent_freebsd_kqueue_event_del,"fdevent_freebsd_kqueue_event_del (fdevents *ev, fdnode *fdn)",372,51,8,15.69
+lighttpd1-gcov/src/fdevent_impl.c,fdevent_freebsd_kqueue_event_set,"fdevent_freebsd_kqueue_event_set (fdevents *ev, fdnode *fdn, int events)",411,51,0,0.00
+lighttpd1-gcov/src/fdevent_impl.c,fdevent_freebsd_kqueue_poll,"fdevent_freebsd_kqueue_poll (fdevents * const ev, int timeout_ms)",434,51,0,0.00
+lighttpd1-gcov/src/fdevent_impl.c,fdevent_freebsd_kqueue_reset,fdevent_freebsd_kqueue_reset (fdevents *ev),468,51,0,0.00
+lighttpd1-gcov/src/fdevent_impl.c,fdevent_freebsd_kqueue_free,fdevent_freebsd_kqueue_free (fdevents *ev),495,51,0,0.00
+lighttpd1-gcov/src/fdevent_impl.c,fdevent_freebsd_kqueue_init,fdevent_freebsd_kqueue_init (fdevents *ev),510,51,0,0.00
+lighttpd1-gcov/src/fdevent_impl.c,fdevent_solaris_port_event_del,"fdevent_solaris_port_event_del (fdevents *ev, fdnode *fdn)",518,51,0,0.00
+lighttpd1-gcov/src/fdevent_impl.c,fdevent_solaris_port_event_set,"fdevent_solaris_port_event_set (fdevents *ev, fdnode *fdn, int events)",540,51,0,0.00
+lighttpd1-gcov/src/fdevent_impl.c,fdevent_solaris_port_poll,"fdevent_solaris_port_poll (fdevents *ev, int timeout_ms)",546,51,0,0.00
+lighttpd1-gcov/src/fdevent_impl.c,fdevent_solaris_port_free,fdevent_solaris_port_free (fdevents *ev),556,51,0,0.00
+lighttpd1-gcov/src/fdevent_impl.c,fdevent_solaris_port_init,fdevent_solaris_port_init (fdevents *ev),601,51,0,0.00
+lighttpd1-gcov/src/fdevent_impl.c,fdevent_solaris_devpoll_event_del,"fdevent_solaris_devpoll_event_del (fdevents *ev, fdnode *fdn)",609,51,0,0.00
+lighttpd1-gcov/src/fdevent_impl.c,fdevent_solaris_devpoll_event_set,"fdevent_solaris_devpoll_event_set (fdevents *ev, fdnode *fdn, int events)",643,51,0,0.00
+lighttpd1-gcov/src/fdevent_impl.c,fdevent_solaris_devpoll_poll,"fdevent_solaris_devpoll_poll (fdevents *ev, int timeout_ms)",653,51,0,0.00
+lighttpd1-gcov/src/fdevent_impl.c,fdevent_solaris_devpoll_reset,fdevent_solaris_devpoll_reset (fdevents *ev),666,51,0,0.00
+lighttpd1-gcov/src/fdevent_impl.c,fdevent_solaris_devpoll_free,fdevent_solaris_devpoll_free (fdevents *ev),689,51,0,0.00
+lighttpd1-gcov/src/fdevent_impl.c,fdevent_solaris_devpoll_init,fdevent_solaris_devpoll_init (fdevents *ev),699,51,0,0.00
+lighttpd1-gcov/src/fdevent_impl.c,fdevent_poll_event_del,"fdevent_poll_event_del (fdevents *ev, fdnode *fdn)",707,51,0,0.00
+lighttpd1-gcov/src/fdevent_impl.c,fdevent_poll_event_set,"fdevent_poll_event_set (fdevents *ev, fdnode *fdn, int events)",744,51,0,0.00
+lighttpd1-gcov/src/fdevent_impl.c,fdevent_poll_poll,"fdevent_poll_poll (fdevents *ev, int timeout_ms)",767,51,0,0.00
+lighttpd1-gcov/src/fdevent_impl.c,fdevent_poll_free,fdevent_poll_free (fdevents *ev),804,51,0,0.00
+lighttpd1-gcov/src/fdevent_impl.c,fdevent_poll_init,fdevent_poll_init (fdevents *ev),841,51,0,0.00
+lighttpd1-gcov/src/fdevent_impl.c,fdevent_select_reset,fdevent_select_reset (fdevents *ev),849,51,0,0.00
+lighttpd1-gcov/src/fdevent_impl.c,fdevent_select_event_del,"fdevent_select_event_del (fdevents *ev, fdnode *fdn)",878,51,0,0.00
+lighttpd1-gcov/src/fdevent_impl.c,fdevent_select_event_set,"fdevent_select_event_set (fdevents *ev, fdnode *fdn, int events)",890,51,0,0.00
+lighttpd1-gcov/src/fdevent_impl.c,fdevent_select_poll,"fdevent_select_poll (fdevents *ev, int timeout_ms)",900,51,0,0.00
+lighttpd1-gcov/src/network_write.c,network_write_setjmp_write_cb,"network_write_setjmp_write_cb (void *fd, const void *data, off_t len)",1,51,0,0.00
+lighttpd1-gcov/src/http_chunk.c,http_chunk_decode_append_data,"http_chunk_decode_append_data (request_st * const r, const char *mem, off_t len)",1,51,0,0.00
+lighttpd1-gcov/src/sys-crypto-md.h,MD4_Init,MD4_Init(MD4_CTX *ctx),1,51,0,0.00
+lighttpd1-gcov/src/sys-crypto-md.h,MD4_Final,"MD4_Final(unsigned char *digest, MD4_CTX *ctx)",26,51,0,0.00
+lighttpd1-gcov/src/sys-crypto-md.h,MD4_Update,"MD4_Update(MD4_CTX *ctx, const void *data, size_t length)",32,51,0,0.00
+lighttpd1-gcov/src/sys-crypto-md.h,MD5_Init,MD5_Init(MD5_CTX *ctx),38,51,0,0.00
+lighttpd1-gcov/src/sys-crypto-md.h,MD5_Final,"MD5_Final(unsigned char *digest, MD5_CTX *ctx)",47,51,0,0.00
+lighttpd1-gcov/src/sys-crypto-md.h,MD5_Update,"MD5_Update(MD5_CTX *ctx, const void *data, size_t length)",53,51,0,0.00
+lighttpd1-gcov/src/sys-crypto-md.h,SHA1_Init,SHA1_Init(SHA_CTX *ctx),59,51,0,0.00
+lighttpd1-gcov/src/sys-crypto-md.h,SHA1_Final,"SHA1_Final(unsigned char *digest, SHA_CTX *ctx)",68,51,0,0.00
+lighttpd1-gcov/src/sys-crypto-md.h,SHA1_Update,"SHA1_Update(SHA_CTX *ctx, const void *data, size_t length)",74,51,0,0.00
+lighttpd1-gcov/src/sys-crypto-md.h,SHA256_Init,SHA256_Init(SHA256_CTX *ctx),80,51,0,0.00
+lighttpd1-gcov/src/sys-crypto-md.h,SHA256_Final,"SHA256_Final(unsigned char *digest, SHA256_CTX *ctx)",89,51,0,0.00
+lighttpd1-gcov/src/sys-crypto-md.h,SHA256_Update,"SHA256_Update(SHA256_CTX *ctx, const void *data, size_t length)",95,51,0,0.00
+lighttpd1-gcov/src/sys-crypto-md.h,SHA512_256_Init,SHA512_256_Init(SHA512_CTX *ctx),101,51,0,0.00
+lighttpd1-gcov/src/sys-crypto-md.h,SHA512_256_Final,"SHA512_256_Final(unsigned char *digest, SHA512_CTX *ctx)",113,51,0,0.00
+lighttpd1-gcov/src/sys-crypto-md.h,SHA512_256_Update,"SHA512_256_Update(SHA512_CTX *ctx, const void *data, size_t length)",119,51,0,0.00
+lighttpd1-gcov/src/sys-crypto-md.h,SHA512_Init,SHA512_Init(SHA512_CTX *ctx),125,51,0,0.00
+lighttpd1-gcov/src/sys-crypto-md.h,SHA512_Final,"SHA512_Final(unsigned char *digest, SHA512_CTX *ctx)",134,51,0,0.00
+lighttpd1-gcov/src/sys-crypto-md.h,SHA512_Update,"SHA512_Update(SHA512_CTX *ctx, const void *data, size_t length)",140,51,0,0.00
+lighttpd1-gcov/src/sys-crypto-md.h,MD4_Init,MD4_Init(MD4_CTX *ctx),146,51,0,0.00
+lighttpd1-gcov/src/sys-crypto-md.h,MD4_Final,"MD4_Final(unsigned char *digest, MD4_CTX *ctx)",162,51,0,0.00
+lighttpd1-gcov/src/sys-crypto-md.h,MD4_Update,"MD4_Update(MD4_CTX *ctx, const void *data, size_t length)",168,51,0,0.00
+lighttpd1-gcov/src/sys-crypto-md.h,MD5_Init,MD5_Init(MD5_CTX *ctx),175,51,0,0.00
+lighttpd1-gcov/src/sys-crypto-md.h,MD5_Final,"MD5_Final(unsigned char *digest, MD5_CTX *ctx)",186,51,0,0.00
+lighttpd1-gcov/src/sys-crypto-md.h,MD5_Update,"MD5_Update(MD5_CTX *ctx, const void *data, size_t length)",196,51,0,0.00
+lighttpd1-gcov/src/sys-crypto-md.h,SHA1_Init,SHA1_Init(SHA_CTX *ctx),207,51,0,0.00
+lighttpd1-gcov/src/sys-crypto-md.h,SHA1_Final,"SHA1_Final(unsigned char *digest, SHA_CTX *ctx)",222,51,0,0.00
+lighttpd1-gcov/src/sys-crypto-md.h,SHA1_Update,"SHA1_Update(SHA_CTX *ctx, const void *data, size_t length)",232,51,0,0.00
+lighttpd1-gcov/src/sys-crypto-md.h,SHA256_Init,SHA256_Init(SHA256_CTX *ctx),243,51,0,0.00
+lighttpd1-gcov/src/sys-crypto-md.h,SHA256_Final,"SHA256_Final(unsigned char *digest, SHA256_CTX *ctx)",258,51,0,0.00
+lighttpd1-gcov/src/sys-crypto-md.h,SHA256_Update,"SHA256_Update(SHA256_CTX *ctx, const void *data, size_t length)",268,51,0,0.00
+lighttpd1-gcov/src/sys-crypto-md.h,SHA512_Init,SHA512_Init(SHA512_CTX *ctx),279,51,0,0.00
+lighttpd1-gcov/src/sys-crypto-md.h,SHA512_Final,"SHA512_Final(unsigned char *digest, SHA512_CTX *ctx)",294,51,0,0.00
+lighttpd1-gcov/src/sys-crypto-md.h,SHA512_Update,"SHA512_Update(SHA512_CTX *ctx, const void *data, size_t length)",304,51,0,0.00
+lighttpd1-gcov/src/sys-crypto-md.h,MD4_Init,MD4_Init(MD4_CTX *ctx),315,51,0,0.00
+lighttpd1-gcov/src/sys-crypto-md.h,MD4_Final,"MD4_Final(unsigned char *digest, MD4_CTX *ctx)",351,51,0,0.00
+lighttpd1-gcov/src/sys-crypto-md.h,MD4_Update,"MD4_Update(MD4_CTX *ctx, const void *data, size_t length)",357,51,0,0.00
+lighttpd1-gcov/src/sys-crypto-md.h,MD5_Init,MD5_Init(MD5_CTX *ctx),363,51,0,0.00
+lighttpd1-gcov/src/sys-crypto-md.h,MD5_Final,"MD5_Final(unsigned char *digest, MD5_CTX *ctx)",379,51,0,0.00
+lighttpd1-gcov/src/sys-crypto-md.h,MD5_Update,"MD5_Update(MD5_CTX *ctx, const void *data, size_t length)",384,51,0,0.00
+lighttpd1-gcov/src/sys-crypto-md.h,SHA1_Init,SHA1_Init(SHA_CTX *ctx),389,51,0,0.00
+lighttpd1-gcov/src/sys-crypto-md.h,SHA1_Final,"SHA1_Final(unsigned char *digest, SHA_CTX *ctx)",405,51,0,0.00
+lighttpd1-gcov/src/sys-crypto-md.h,SHA1_Update,"SHA1_Update(SHA_CTX *ctx, const void *data, size_t length)",410,51,0,0.00
+lighttpd1-gcov/src/sys-crypto-md.h,SHA256_Init,SHA256_Init(SHA256_CTX *ctx),415,51,0,0.00
+lighttpd1-gcov/src/sys-crypto-md.h,SHA256_Final,"SHA256_Final(unsigned char *digest, SHA256_CTX *ctx)",431,51,0,0.00
+lighttpd1-gcov/src/sys-crypto-md.h,SHA256_Update,"SHA256_Update(SHA256_CTX *ctx, const void *data, size_t length)",436,51,0,0.00
+lighttpd1-gcov/src/sys-crypto-md.h,SHA512_Init,SHA512_Init(SHA512_CTX *ctx),441,51,0,0.00
+lighttpd1-gcov/src/sys-crypto-md.h,SHA512_Final,"SHA512_Final(unsigned char *digest, SHA512_CTX *ctx)",458,51,0,0.00
+lighttpd1-gcov/src/sys-crypto-md.h,SHA512_Update,"SHA512_Update(SHA512_CTX *ctx, const void *data, size_t length)",463,51,0,0.00
+lighttpd1-gcov/src/sys-crypto-md.h,EVP_MD4_Init,EVP_MD4_Init(EVP_MD4_CTX *ctx),468,51,0,0.00
+lighttpd1-gcov/src/sys-crypto-md.h,EVP_MD4_Final,"EVP_MD4_Final(unsigned char *digest, EVP_MD4_CTX *ctx)",510,51,0,0.00
+lighttpd1-gcov/src/sys-crypto-md.h,EVP_MD4_Update,"EVP_MD4_Update(EVP_MD4_CTX *ctx, const void *data, size_t length)",516,51,0,0.00
+lighttpd1-gcov/src/sys-crypto-md.h,EVP_MD5_Init,EVP_MD5_Init(EVP_MD5_CTX *ctx),524,51,0,0.00
+lighttpd1-gcov/src/sys-crypto-md.h,EVP_MD5_Final,"EVP_MD5_Final(unsigned char *digest, EVP_MD5_CTX *ctx)",537,51,0,0.00
+lighttpd1-gcov/src/sys-crypto-md.h,EVP_MD5_Update,"EVP_MD5_Update(EVP_MD5_CTX *ctx, const void *data, size_t length)",543,51,0,0.00
+lighttpd1-gcov/src/sys-crypto-md.h,EVP_SHA1_Init,EVP_SHA1_Init(EVP_SHA1_CTX *ctx),551,51,0,0.00
+lighttpd1-gcov/src/sys-crypto-md.h,EVP_SHA1_Final,"EVP_SHA1_Final(unsigned char *digest, EVP_SHA1_CTX *ctx)",564,51,0,0.00
+lighttpd1-gcov/src/sys-crypto-md.h,EVP_SHA1_Update,"EVP_SHA1_Update(EVP_SHA1_CTX *ctx, const void *data, size_t length)",570,51,0,0.00
+lighttpd1-gcov/src/sys-crypto-md.h,EVP_SHA256_Init,EVP_SHA256_Init(EVP_SHA256_CTX *ctx),578,51,0,0.00
+lighttpd1-gcov/src/sys-crypto-md.h,EVP_SHA256_Final,"EVP_SHA256_Final(unsigned char *digest, EVP_SHA256_CTX *ctx)",591,51,0,0.00
+lighttpd1-gcov/src/sys-crypto-md.h,EVP_SHA256_Update,"EVP_SHA256_Update(EVP_SHA256_CTX *ctx, const void *data, size_t length)",597,51,0,0.00
+lighttpd1-gcov/src/sys-crypto-md.h,EVP_SHA512_256_Init,EVP_SHA512_256_Init(EVP_SHA512_256_CTX *ctx),605,51,0,0.00
+lighttpd1-gcov/src/sys-crypto-md.h,EVP_SHA512_256_Final,"EVP_SHA512_256_Final(unsigned char *digest, EVP_SHA512_256_CTX *ctx)",618,51,0,0.00
+lighttpd1-gcov/src/sys-crypto-md.h,EVP_SHA512_256_Update,"EVP_SHA512_256_Update(EVP_SHA512_256_CTX *ctx, const void *data, size_t length)",624,51,0,0.00
+lighttpd1-gcov/src/sys-crypto-md.h,EVP_SHA512_Init,EVP_SHA512_Init(EVP_SHA512_CTX *ctx),632,51,0,0.00
+lighttpd1-gcov/src/sys-crypto-md.h,EVP_SHA512_Final,"EVP_SHA512_Final(unsigned char *digest, EVP_SHA512_CTX *ctx)",645,51,0,0.00
+lighttpd1-gcov/src/sys-crypto-md.h,EVP_SHA512_Update,"EVP_SHA512_Update(EVP_SHA512_CTX *ctx, const void *data, size_t length)",651,51,0,0.00
+lighttpd1-gcov/src/sys-crypto-md.h,MD5_Init,MD5_Init(MD5_CTX *ctx),659,51,0,0.00
+lighttpd1-gcov/src/sys-crypto-md.h,MD5_Final,"MD5_Final(unsigned char *digest, MD5_CTX *ctx)",675,51,0,0.00
+lighttpd1-gcov/src/sys-crypto-md.h,MD5_Update,"MD5_Update(MD5_CTX *ctx, const void *data, size_t length)",682,51,0,0.00
+lighttpd1-gcov/src/sys-crypto-md.h,SHA1_Init,SHA1_Init(SHA_CTX *ctx),688,51,0,0.00
+lighttpd1-gcov/src/sys-crypto-md.h,SHA1_Final,"SHA1_Final(unsigned char *digest, SHA_CTX *ctx)",697,51,0,0.00
+lighttpd1-gcov/src/sys-crypto-md.h,SHA1_Update,"SHA1_Update(SHA_CTX *ctx, const void *data, size_t length)",704,51,0,0.00
+lighttpd1-gcov/src/sys-crypto-md.h,SHA256_Init,SHA256_Init(SHA256_CTX *ctx),710,51,0,0.00
+lighttpd1-gcov/src/sys-crypto-md.h,SHA256_Final,"SHA256_Final(unsigned char *digest, SHA256_CTX *ctx)",719,51,0,0.00
+lighttpd1-gcov/src/sys-crypto-md.h,SHA256_Update,"SHA256_Update(SHA256_CTX *ctx, const void *data, size_t length)",726,51,0,0.00
+lighttpd1-gcov/src/sys-crypto-md.h,SHA512_Init,SHA512_Init(SHA512_CTX *ctx),732,51,0,0.00
+lighttpd1-gcov/src/sys-crypto-md.h,SHA512_Final,"SHA512_Final(unsigned char *digest, SHA512_CTX *ctx)",741,51,0,0.00
+lighttpd1-gcov/src/sys-crypto-md.h,SHA512_Update,"SHA512_Update(SHA512_CTX *ctx, const void *data, size_t length)",748,51,0,0.00
+lighttpd1-gcov/src/sys-crypto-md.h,nss_requires_explicit_init_for_basic_crypto_wth,nss_requires_explicit_init_for_basic_crypto_wth(void),754,51,0,0.00
+lighttpd1-gcov/src/sys-crypto-md.h,li_md_once,li_md_once(MD4),780,51,0,0.00
+lighttpd1-gcov/src/sys-crypto-md.h,li_md_iov,li_md_iov(MD4),955,30,0,0.00
+lighttpd1-gcov/src/sys-crypto-md.h,li_md_once,li_md_once(MD5),956,29,0,0.00
+lighttpd1-gcov/src/sys-crypto-md.h,li_md_iov,li_md_iov(MD5),960,25,0,0.00
+lighttpd1-gcov/src/sys-crypto-md.h,li_md_once,li_md_once(SHA1),961,24,0,0.00
+lighttpd1-gcov/src/sys-crypto-md.h,li_md_iov,li_md_iov(SHA1),965,20,0,0.00
+lighttpd1-gcov/src/sys-crypto-md.h,li_md_once,li_md_once(SHA256),966,19,0,0.00
+lighttpd1-gcov/src/sys-crypto-md.h,li_md_iov,li_md_iov(SHA256),970,15,0,0.00
+lighttpd1-gcov/src/sys-crypto-md.h,li_md_once,li_md_once(SHA512_256),971,14,0,0.00
+lighttpd1-gcov/src/sys-crypto-md.h,li_md_iov,li_md_iov(SHA512_256),975,10,0,0.00
+lighttpd1-gcov/src/sys-crypto-md.h,li_md_once,li_md_once(SHA512),976,9,0,0.00
+lighttpd1-gcov/src/sys-crypto-md.h,li_md_iov,li_md_iov(SHA512),980,5,0,0.00
+lighttpd1-gcov/src/configparser.c,configparser_comp_key_id,"configparser_comp_key_id(const buffer * const obj_tag, const buffer * const comp_tag)",1,51,0,0.00
+lighttpd1-gcov/src/configparser.c,configparser_simplify_regex,configparser_simplify_regex(buffer * const b),187,51,0,0.00
+lighttpd1-gcov/src/configparser.c,configparser_parse_condition,"configparser_parse_condition(config_t * const ctx, const buffer * const obj_tag, const buffer * const comp_tag, config_cond_t cond, buffer * const rvalue)",228,51,0,0.00
+lighttpd1-gcov/src/configparser.c,configparser_parse_else_condition,configparser_parse_else_condition(config_t * const ctx),266,51,0,0.00
+lighttpd1-gcov/src/reqpool.c,request_config_set_defaults,request_config_set_defaults (const request_config *config_defaults),1,51,10,19.61
+lighttpd1-gcov/src/reqpool.c,request_config_reset,request_config_reset (request_st * const r),32,51,24,47.06
+lighttpd1-gcov/src/reqpool.c,request_init_data,"request_init_data (request_st * const r, connection * const con, server * const srv)",40,51,21,41.18
+lighttpd1-gcov/src/reqpool.c,request_init,request_init (connection * const con),47,51,21,41.18
+lighttpd1-gcov/src/reqpool.c,request_reset,request_reset (request_st * const r),84,51,18,35.29
+lighttpd1-gcov/src/reqpool.c,request_reset_ex,request_reset_ex (request_st * const r),93,51,19,37.25
+lighttpd1-gcov/src/reqpool.c,request_free_data,request_free_data (request_st * const r),192,51,27,52.94
+lighttpd1-gcov/src/reqpool.c,request_pool_free,request_pool_free (void),222,51,22,43.14
+lighttpd1-gcov/src/reqpool.c,request_release,request_release (request_st * const r),274,49,2,4.08
+lighttpd1-gcov/src/reqpool.c,request_acquire,request_acquire (connection * const con),286,37,0,0.00
+lighttpd1-gcov/src/h1.c,h1_send_1xx_info,"h1_send_1xx_info (request_st * const r, connection * const con)",1,51,0,0.00
+lighttpd1-gcov/src/h1.c,h1_send_1xx,"h1_send_1xx (request_st * const r, connection * const con)",27,51,0,0.00
+lighttpd1-gcov/src/h1.c,h1_send_100_continue,"h1_send_100_continue (request_st * const r, connection * const con)",81,51,0,0.00
+lighttpd1-gcov/src/h1.c,h1_send_headers_partial_1xx,"h1_send_headers_partial_1xx (request_st * const r, buffer * const b)",115,51,5,9.80
+lighttpd1-gcov/src/h1.c,h1_send_headers,h1_send_headers (request_st * const r),131,51,9,17.65
+lighttpd1-gcov/src/h1.c,h1_discard_blank_line,"h1_discard_blank_line (chunkqueue * const cq, uint32_t header_len)",152,51,14,27.45
+lighttpd1-gcov/src/h1.c,h1_recv_headers_more,"h1_recv_headers_more (connection * const con, chunkqueue * const cq, chunk *c, const size_t olen)",266,51,16,31.37
+lighttpd1-gcov/src/h1.c,h1_check_upgrade,"h1_check_upgrade (request_st * const r, connection * const con)",275,51,15,29.41
+lighttpd1-gcov/src/h1.c,h1_recv_headers,"h1_recv_headers (request_st * const r, connection * const con)",312,51,0,0.00
+lighttpd1-gcov/src/h1.c,h1_check_expect_100,"h1_check_expect_100 (request_st * const r, connection * const con)",368,51,22,43.14
+lighttpd1-gcov/src/h1.c,h1_cq_compact,h1_cq_compact (chunkqueue * const cq),514,51,0,0.00
+lighttpd1-gcov/src/h1.c,h1_chunked_crlf,h1_chunked_crlf (chunkqueue * const cq),543,51,0,0.00
+lighttpd1-gcov/src/h1.c,h1_chunked,"h1_chunked (request_st * const r, chunkqueue * const cq, chunkqueue * const dst_cq)",562,51,0,0.00
+lighttpd1-gcov/src/h1.c,h1_read_body_unknown,"h1_read_body_unknown (request_st * const r, chunkqueue * const cq, chunkqueue * const dst_cq)",595,51,0,0.00
+lighttpd1-gcov/src/h1.c,h1_reqbody_read,h1_reqbody_read (request_st * const r),758,51,0,0.00
+lighttpd1-gcov/src/h1.c,h1_check_timeout,"h1_check_timeout (connection * const con, const unix_time64_t cur_ts)",774,51,0,0.00
+lighttpd1-gcov/src/mod_indexfile.c,__attribute_nonnull__,__attribute_nonnull__(),1,51,0,0.00
+lighttpd1-gcov/src/response.c,http_response_physical_path_error,"http_response_physical_path_error (request_st * const r, const int code, const char * const msg)",1,51,0,0.00
+lighttpd1-gcov/src/response.c,http_response_prepare,http_response_prepare (request_st * const r),32,51,0,0.00
+lighttpd1-gcov/src/response.c,http_response_errdoc_init,http_response_errdoc_init (request_st * const r),230,51,4,7.84
+lighttpd1-gcov/src/response.c,http_response_static_errdoc,http_response_static_errdoc (request_st * const r),452,51,14,27.45
+lighttpd1-gcov/src/response.c,http_response_merge_trailers,http_response_merge_trailers (request_st * const r),481,51,13,25.49
+lighttpd1-gcov/src/response.c,http_response_write_prepare,http_response_write_prepare(request_st * const r),539,51,2,3.92
+lighttpd1-gcov/src/response.c,http_response_call_error_handler,"http_response_call_error_handler (request_st * const r, const buffer * const error_handler)",578,51,14,27.45
+lighttpd1-gcov/src/response.c,http_response_has_error_handler,http_response_has_error_handler (request_st * const r),727,51,4,7.84
+lighttpd1-gcov/src/response.c,http_response_handler,http_response_handler (request_st * const r),771,51,14,27.45
+lighttpd1-gcov/src/fdlog_maint.c,fdlog_pipe_spawn,"fdlog_pipe_spawn (const char * const fn, const int rfd)",1,51,0,0.00
+lighttpd1-gcov/src/fdlog_maint.c,fdlog_pipe_restart,"fdlog_pipe_restart (fdlog_pipe * const fdp, const unix_time64_t ts)",60,51,3,5.88
+lighttpd1-gcov/src/fdlog_maint.c,fdlog_pipes_restart,fdlog_pipes_restart (const unix_time64_t ts),91,51,3,5.88
+lighttpd1-gcov/src/fdlog_maint.c,fdlog_pipes_waitpid_cb,fdlog_pipes_waitpid_cb (const pid_t pid),103,51,2,3.92
+lighttpd1-gcov/src/fdlog_maint.c,fdlog_pipes_close,fdlog_pipes_close (fdlog_st * const retain),114,51,0,0.00
+lighttpd1-gcov/src/fdlog_maint.c,fdlog_pipes_abandon_pids,fdlog_pipes_abandon_pids (void),128,51,0,0.00
+lighttpd1-gcov/src/fdlog_maint.c,fdlog_pipe_serrh,fdlog_pipe_serrh (const int fd),145,51,0,0.00
+lighttpd1-gcov/src/fdlog_maint.c,fdlog_pipe_init,"fdlog_pipe_init (const char * const fn, const int fds[2], const pid_t pid)",155,51,0,0.00
+lighttpd1-gcov/src/fdlog_maint.c,fdlog_pipe_open,fdlog_pipe_open (const char * const fn),171,51,0,0.00
+lighttpd1-gcov/src/fdlog_maint.c,fdlog_file_init,"fdlog_file_init (const char * const fn, const int fd)",185,51,0,0.00
+lighttpd1-gcov/src/fdlog_maint.c,fdlog_file_open_fd,fdlog_file_open_fd (const char * const fn),214,51,2,3.92
+lighttpd1-gcov/src/fdlog_maint.c,fdlog_file_open,fdlog_file_open (const char * const fn),224,51,3,5.88
+lighttpd1-gcov/src/fdlog_maint.c,fdlog_open,fdlog_open (const char * const fn),232,51,3,5.88
+lighttpd1-gcov/src/fdlog_maint.c,fdlog_files_flush,"fdlog_files_flush (fdlog_st * const errh, const int memrel)",246,51,3,5.88
+lighttpd1-gcov/src/fdlog_maint.c,fdlog_files_cycle,fdlog_files_cycle (fdlog_st * const errh),255,51,2,3.92
+lighttpd1-gcov/src/fdlog_maint.c,fdlog_files_close,fdlog_files_close (fdlog_st * const retain),273,51,0,0.00
+lighttpd1-gcov/src/fdlog_maint.c,fdlog_closeall,fdlog_closeall (fdlog_st * const errh),305,33,5,15.15
+lighttpd1-gcov/src/fdlog_maint.c,fdlog_flushall,fdlog_flushall (fdlog_st * const errh),320,18,5,27.78
+lighttpd1-gcov/src/http_etag.c,http_etag_matches,"http_etag_matches (const buffer * const etag, const char *s, const int weak_ok)",1,51,0,0.00
+lighttpd1-gcov/src/http_etag.c,http_etag_remix,"http_etag_remix (buffer * const etag, const char * const str, const uint32_t len)",19,51,0,0.00
+lighttpd1-gcov/src/http_etag.c,http_etag_create,"http_etag_create (buffer * const etag, const struct stat * const st, const int flags)",48,48,0,0.00
+lighttpd1-gcov/src/buffer.c,__attribute_nonnull__,__attribute_nonnull__(),1,51,16,31.37
+lighttpd1-gcov/src/buffer.c,__attribute_nonnull__,__attribute_nonnull__(),48,51,24,47.06
+lighttpd1-gcov/src/buffer.c,__attribute_nonnull__,__attribute_nonnull__(),70,51,25,49.02
+lighttpd1-gcov/src/buffer.c,buffer_extend,"buffer_extend (buffer * const b, const size_t x)",95,51,23,45.10
+lighttpd1-gcov/src/buffer.c,buffer_copy_path_len2,"buffer_copy_path_len2 (buffer * const restrict b, const char * const restrict s1, size_t len1, const char * const restrict s2, size_t len2)",127,51,28,54.90
+lighttpd1-gcov/src/buffer.c,buffer_copy_string_len_lc,"buffer_copy_string_len_lc (buffer * const restrict b, const char * const restrict s, const size_t len)",263,51,12,23.53
+lighttpd1-gcov/src/buffer.c,__attribute_nonnull__,__attribute_nonnull__(),273,51,16,31.37
+lighttpd1-gcov/src/buffer.c,__attribute_nonnull__,__attribute_nonnull__(),302,51,14,27.45
+lighttpd1-gcov/src/buffer.c,buffer_append_bs_escaped,"buffer_append_bs_escaped (buffer * const restrict b,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>723</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                          const char * restrict s, const size_t len)",313,51,15,29.41
+lighttpd1-gcov/src/buffer.c,buffer_append_bs_escaped_json,"buffer_append_bs_escaped_json (buffer * const restrict b,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>775</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                               const char * restrict s, const size_t len)",724,51,0,0.00
+lighttpd1-gcov/src/mod_webdav.c,webdav_str_len_to_lower,"webdav_str_len_to_lower (char * const ss, const uint32_t len)",1,51,0,0.00
+lighttpd1-gcov/src/mod_webdav.c,URIHANDLER_FUNC,URIHANDLER_FUNC(mod_webdav_uri_handler),339,51,0,0.00
+lighttpd1-gcov/src/mod_webdav.c,webdav_double_buffer,"webdav_double_buffer (request_st * const r, buffer * const b)",613,51,0,0.00
+lighttpd1-gcov/src/mod_webdav.c,webdav_xml_log_response,webdav_xml_log_response (request_st * const r),670,51,0,0.00
+lighttpd1-gcov/src/mod_webdav.c,webdav_xml_doctype,"webdav_xml_doctype (buffer * const b, request_st * const r)",762,51,0,0.00
+lighttpd1-gcov/src/mod_webdav.c,webdav_xml_prop,"webdav_xml_prop (buffer * const b,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>815</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                 const webdav_property_name * const prop,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>816</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                 const char * const value, const uint32_t vlen)",803,51,0,0.00
+lighttpd1-gcov/src/mod_webdav.c,webdav_xml_href,"webdav_xml_href (buffer * const b, const buffer * const href)",817,51,0,0.00
+lighttpd1-gcov/src/mod_webdav.c,webdav_xml_status,"webdav_xml_status (buffer * const b, const int status)",847,51,0,0.00
+lighttpd1-gcov/src/mod_webdav.c,webdav_xml_propstat_protected,"webdav_xml_propstat_protected (buffer * const b, const char * const propname,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>871</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                               const uint32_t len, const int status)",858,51,0,0.00
+lighttpd1-gcov/src/mod_webdav.c,webdav_xml_propstat_status,"webdav_xml_propstat_status (buffer * const b, const char * const ns,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>890</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                            const char * const name, const int status)",872,51,0,0.00
+lighttpd1-gcov/src/mod_webdav.c,webdav_xml_propstat,"webdav_xml_propstat (buffer * const b, buffer * const value, const int status)",891,51,0,0.00
+lighttpd1-gcov/src/mod_webdav.c,webdav_xml_response_status,"webdav_xml_response_status (request_st * const r,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>926</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                            const buffer * const href,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>927</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                            const int status)",911,51,0,0.00
+lighttpd1-gcov/src/mod_webdav.c,webdav_xml_activelock,"webdav_xml_activelock (buffer * const b,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>945</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                       const webdav_lockdata * const lockdata,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>946</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                       const char * const tbuf, uint32_t tbuf_len)",928,51,0,0.00
+lighttpd1-gcov/src/mod_webdav.c,webdav_xml_doc_multistatus,"webdav_xml_doc_multistatus (request_st * const r,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>1011</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                            const plugin_config * const pconf)",947,51,0,0.00
+lighttpd1-gcov/src/mod_webdav.c,webdav_xml_doc_multistatus_response,"webdav_xml_doc_multistatus_response (request_st * const r,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>1033</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                                     const plugin_config * const pconf,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>1034</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                                     buffer * const ms)",1012,51,0,0.00
+lighttpd1-gcov/src/mod_webdav.c,webdav_xml_doc_lock_acquired,"webdav_xml_doc_lock_acquired (request_st * const r,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>1060</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                              const plugin_config * const pconf,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>1061</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                              const webdav_lockdata * const lockdata)",1035,51,0,0.00
+lighttpd1-gcov/src/mod_webdav.c,webdav_xml_doc_error_propfind_finite_depth,webdav_xml_doc_error_propfind_finite_depth (request_st * const r),1062,51,0,0.00
+lighttpd1-gcov/src/mod_webdav.c,webdav_xml_doc_error_lock_token_matches_request_uri,webdav_xml_doc_error_lock_token_matches_request_uri (request_st * const r),1113,51,0,0.00
+lighttpd1-gcov/src/mod_webdav.c,webdav_xml_doc_423_locked,"webdav_xml_doc_423_locked (request_st * const r, buffer * const hrefs,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>1148</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                           const char * const errtag, const uint32_t errtaglen)",1130,51,0,0.00
+lighttpd1-gcov/src/mod_webdav.c,webdav_xml_doc_error_lock_token_submitted,"webdav_xml_doc_error_lock_token_submitted (request_st * const r,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>1180</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                                           buffer * const hrefs)",1149,51,0,0.00
+lighttpd1-gcov/src/mod_webdav.c,webdav_xml_doc_error_no_conflicting_lock,"webdav_xml_doc_error_no_conflicting_lock (request_st * const r,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>1192</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                                          buffer * const hrefs)",1181,51,0,0.00
+lighttpd1-gcov/src/mod_webdav.c,mod_webdav_sqlite3_init,"mod_webdav_sqlite3_init (const char * const restrict dbname,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>1302</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                         log_error_st * const errh)",1193,51,0,0.00
+lighttpd1-gcov/src/mod_webdav.c,mod_webdav_sqlite3_prep,"mod_webdav_sqlite3_prep (sql_config * const restrict sql,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>1372</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                         const char * const sqlite_db_name,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>1373</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                         log_error_st * const errh)",1303,51,0,0.00
+lighttpd1-gcov/src/mod_webdav.c,SERVER_FUNC,SERVER_FUNC(mod_webdav_worker_init),1374,51,0,0.00
+lighttpd1-gcov/src/mod_webdav.c,webdav_db_transaction,"webdav_db_transaction (const plugin_config * const pconf,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>1487</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                       const char * const action)",1444,51,0,0.00
+lighttpd1-gcov/src/mod_webdav.c,webdav_lock_match,"webdav_lock_match (const plugin_config * const pconf,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>1530</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                   const webdav_lockdata * const lockdata)",1488,51,0,0.00
+lighttpd1-gcov/src/mod_webdav.c,webdav_lock_activelocks_lockdata,"webdav_lock_activelocks_lockdata (sqlite3_stmt * const stmt,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>1579</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                                  webdav_lockdata_wr * const lockdata)",1531,51,0,0.00
+lighttpd1-gcov/src/mod_webdav.c,webdav_lock_activelocks,"webdav_lock_activelocks (const plugin_config * const pconf,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>1610</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                         const buffer * const uri,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>1611</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                         const int expand_checks,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>1612</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                         webdav_lock_activelocks_cb * const lock_cb,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>1613</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                         void * const vdata)",1580,51,0,0.00
+lighttpd1-gcov/src/mod_webdav.c,webdav_lock_delete_uri,"webdav_lock_delete_uri (const plugin_config * const pconf,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>1693</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                        const buffer * const uri)",1614,51,0,0.00
+lighttpd1-gcov/src/mod_webdav.c,webdav_lock_delete_uri_col,"webdav_lock_delete_uri_col (const plugin_config * const pconf,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>1729</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                            const buffer * const uri)",1694,51,0,0.00
+lighttpd1-gcov/src/mod_webdav.c,webdav_lock_acquire,"webdav_lock_acquire (const plugin_config * const pconf,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>1771</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                     const webdav_lockdata * const lockdata)",1730,51,0,0.00
+lighttpd1-gcov/src/mod_webdav.c,webdav_lock_refresh,"webdav_lock_refresh (const plugin_config * const pconf,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>1831</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                     webdav_lockdata * const lockdata)",1772,51,0,0.00
+lighttpd1-gcov/src/mod_webdav.c,webdav_lock_release,"webdav_lock_release (const plugin_config * const pconf,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>1865</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                     const webdav_lockdata * const lockdata)",1832,51,0,0.00
+lighttpd1-gcov/src/mod_webdav.c,webdav_prop_move_uri,"webdav_prop_move_uri (const plugin_config * const pconf,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>1896</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                      const buffer * const src,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>1897</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                      const buffer * const dst)",1866,51,0,0.00
+lighttpd1-gcov/src/mod_webdav.c,webdav_prop_move_uri_col,"webdav_prop_move_uri_col (const plugin_config * const pconf,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>1931</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                          const buffer * const src,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>1932</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                          const buffer * const dst)",1898,51,0,0.00
+lighttpd1-gcov/src/mod_webdav.c,webdav_prop_delete_uri,"webdav_prop_delete_uri (const plugin_config * const pconf,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>1972</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                        const buffer * const uri)",1933,51,0,0.00
+lighttpd1-gcov/src/mod_webdav.c,webdav_prop_copy_uri,"webdav_prop_copy_uri (const plugin_config * const pconf,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>2004</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                      const buffer * const src,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>2005</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                      const buffer * const dst)",1973,51,0,0.00
+lighttpd1-gcov/src/mod_webdav.c,webdav_prop_delete,"webdav_prop_delete (const plugin_config * const pconf,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>2040</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                    const buffer * const uri,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>2041</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                    const char * const prop_name,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>2042</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                    const char * const prop_ns)",2006,51,0,0.00
+lighttpd1-gcov/src/mod_webdav.c,webdav_prop_update,"webdav_prop_update (const plugin_config * const pconf,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>2072</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                    const buffer * const uri,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>2073</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                    const char * const prop_name,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>2074</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                    const char * const prop_ns,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>2075</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                    const char * const prop_value)",2043,51,0,0.00
+lighttpd1-gcov/src/mod_webdav.c,webdav_prop_select_prop,"webdav_prop_select_prop (const plugin_config * const pconf,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>2105</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                         const buffer * const uri,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>2106</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                         const webdav_property_name * const prop,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>2107</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                         buffer * const b)",2076,51,0,0.00
+lighttpd1-gcov/src/mod_webdav.c,webdav_prop_select_props,"webdav_prop_select_props (const plugin_config * const pconf,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>2139</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                          const buffer * const uri,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>2140</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                          buffer * const b)",2108,51,0,0.00
+lighttpd1-gcov/src/mod_webdav.c,webdav_prop_select_propnames,"webdav_prop_select_propnames (const plugin_config * const pconf,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>2172</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                              const buffer * const uri,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>2173</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                              buffer * const b)",2141,51,0,0.00
+lighttpd1-gcov/src/mod_webdav.c,webdav_fcopyfile_sz,"webdav_fcopyfile_sz (int ifd, int ofd, off_t isz)",2174,51,0,0.00
+lighttpd1-gcov/src/mod_webdav.c,webdav_405_no_db,webdav_405_no_db (request_st * const r),2233,51,0,0.00
+lighttpd1-gcov/src/mod_webdav.c,webdav_reqbody_type_xml,webdav_reqbody_type_xml (request_st * const r),2321,51,0,0.00
+lighttpd1-gcov/src/mod_webdav.c,webdav_if_match_or_unmodified_since,"webdav_if_match_or_unmodified_since (request_st * const r, struct stat *st)",2335,51,0,0.00
+lighttpd1-gcov/src/mod_webdav.c,webdav_response_etag,"webdav_response_etag (request_st * const r, struct stat *st)",2351,51,0,0.00
+lighttpd1-gcov/src/mod_webdav.c,webdav_parent_modified,webdav_parent_modified (const buffer *path),2403,51,0,0.00
+lighttpd1-gcov/src/mod_webdav.c,webdav_parse_Depth,webdav_parse_Depth (const request_st * const r),2416,51,0,0.00
+lighttpd1-gcov/src/mod_webdav.c,webdav_unlinkat,"webdav_unlinkat (const plugin_config * const pconf,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>2457</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                 const physical_st * const dst,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>2458</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                 const int dfd, const char * const d_name)",2431,51,0,0.00
+lighttpd1-gcov/src/mod_webdav.c,webdav_delete_file,"webdav_delete_file (const plugin_config * const pconf,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>2476</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                    const physical_st * const dst)",2459,51,0,0.00
+lighttpd1-gcov/src/mod_webdav.c,webdav_delete_dir,"webdav_delete_dir (const plugin_config * const pconf,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>2493</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                   physical_st * const dst,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>2494</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                   request_st * const r,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>2495</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                   const int flags)",2477,51,0,0.00
+lighttpd1-gcov/src/mod_webdav.c,webdav_linktmp_rename,"webdav_linktmp_rename (const plugin_config * const pconf,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>2606</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                       const buffer * const src,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>2607</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                       const buffer * const dst)",2496,51,0,0.00
+lighttpd1-gcov/src/mod_webdav.c,webdav_copytmp_rename,"webdav_copytmp_rename (const plugin_config * const pconf,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>2643</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                       const physical_st * const src,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>2644</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                       const physical_st * const dst,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>2645</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                       int * const flags)",2608,51,0,0.00
+lighttpd1-gcov/src/mod_webdav.c,webdav_copymove_file,"webdav_copymove_file (const plugin_config * const pconf,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>2906</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                      const physical_st * const src,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>2907</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                      const physical_st * const dst,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>2908</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                      int * const flags)",2646,51,0,0.00
+lighttpd1-gcov/src/mod_webdav.c,webdav_mkdir,"webdav_mkdir (const plugin_config * const pconf,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>2981</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>              const physical_st * const dst,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>2982</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>              const int overwrite)",2909,51,0,0.00
+lighttpd1-gcov/src/mod_webdav.c,webdav_copymove_dir,"webdav_copymove_dir (const plugin_config * const pconf,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>3042</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                     physical_st * const src,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>3043</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                     physical_st * const dst,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>3044</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                     request_st * const r,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>3045</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                     int flags)",2983,51,0,0.00
+lighttpd1-gcov/src/mod_webdav.c,webdav_propfind_live_props,"webdav_propfind_live_props (const webdav_propfind_bufs * const restrict pb,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>3403</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                           const enum webdav_live_props_e pnum)",3046,51,0,0.00
+lighttpd1-gcov/src/mod_webdav.c,webdav_propfind_lockdiscovery_cb,"webdav_propfind_lockdiscovery_cb (void * const vdata,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>3579</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                                  const webdav_lockdata * const lockdata)",3404,51,0,0.00
+lighttpd1-gcov/src/mod_webdav.c,webdav_propfind_resource_props,webdav_propfind_resource_props (const webdav_propfind_bufs * const restrict pb),3580,51,0,0.00
+lighttpd1-gcov/src/mod_webdav.c,webdav_propfind_resource_propnames,"webdav_propfind_resource_propnames (const webdav_propfind_bufs *</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>3652</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                                      const restrict pb)",3588,51,0,0.00
+lighttpd1-gcov/src/mod_webdav.c,webdav_propfind_resource_403,webdav_propfind_resource_403 (const webdav_propfind_bufs * const restrict pb),3653,51,0,0.00
+lighttpd1-gcov/src/mod_webdav.c,webdav_propfind_resource,webdav_propfind_resource (const webdav_propfind_bufs * const restrict pb),3676,51,0,0.00
+lighttpd1-gcov/src/mod_webdav.c,webdav_propfind_dir,webdav_propfind_dir (webdav_propfind_bufs * const restrict pb),3694,51,0,0.00
+lighttpd1-gcov/src/mod_webdav.c,webdav_mmap_file_chunk,"webdav_mmap_file_chunk (chunk * const c, log_error_st * const errh)",3736,51,0,0.00
+lighttpd1-gcov/src/mod_webdav.c,webdav_parse_chunkqueue,"webdav_parse_chunkqueue (request_st * const r,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>3835</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                         const plugin_config * const pconf)",3813,51,0,0.00
+lighttpd1-gcov/src/mod_webdav.c,webdav_lock_token_submitted_cb,"webdav_lock_token_submitted_cb (void * const vdata,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>3942</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                                const webdav_lockdata * const lockdata)",3836,51,0,0.00
+lighttpd1-gcov/src/mod_webdav.c,webdav_has_lock,"webdav_has_lock (request_st * const r,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>3995</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                 const plugin_config * const pconf,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>3996</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                 const buffer * const uri)",3943,51,0,0.00
+lighttpd1-gcov/src/mod_webdav.c,mod_webdav_propfind,"mod_webdav_propfind (request_st * const r, const plugin_config * const pconf)",3997,51,0,0.00
+lighttpd1-gcov/src/mod_webdav.c,mod_webdav_mkcol,"mod_webdav_mkcol (request_st * const r, const plugin_config * const pconf)",4176,51,0,0.00
+lighttpd1-gcov/src/mod_webdav.c,mod_webdav_delete,"mod_webdav_delete (request_st * const r, const plugin_config * const pconf)",4404,51,0,0.00
+lighttpd1-gcov/src/mod_webdav.c,mod_webdav_write_cq,"mod_webdav_write_cq (request_st * const r, chunkqueue * const cq, const int fd)",4417,51,0,0.00
+lighttpd1-gcov/src/mod_webdav.c,mod_webdav_write_single_file_chunk,"mod_webdav_write_single_file_chunk (request_st * const r, chunkqueue * const cq)",4505,51,0,0.00
+lighttpd1-gcov/src/mod_webdav.c,mod_webdav_put_0,"mod_webdav_put_0 (request_st * const r, const plugin_config * const pconf)",4525,51,0,0.00
+lighttpd1-gcov/src/mod_webdav.c,mod_webdav_put_prep,"mod_webdav_put_prep (request_st * const r, const plugin_config * const pconf)",4556,51,0,0.00
+lighttpd1-gcov/src/mod_webdav.c,mod_webdav_put_linkat_rename,"mod_webdav_put_linkat_rename (request_st * const r,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>4701</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                              const char * const pathtemp)",4604,51,0,0.00
+lighttpd1-gcov/src/mod_webdav.c,mod_webdav_put_range,"mod_webdav_put_range (request_st * const r, const buffer * const h,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>4755</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                      const plugin_config * const pconf)",4702,51,0,0.00
+lighttpd1-gcov/src/mod_webdav.c,mod_webdav_put,"mod_webdav_put (request_st * const r, const plugin_config * const pconf)",4756,51,0,0.00
+lighttpd1-gcov/src/mod_webdav.c,mod_webdav_copymove_b,"mod_webdav_copymove_b (request_st * const r, const plugin_config * const pconf, physical_st * const dst)",4905,51,0,0.00
+lighttpd1-gcov/src/mod_webdav.c,mod_webdav_copymove,"mod_webdav_copymove (request_st * const r, const plugin_config * const pconf)",5037,51,0,0.00
+lighttpd1-gcov/src/mod_webdav.c,mod_webdav_proppatch,"mod_webdav_proppatch (request_st * const r, const plugin_config * const pconf)",5396,51,0,0.00
+lighttpd1-gcov/src/mod_webdav.c,webdav_conflicting_lock_cb,"webdav_conflicting_lock_cb (void * const vdata,</pre></td>
+    </tr>
+
+    <tr>
+    <td align=""right"" class=""lineno""><pre>5597</pre></td>
+    <td align=""right"" class=""linebranch""></td>
+    <td align=""right"" class=""linecount ""><pre></pre></td>
+    <td align=""left"" class=""src ""><pre>                            const webdav_lockdata * const lockdata)",5414,51,0,0.00
+lighttpd1-gcov/src/mod_webdav.c,mod_webdav_lock,"mod_webdav_lock (request_st * const r, const plugin_config * const pconf)",5598,51,0,0.00
+lighttpd1-gcov/src/mod_webdav.c,mod_webdav_unlock,"mod_webdav_unlock (request_st * const r, const plugin_config * const pconf)",5613,51,0,0.00
+lighttpd1-gcov/src/mod_webdav.c,SUBREQUEST_FUNC,SUBREQUEST_FUNC(mod_webdav_subrequest_handler),5929,51,0,0.00
+lighttpd1-gcov/src/mod_webdav.c,PHYSICALPATH_FUNC,PHYSICALPATH_FUNC(mod_webdav_physical_handler),5978,51,0,0.00
+lighttpd1-gcov/src/mod_alias.c,mod_alias_remap,"mod_alias_remap (request_st * const r, const array * const aliases)",1,51,0,0.00
+lighttpd1-gcov/src/mod_proxy.c,SETDEFAULTS_FUNC,SETDEFAULTS_FUNC(mod_proxy_set_defaults),1,51,0,0.00
+lighttpd1-gcov/src/fdlog.c,fdlog_init,"fdlog_init (const char * const fn, const int fd, const int mode)",1,27,0,0.00
+lighttpd1-gcov/src/fdlog.c,fdlog_free,fdlog_free (fdlog_st * const fdlog),11,17,0,0.00
+lighttpd1-gcov/src/array.c,array_match_key_prefix_klen,"array_match_key_prefix_klen (const array * const a, const char * const s, const uint32_t slen)",1,51,11,21.57
+lighttpd1-gcov/src/array.c,array_match_key_prefix_nc_klen,"array_match_key_prefix_nc_klen (const array * const a, const char * const s, const uint32_t slen)",515,51,0,0.00
+lighttpd1-gcov/src/array.c,array_match_key_prefix,"array_match_key_prefix (const array * const a, const buffer * const b)",527,51,0,0.00
+lighttpd1-gcov/src/array.c,array_match_key_prefix_nc,"array_match_key_prefix_nc (const array * const a, const buffer * const b)",539,51,0,0.00
+lighttpd1-gcov/src/array.c,array_match_value_prefix,"array_match_value_prefix (const array * const a, const buffer * const b)",548,51,0,0.00
+lighttpd1-gcov/src/array.c,array_match_value_prefix_nc,"array_match_value_prefix_nc (const array * const a, const buffer * const b)",554,51,0,0.00
+lighttpd1-gcov/src/array.c,array_match_key_suffix,"array_match_key_suffix (const array * const a, const buffer * const b)",568,51,0,0.00
+lighttpd1-gcov/src/array.c,array_match_key_suffix_nc,"array_match_key_suffix_nc (const array * const a, const buffer * const b)",582,51,0,0.00
+lighttpd1-gcov/src/array.c,array_match_value_suffix,"array_match_value_suffix (const array * const a, const buffer * const b)",597,51,0,0.00
+lighttpd1-gcov/src/array.c,array_match_value_suffix_nc,"array_match_value_suffix_nc (const array * const a, const buffer * const b)",612,44,0,0.00
+lighttpd1-gcov/src/array.c,array_match_path_or_ext,"array_match_path_or_ext (const array * const a, const buffer * const b)",627,29,0,0.00

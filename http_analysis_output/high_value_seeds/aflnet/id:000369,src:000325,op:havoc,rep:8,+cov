@@ -1,0 +1,10 @@
+DELETE /hellx.txt HTTP/1.1
+Host: 127.0.0.DELETE
+User-Agent: curl/8.0.1
+Accept: */*
+
+DELETE /hello.txt HTTP/1.080
+User-Agent: curl/8]0.1
+Accept:t: curl/8.ƒDELETE“TRACEƒƒƒƒƒƒƒƒƒƒƒ0.P
+Accept: */*
+

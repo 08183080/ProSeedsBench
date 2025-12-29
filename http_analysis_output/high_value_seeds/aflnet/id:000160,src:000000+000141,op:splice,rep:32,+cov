@@ -1,0 +1,19 @@
+DELETE /hello.txt HTTP/1.1
+Host: 127.0.0.1:ÿÿÿÿ
+UsAgent: curl/8.0.1þAcceer-Agent:DELETE8.0.1
+Accept: */*
+
+DELETE /hello.txt HTTP/1.1
+Host: 127.0.0.1:ÿÿÿÿ
+UsAgent: curl/8.0.1þAcceer-Agent:DELETE8.0.1
+Accept: */*
+
+DELETE /hello.txt HTTP/1.1
+Host: 127®0.0.1:ÿÿÿÿ
+UsAgent: curl/8.0.1þAcceer-Agent:DELETE8.0.1
+Accept: */*
+
+DELETE /hello.txt HTTPUser-Agent: 127.0.0.1:ÿÿÿÿ
+UsAgent: curl/8.0.1þAcceer-Agent:DELETE8.0.1
+Accept: */Ë
+

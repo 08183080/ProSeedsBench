@@ -1,0 +1,12 @@
+GET /hellˆ.txt/hellˆ.txt HTTP/1.1
+Host: 127.xt HTTP/1.1
+Host: 127.0
+User-Agent: cmrl/8.0.1
+Accept: DELETE
+
+DELETE /hello.txt HTT
+MKCOL /\ello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/ÿÿÿ€1
+Accept: */*
+

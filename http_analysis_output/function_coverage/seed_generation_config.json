@@ -1,0 +1,258 @@
+{
+  "version": "1.0",
+  "generated_at": "2025-12-28T20:33:32.950621",
+  "description": "基于函数覆盖分析生成的种子生成配置",
+  "priorities": {
+    "high": [
+      {
+        "function": "http_version_buf",
+        "file": "lighttpd1-gcov/src/http_kv.c",
+        "start_line": 1,
+        "reason": "completely_uncovered"
+      },
+      {
+        "function": "http_response_delay",
+        "file": "lighttpd1-gcov/src/http-header-glue.c",
+        "start_line": 1,
+        "reason": "completely_uncovered"
+      },
+      {
+        "function": "http_response_check_1xx",
+        "file": "lighttpd1-gcov/src/http-header-glue.c",
+        "start_line": 1091,
+        "reason": "completely_uncovered"
+      },
+      {
+        "function": "gw_hash",
+        "file": "lighttpd1-gcov/src/gw_backend.c",
+        "start_line": 1,
+        "reason": "completely_uncovered"
+      },
+      {
+        "function": "__attribute_nonnull__",
+        "file": "lighttpd1-gcov/src/ck.h",
+        "start_line": 59,
+        "reason": "completely_uncovered"
+      },
+      {
+        "function": "__attribute_nonnull__",
+        "file": "lighttpd1-gcov/src/ck.h",
+        "start_line": 65,
+        "reason": "completely_uncovered"
+      },
+      {
+        "function": "http_auth_cache_entry_init",
+        "file": "lighttpd1-gcov/src/mod_auth.c",
+        "start_line": 1,
+        "reason": "completely_uncovered"
+      },
+      {
+        "function": "http_auth_cache_entry_free",
+        "file": "lighttpd1-gcov/src/mod_auth.c",
+        "start_line": 60,
+        "reason": "completely_uncovered"
+      },
+      {
+        "function": "http_auth_cache_free",
+        "file": "lighttpd1-gcov/src/mod_auth.c",
+        "start_line": 88,
+        "reason": "completely_uncovered"
+      },
+      {
+        "function": "http_auth_cache_init",
+        "file": "lighttpd1-gcov/src/mod_auth.c",
+        "start_line": 96,
+        "reason": "completely_uncovered"
+      },
+      {
+        "function": "http_auth_cache_hash",
+        "file": "lighttpd1-gcov/src/mod_auth.c",
+        "start_line": 107,
+        "reason": "completely_uncovered"
+      },
+      {
+        "function": "http_auth_cache_query",
+        "file": "lighttpd1-gcov/src/mod_auth.c",
+        "start_line": 122,
+        "reason": "completely_uncovered"
+      },
+      {
+        "function": "mod_auth_tag_old_entries",
+        "file": "lighttpd1-gcov/src/mod_auth.c",
+        "start_line": 132,
+        "reason": "completely_uncovered"
+      },
+      {
+        "function": "mod_auth_periodic_cleanup",
+        "file": "lighttpd1-gcov/src/mod_auth.c",
+        "start_line": 154,
+        "reason": "completely_uncovered"
+      },
+      {
+        "function": "TRIGGER_FUNC",
+        "file": "lighttpd1-gcov/src/mod_auth.c",
+        "start_line": 170,
+        "reason": "completely_uncovered"
+      },
+      {
+        "function": "mod_auth_send_400_bad_request",
+        "file": "lighttpd1-gcov/src/mod_auth.c",
+        "start_line": 191,
+        "reason": "completely_uncovered"
+      },
+      {
+        "function": "mod_auth_send_401_unauthorized_basic",
+        "file": "lighttpd1-gcov/src/mod_auth.c",
+        "start_line": 739,
+        "reason": "completely_uncovered"
+      },
+      {
+        "function": "mod_auth_basic_misconfigured",
+        "file": "lighttpd1-gcov/src/mod_auth.c",
+        "start_line": 751,
+        "reason": "completely_uncovered"
+      },
+      {
+        "function": "mod_auth_check_basic",
+        "file": "lighttpd1-gcov/src/mod_auth.c",
+        "start_line": 767,
+        "reason": "completely_uncovered"
+      },
+      {
+        "function": "mod_auth_digest_mutate",
+        "file": "lighttpd1-gcov/src/mod_auth.c",
+        "start_line": 784,
+        "reason": "completely_uncovered"
+      }
+    ],
+    "medium": [],
+    "low": []
+  },
+  "seed_generation_rules": [
+    {
+      "type": "http_methods",
+      "description": "生成不同HTTP方法的请求来覆盖HTTP处理函数",
+      "target_functions": [
+        "http_version_buf",
+        "http_response_delay",
+        "http_response_check_1xx",
+        "gw_hash",
+        "__attribute_nonnull__",
+        "__attribute_nonnull__",
+        "http_auth_cache_entry_init",
+        "http_auth_cache_entry_free",
+        "http_auth_cache_free",
+        "http_auth_cache_init"
+      ],
+      "template": "HTTP/1.1 {method} /path HTTP/1.1\r\nHost: example.com\r\n\r\n",
+      "variations": [
+        {
+          "method": "GET",
+          "description": "标准GET请求"
+        },
+        {
+          "method": "POST",
+          "description": "POST请求，需要body"
+        },
+        {
+          "method": "PUT",
+          "description": "PUT请求"
+        },
+        {
+          "method": "DELETE",
+          "description": "DELETE请求"
+        },
+        {
+          "method": "HEAD",
+          "description": "HEAD请求"
+        },
+        {
+          "method": "OPTIONS",
+          "description": "OPTIONS请求"
+        },
+        {
+          "method": "PATCH",
+          "description": "PATCH请求"
+        },
+        {
+          "method": "TRACE",
+          "description": "TRACE请求"
+        }
+      ]
+    },
+    {
+      "type": "http_headers",
+      "description": "生成包含各种HTTP头的请求来覆盖头部处理函数",
+      "target_functions": [
+        "http_version_buf",
+        "http_response_delay",
+        "http_response_check_1xx",
+        "gw_hash",
+        "__attribute_nonnull__",
+        "__attribute_nonnull__",
+        "http_auth_cache_entry_init",
+        "http_auth_cache_entry_free",
+        "http_auth_cache_free",
+        "http_auth_cache_init"
+      ],
+      "template": "GET /path HTTP/1.1\r\nHost: example.com\r\n{header_name}: {header_value}\r\n\r\n",
+      "variations": [
+        {
+          "header_name": "User-Agent",
+          "header_value": "Mozilla/5.0"
+        },
+        {
+          "header_name": "Accept",
+          "header_value": "text/html,application/json"
+        },
+        {
+          "header_name": "Content-Type",
+          "header_value": "application/json"
+        },
+        {
+          "header_name": "Content-Length",
+          "header_value": "100"
+        },
+        {
+          "header_name": "Connection",
+          "header_value": "keep-alive"
+        },
+        {
+          "header_name": "Cookie",
+          "header_value": "session=abc123"
+        }
+      ]
+    },
+    {
+      "type": "authentication",
+      "description": "生成包含认证信息的请求来覆盖认证相关函数",
+      "target_functions": [
+        "http_auth_cache_entry_init",
+        "http_auth_cache_entry_free",
+        "http_auth_cache_free",
+        "http_auth_cache_init",
+        "http_auth_cache_hash",
+        "http_auth_cache_query",
+        "mod_auth_tag_old_entries",
+        "mod_auth_periodic_cleanup",
+        "TRIGGER_FUNC",
+        "mod_auth_send_400_bad_request"
+      ],
+      "template": "GET /path HTTP/1.1\r\nHost: example.com\r\nAuthorization: {auth_type} {credentials}\r\n\r\n",
+      "variations": [
+        {
+          "auth_type": "Basic",
+          "credentials": "dXNlcm5hbWU6cGFzc3dvcmQ="
+        },
+        {
+          "auth_type": "Digest",
+          "credentials": "username=\"user\", realm=\"test\""
+        },
+        {
+          "auth_type": "Bearer",
+          "credentials": "token123"
+        }
+      ]
+    }
+  ]
+}

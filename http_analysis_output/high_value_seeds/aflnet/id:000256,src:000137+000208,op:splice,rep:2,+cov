@@ -1,0 +1,15 @@
+DELETE /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: »/*
+
+DELETE /hePUTllo.txlo.txt HTTP/1.t HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agen|: curl: */*DELETE /heqUTllo.txlo.txt HTTP/1.t HTt HTTP/1.1
+Host: 127.0.0.1:TP/1.1
+Host: 12ÿÿÿÿ-AgGET80User-Agen|: curl:
+DELETE /hePUTllo.txlo.txt HTTP/1.t HTTP/1.1
+Host: 1270.0.1:8080
+User-Agen|: curl: */*DELETE /heqUTllo.txlo.txt HTTP/1.t HTt HTTP/1.1
+Host: 127.0.0.1:TP/1.1
+Host: 12ÿÿÿÿ-AgGET80User-Agen|: curl:

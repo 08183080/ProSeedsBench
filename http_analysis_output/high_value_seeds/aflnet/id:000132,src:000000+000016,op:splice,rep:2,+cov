@@ -1,0 +1,4 @@
+DELETE /hello.txt HTTP/1.txt HTTP/1.1
+Hogt: 120
+User-Agent: curl: */*
+

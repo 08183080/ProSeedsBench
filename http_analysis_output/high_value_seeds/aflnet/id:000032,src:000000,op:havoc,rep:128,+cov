@@ -1,0 +1,10 @@
+OPTcONS /hello.txt HTTP/1.11080
+User-Agent:=curl/8.0.1
+Accep€: */*
+
+DELEtEÿhe: 127.0.H61:80M0
+User-Agen’: curl/8.0.18080cept: */*
+îOPTIONS /hello.txt HTTP/1.1
+Hos-Agent: curl/8.0.1
+Accept: */*
+

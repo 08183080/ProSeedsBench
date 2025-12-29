@@ -1,0 +1,20 @@
+{
+  "xpgfuzz": {
+    "max_nodes": 5,
+    "mean_nodes": 5.0,
+    "max_edges": 4,
+    "mean_edges": 4.0
+  },
+  "chatafl": {
+    "max_nodes": 7,
+    "mean_nodes": 7.0,
+    "max_edges": 15,
+    "mean_edges": 15.0
+  },
+  "aflnet": {
+    "max_nodes": 7,
+    "mean_nodes": 7.0,
+    "max_edges": 11,
+    "mean_edges": 11.0
+  }
+}
